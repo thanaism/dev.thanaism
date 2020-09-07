@@ -2,7 +2,7 @@
 layout: post
 title: My First Test Post
 image: img/callum-shaw-555357-unsplash.jpg
-author: [Ghost]
+author: [Thanai]
 date: 2020-09-08T10:00:00.000Z
 tags:
   - Source

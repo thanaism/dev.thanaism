@@ -317,10 +317,11 @@ const PostFullTags = styled.section`
 const PostFullCustomExcerpt = styled.p`
   margin: 20px 0 0;
   color: var(--midgrey);
-  font-family: Georgia, serif;
+  font-family: -apple-system, Segoe UI, Helvetica Neue, Hiragino Kaku Gothic ProN, 'メイリオ',
+    meiryo, sans-serif;
   font-size: 2.3rem;
   line-height: 1.4em;
-  font-weight: 300;
+  font-weight: 350;
 
   @media (max-width: 500px) {
     font-size: 1.9rem;

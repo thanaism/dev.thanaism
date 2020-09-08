@@ -204,7 +204,8 @@ const PostCardTitle = styled.h2`
 `;
 
 const PostCardExcerpt = styled.section`
-  font-family: Georgia, serif;
+  font-family: -apple-system, Segoe UI, Helvetica Neue, Hiragino Kaku Gothic ProN, 'メイリオ',
+    meiryo, sans-serif;
 
   @media (prefers-color-scheme: dark) {
     /* color: color(var(--midgrey) l(+10%)); */

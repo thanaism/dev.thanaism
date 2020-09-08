@@ -154,7 +154,7 @@ const SubscribeOverlayClose = styled.a`
   height: 40px;
 
   :before {
-    content: "";
+    content: '';
     position: absolute;
     top: 20px;
     right: 4px;
@@ -167,7 +167,7 @@ const SubscribeOverlayClose = styled.a`
   }
 
   :after {
-    content: "";
+    content: '';
     position: absolute;
     top: 20px;
     right: 4px;
@@ -203,7 +203,8 @@ const SubscribeOverlayDescription = styled.p`
   margin: 0 auto 50px;
   max-width: 650px;
   color: #fff;
-  font-family: Georgia, serif;
+  font-family: -apple-system, Segoe UI, Helvetica Neue, Hiragino Kaku Gothic ProN, 'メイリオ',
+    meiryo, sans-serif;
   font-size: 2.4rem;
   line-height: 1.3em;
   font-weight: 300;

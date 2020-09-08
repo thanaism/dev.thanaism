@@ -131,7 +131,8 @@ const IndexLayout: React.FC<IndexProps> = props => {
           }
           html {
             box-sizing: border-box;
-            font-family: sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+              Cantarell;
 
             -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;
@@ -390,7 +391,7 @@ const IndexLayout: React.FC<IndexProps> = props => {
           blockquote p {
             margin: 0.8em 0;
             font-size: 1.2em;
-            font-weight: 300;
+            // font-weight: 300;
           }
 
           blockquote small {

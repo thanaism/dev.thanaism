@@ -6,6 +6,7 @@ import { lighten, setLightness } from 'polished';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
+import 'katex/dist/katex.min.css';
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 

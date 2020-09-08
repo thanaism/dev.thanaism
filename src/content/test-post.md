@@ -4,6 +4,7 @@ title: My First Test Post
 image: img/callum-shaw-555357-unsplash.jpg
 author: [Thanai]
 date: 2020-09-08T10:00:00.000Z
+draft: false
 tags:
   - Source
 excerpt: The very first post to Gatsby world.

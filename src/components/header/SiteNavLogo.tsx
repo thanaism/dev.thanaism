@@ -4,6 +4,7 @@ import { css } from '@emotion/core';
 import { FixedObject } from 'gatsby-image';
 
 import config from '../../website-config';
+import SiteNav from './SiteNav';
 
 interface SiteNavLogoProps {
   logo?: {
@@ -13,11 +14,12 @@ interface SiteNavLogoProps {
   };
 }
 
+// SiteNavLogoがサイトトップのロゴ
 export const SiteNavLogo = () => (
   <StaticQuery
     query={graphql`
       query HeadingQuery {
-        logo: file(relativePath: { eq: "img/ghost-logo.png" }) {
+        logo: file(relativePath: { eq: "img/thanaism-logo.png" }) {
           childImageSharp {
             fixed(quality: 100, width: 500) {
               ...GatsbyImageSharpFixed

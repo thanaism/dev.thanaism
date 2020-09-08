@@ -54,7 +54,7 @@ const config: WebsiteConfig = {
   coverImage: 'img/blog-cover.png',
   logo: 'img/thanaism-logo.png',
   lang: 'ja',
-  siteUrl: 'https://thanaism.com',
+  siteUrl: 'https://dev.thanaism.com',
   facebook: 'https://www.facebook.com/ghost',
   twitter: 'https://twitter.com/okinawa__noodle',
   showSubscribe: true,

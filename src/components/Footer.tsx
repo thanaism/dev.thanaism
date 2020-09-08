@@ -22,18 +22,22 @@ export const Footer: React.FC = () => {
         </section>
         <SiteFooterNav>
           <Link to="/">Latest Posts</Link>
-          {config.facebook && (
+          {/* {config.facebook && (
             <a href={config.facebook} target="_blank" rel="noopener noreferrer">
               Facebook
             </a>
-          )}
+          )} */}
           {config.twitter && (
             <a href={config.twitter} target="_blank" rel="noopener noreferrer">
               Twitter
             </a>
           )}
 
-          <a href="https://github.com/scttcper/gatsby-casper" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/scttcper/gatsby-casper"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Casper
           </a>
 
@@ -100,4 +104,3 @@ const SiteFooterNav = styled.nav`
     }
   }
 `;
-

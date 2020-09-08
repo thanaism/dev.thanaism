@@ -17,3 +17,8 @@ This is my first time to edit article on vscode and push to post it.
 
 `SSL` is an abbreviation for `Secure Sockets Layer`.  
 To use cumston domain on Netlify, I went to my ConoHa setting board and set provided CNAME setting.
+
+## Using img test
+
+![Image description](img/speeches-cover.jpg)  
+This is my first test for using img on the middle of an article of Gatsby.

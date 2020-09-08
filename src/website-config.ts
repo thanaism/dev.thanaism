@@ -52,7 +52,7 @@ const config: WebsiteConfig = {
   title: 'Thanaism',
   description: 'Improve Your Life.',
   coverImage: 'img/blog-cover.png',
-  logo: 'img/ghost-logo.png',
+  logo: 'img/thanaism-logo.png',
   lang: 'ja',
   siteUrl: 'https://thanaism.com',
   facebook: 'https://www.facebook.com/ghost',

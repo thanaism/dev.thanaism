@@ -5,7 +5,7 @@ import { FixedObject } from 'gatsby-image';
 
 import config from '../../website-config';
 
-interface SiteNavLogoProps {
+interface SiteNavSymbolProps {
   logo?: {
     childImageSharp: {
       fixed: FixedObject;
@@ -13,12 +13,12 @@ interface SiteNavLogoProps {
   };
 }
 
-// SiteNavLogoがサイトトップのロゴ
-export const SiteNavLogo = () => (
+// SiteNavSymbolがサイト左上のロゴ
+export const SiteNavSymbol = () => (
   <StaticQuery
     query={graphql`
-      query HeadingQuery {
-        logo: file(relativePath: { eq: "img/thanaism-logo.png" }) {
+      query GetSiteSymbol {
+        logo: file(relativePath: { eq: "img/thanaism-symbol.png" }) {
           childImageSharp {
             fixed(quality: 100, width: 500) {
               ...GatsbyImageSharpFixed
@@ -28,7 +28,7 @@ export const SiteNavLogo = () => (
       }
     `}
     // tslint:disable-next-line:react-this-binding-issue
-    render={(data: SiteNavLogoProps) => (
+    render={(data: SiteNavSymbolProps) => (
       <Link className="site-nav-logo" css={SiteNavLogoStyles} to="/">
         {data.logo ? (
           <img src={data.logo.childImageSharp.fixed.src} alt={config.title} />

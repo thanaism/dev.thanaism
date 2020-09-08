@@ -257,7 +257,13 @@ const PostTemplate = css`
     background: #fff;
     padding-bottom: 4vw;
   }
-
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 50px;
+  }
   @media (prefers-color-scheme: dark) {
     .site-main {
       /* background: var(--darkmode); */

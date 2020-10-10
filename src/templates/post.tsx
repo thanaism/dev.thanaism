@@ -257,13 +257,23 @@ const PostTemplate = css`
     background: #fff;
     padding-bottom: 4vw;
   }
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: 50px;
+  p {
+    font-size: 1.6rem;
   }
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // h6 {
+  //   margin-top: 50px;
+  // }
+  // h2 {
+  //   font-size: 2.56rem;
+  //   border-bottom: 1px solid #ddd;
+  // }
+  // h3 {
+  //   font-size: 2.24rem;
+  // }
   @media (prefers-color-scheme: dark) {
     .site-main {
       /* background: var(--darkmode); */

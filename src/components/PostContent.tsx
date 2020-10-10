@@ -32,7 +32,7 @@ const PostContent: React.FC<PostContentProps> = ({ htmlAst }) => {
 export const PostFullContent = styled.section`
   position: relative;
   margin: 0 auto;
-  padding: 0 170px 6vw;
+  padding: 0 120px 6vw;
   min-height: 230px;
   font-family: -apple-system, Segoe UI, Helvetica Neue, Hiragino Kaku Gothic ProN, 'メイリオ',
     meiryo, sans-serif;
@@ -92,6 +92,7 @@ export const PostFullContent = styled.section`
 
   li {
     word-break: break-word;
+    font-size: 1.6rem;
   }
 
   li p {
@@ -158,8 +159,9 @@ export const PostFullContent = styled.section`
 
   blockquote {
     margin: 0 0 1.5em;
-    padding: 0 1.5em;
-    border-left: #3eb0ef 3px solid;
+    padding: 0 1.2rem;
+    // border-left: #3eb0ef 3px solid;
+    border-left: #ddd 5px solid;
   }
   @media (max-width: 500px) {
     blockquote {
@@ -170,7 +172,8 @@ export const PostFullContent = styled.section`
   blockquote p {
     margin: 0 0 1em 0;
     color: inherit;
-    font-size: inherit;
+    // font-size: inherit;
+    font-size: 1.6rem;
     line-height: inherit;
     // font-style: italic;
   }
@@ -181,12 +184,12 @@ export const PostFullContent = styled.section`
 
   code {
     padding: 0 5px 2px;
-    font-size: 0.8em;
+    // font-size: 0.8em;
     line-height: 1em;
-    font-weight: 400 !important;
+    // font-weight: 400 !important;
     /* background: var(--whitegrey); */
     background: ${colors.whitegrey};
-    border-radius: 3px;
+    // border-radius: 3px;
   }
 
   p code {
@@ -281,14 +284,15 @@ export const PostFullContent = styled.section`
   }
 
   h2 {
-    margin: 0.5em 0 0.4em;
-    font-size: 3.2rem;
+    margin: 5.632rem 0 2.4rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 2.56rem;
     line-height: 1.25em;
     font-weight: 600;
   }
-  p + h2 {
-    margin-top: 0.8em;
-  }
+  // p + h2 {
+  //   margin-top: 0.8em;
+  // }
   @media (max-width: 800px) {
     h2 {
       margin-bottom: 0.3em;
@@ -298,8 +302,8 @@ export const PostFullContent = styled.section`
   }
 
   h3 {
-    margin: 0.5em 0 0.2em;
-    font-size: 2.5rem;
+    margin: 4.928rem 0 2.4rem;
+    font-size: 2.24rem;
     line-height: 1.3em;
     font-weight: 600;
   }
@@ -315,8 +319,8 @@ export const PostFullContent = styled.section`
   }
 
   h4 {
-    margin: 0.5em 0 0.2em;
-    font-size: 2.5rem;
+    margin: 4.224rem 0 2.4rem;
+    font-size: 1.92rem;
     font-weight: 600;
   }
   h2 + h4 {
@@ -520,7 +524,7 @@ export const PostFullContent = styled.section`
   code[class*='language-'],
   pre[class*='language-'] {
     color: white;
-    background: none;
+    background: #364549;
     font-family: Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
     font-feature-settings: normal;
     text-align: left;
@@ -571,11 +575,13 @@ export const PostFullContent = styled.section`
 
   /* Inline code */
   *:not(pre) > code[class*='language-'] {
-    border-radius: 0.3em;
-    background: rgb(1, 22, 39);
-    color: white;
-    padding: 0.15em 0.5em;
-    white-space: normal;
+    // border-radius: 0.3em;
+    // background: rgb(1, 22, 39);
+    // color: white;
+    color: black;
+    background-color: #EEEEEE;
+    padding: 0.1em 0.4em;
+    // white-space: normal;
   }
 
   .token.attr-name {
@@ -584,7 +590,8 @@ export const PostFullContent = styled.section`
   }
 
   .token.comment {
-    color: rgb(128, 147, 147);
+    // color: rgb(128, 147, 147);
+    color: #9dabae;
   }
 
   .token.string,
@@ -597,19 +604,22 @@ export const PostFullContent = styled.section`
   }
 
   .token.number {
-    color: rgb(247, 140, 108);
+    // color: rgb(247, 140, 108);
+    color: #a980f5;
   }
 
+  .token.keyword,
   .token.builtin,
   .token.char,
   .token.constant,
   .token.function {
-    color: rgb(130, 170, 255);
+    // color: rgb(130, 170, 255);
+    color: #ebd247;
   }
 
-  .token.punctuation {
-    color: rgb(199, 146, 234);
-  }
+  // .token.punctuation {
+  //   color: rgb(199, 146, 234);
+  // }
 
   .token.selector,
   .token.doctype {
@@ -621,15 +631,18 @@ export const PostFullContent = styled.section`
     color: rgb(255, 203, 139);
   }
 
-  .token.tag,
-  .token.operator,
-  .token.keyword {
+  // .token.operator,
+  // .token.keyword,
+  .token.tag {
     color: #ffa7c4;
   }
 
-  .token.boolean {
-    color: rgb(255, 88, 116);
-  }
+  .token.operator{
+    color: #ff8095;
+  } 
+  // .token.boolean {
+  //   color: rgb(255, 88, 116);
+  // }
 
   .token.property {
     color: rgb(128, 203, 196);
@@ -658,8 +671,9 @@ export const PostFullContent = styled.section`
     margin-bottom: 1.75rem;
     margin-left: -1.3125rem;
     margin-right: -1.3125rem;
-    border-radius: 10px;
+    // border-radius: 10px;
     background: #011627;
+    // background: ##364549;
     -webkit-overflow-scrolling: touch;
     overflow: auto;
   }
@@ -669,6 +683,10 @@ export const PostFullContent = styled.section`
     min-width: 100%;
   }
   /* End Syntax Highlighting */
+
+  .katex-html {
+    font-size: 2.0rem;
+  }
 `;
 
 export default PostContent;

@@ -45,6 +45,16 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 };
 
 exports.createPages = async ({ graphql, actions }) => {
+  
+  // const { createRedirect } = actions
+
+  // createRedirect({
+  //   fromPath: '/2010*',
+  //   toPath: '2020/10/:splat',
+  //   isPermanent: true,
+  //   force: true
+  // })
+  
   const { createPage } = actions;
 
   const result = await graphql(`
@@ -109,7 +119,7 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `);
-
+  
   if (result.errors) {
     console.error(result.errors);
     throw new Error(result.errors);

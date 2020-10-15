@@ -50,7 +50,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 2000,
+              maxWidth: 1000,
               quality: 100,
             },
           },
@@ -70,6 +70,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
     'gatsby-plugin-feed',
+    'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-postcss',
       options: {
@@ -94,5 +95,7 @@ module.exports = {
         siteSpeedSampleRate: 10,
       },
     },
+    'gatsby-redirect-from',
+    'gatsby-plugin-meta-redirect', // make sure this is always the last one
   ],
 };

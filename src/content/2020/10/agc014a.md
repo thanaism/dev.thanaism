@@ -6,7 +6,7 @@ author: [Thanai]
 date: 2020-09-08T15:00:00.000Z
 draft: false
 tags:
-  - Source
+  - Programming
 excerpt: AGC014のA問題を、より短いコードで、O(1)で解く方法を考える。
 redirect_from:
   - /200908_agc014a/
@@ -34,14 +34,14 @@ redirect_from:
 普通に解くと$O(\log N)$で捌けるので、その場合は特に難しくない。
 $A,B,C$がともに等しい値で、かつ偶数のときにこの操作は無限ループとなる。
 
-```python
+```py
 if a==b==c and a%2==0:
   print(-1)
 ```
 
 そうでない場合は、単純に操作を繰り返してあげればよい。
 
-```python
+```py
 else:
   res=0
   while a%2==b%2==c%2==0:
@@ -59,7 +59,7 @@ AtCoder の良いところは、強い人達の提出コードが読み放題な
 
 さて、私が愛してやまない Python による[最短解答](https://atcoder.jp/contests/agc014/submissions/14893185)が以下であった。
 
-```python
+```py
 a,b,c=map(int,input().split())
 e=a-b|c-b
 print(len(bin(e&-e))-3or~c%-2)
@@ -86,7 +86,7 @@ print(len(bin(e&-e))-3or~c%-2)
 
 ビット演算に慣れていない人のために補足すると、`x&-x`により 2 進数における最も下位の 1 が立っているビットの桁位置を知ることができる。
 
-```txt
+```py
 #適当な2進数を考える
 +x = 0b010100
 
@@ -136,7 +136,7 @@ print(len(bin(e&-e))-3or~c%-2)
 
 Python だと真偽値`bool`型は`int`型のサブクラスであり、以下の対応になっている。
 
-```python
+```py
 >>> True==1
 True
 
@@ -150,7 +150,7 @@ False
 しかし、`if`節の中ではそれ以外でも真偽の判定がなされる。
 具体的には`0`や`空のオブジェクト`が`False`と判断される。
 
-```python
+```py
 >>> True if -1 else False
 True
 
@@ -164,7 +164,7 @@ False
 
 #### 3 行目の分解結果
 
-```python
+```py
 len(bin(e&-e))-3or~c%-2
 ```
 
@@ -176,7 +176,7 @@ len(bin(e&-e))-3or~c%-2
 
 ### 2 行目を分解する
 
-```python
+```py
 e=a-b|c-b
 ```
 
@@ -184,7 +184,7 @@ e=a-b|c-b
 
 基本に立ち返って、「普通」の解答を思い出すと、
 
-```python
+```py
 if a==b==c and a%2==0:
   print(-1)
 ```
@@ -203,7 +203,7 @@ $A=B=C$かつ$A$が偶数のときに`-1`を返している。
 
 以下では`==`を等号として用いる。
 
-```python
+```py
 # a==b==cのとき、
 e == a-b|c-b
 e == a-a|a-a
@@ -231,7 +231,7 @@ f=lambda x:len(bin(x&-x))-3
 
 > 4 12 20
 
-```python
+```py
 e = a-b|c-b
 e = 4-12|12-20
 e = -8|-8
@@ -246,7 +246,7 @@ f(e) == 3
 - `x`と`y`のビットを下位からたどったときに互いに共通する桁まで`0`が連続するビットとなる
 - ただし、`x==y`のときは 0 が返る
 
-```txt
+```py
 # Cは下位から連続してビットが共通する部分
   x = 0b???????XCCCCC
   y = 0b???????YCCCCC

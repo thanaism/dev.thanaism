@@ -6,7 +6,7 @@ author: [Thanai]
 date: 2020-10-09T0:00:00.000Z
 draft: false
 tags:
-  - Source
+  - Poem
 excerpt: 今を人生の節目にしたいという思いを込めて
 redirect_from:
   - /201009_self-analysis/

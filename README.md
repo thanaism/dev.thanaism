@@ -49,7 +49,7 @@ Now push to whatever repo you want!
 
 Edit `gatsby-config.js` and add your tracking ID
 
-```javascript
+```js
 {
     resolve: `gatsby-plugin-google-analytics`,
     options: {
@@ -75,7 +75,7 @@ Edit `gatsby-config.js` and add your tracking ID
 
 Edit `gatsby-config.js` section `siteMetadata`
 
-```javascript
+```js
  siteMetadata: {
     title: 'My awesome site name',
     description: 'This is a description for my site',

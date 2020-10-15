@@ -15,10 +15,14 @@ export const Footer: React.FC = () => {
         <section className="copyright">
           <Link to="/">{config.title}</Link> &copy; {new Date().getFullYear()}{' '}
           {config.footer && (
-            <Link to="/">
-              | {config.title} {config.footer}
-            </Link>
-          )}
+            <React.Fragment>
+            | {config.title} <a
+            href="https://github.com/scttcper/gatsby-casper"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{config.footer}</a>
+            </React.Fragment>
+            )}
         </section>
         <SiteFooterNav>
           <Link to="/">Latest Posts</Link>
@@ -33,15 +37,15 @@ export const Footer: React.FC = () => {
             </a>
           )}
 
-          <a
+          {/* <a
             href="https://github.com/scttcper/gatsby-casper"
             target="_blank"
             rel="noopener noreferrer"
           >
             Casper
-          </a>
+          </a> */}
 
-          <a href="/rss.xml">RSS</a>
+          {/* <a href="/rss.xml">RSS</a> */}
         </SiteFooterNav>
       </div>
     </footer>

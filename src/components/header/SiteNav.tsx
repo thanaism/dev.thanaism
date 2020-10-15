@@ -6,11 +6,12 @@ import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 
 import { colors } from '../../styles/colors';
-import { SocialLink, SocialLinkFb } from '../../styles/shared';
+// import { SocialLink, SocialLinkFb } from '../../styles/shared';
+import { SocialLink } from '../../styles/shared';
 import config from '../../website-config';
 // import { Facebook } from '../icons/facebook';
 import { Twitter } from '../icons/twitter';
-import { SubscribeModal } from '../subscribe/SubscribeModal';
+// import { SubscribeModal } from '../subscribe/SubscribeModal';
 import { SiteNavSymbol } from './SiteNavSymbol';
 
 interface SiteNavProps {
@@ -24,17 +25,17 @@ interface SiteNavState {
 }
 
 class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
-  subscribe = React.createRef<SubscribeModal>();
+  // subscribe = React.createRef<SubscribeModal>();
   titleRef = React.createRef<HTMLSpanElement>();
   lastScrollY = 0;
   ticking = false;
   state = { showTitle: false };
 
-  openModal = () => {
-    if (this.subscribe.current) {
-      this.subscribe.current.open();
-    }
-  };
+  // openModal = () => {
+  //   if (this.subscribe.current) {
+  //     this.subscribe.current.open();
+  //   }
+  // };
 
   componentDidMount(): void {
     this.lastScrollY = window.scrollY;
@@ -83,7 +84,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
     const { isHome = false, isPost = false, post = {} } = this.props;
     return (
       <>
-        {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
+        {/* {config.showSubscribe && <SubscribeModal ref={this.subscribe} />} */}
         <nav css={SiteNavStyles}>
           <SiteNavLeft className="site-nav-left">
             {!isHome && <SiteNavSymbol />}
@@ -130,9 +131,9 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                 </a>
               )}
             </SocialLinks>
-            {config.showSubscribe && (
+            {/* {config.showSubscribe && (
               <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
-            )}
+            )} */}
           </SiteNavRight>
         </nav>
       </>
@@ -259,22 +260,22 @@ const SocialLinks = styled.div`
   align-items: center;
 `;
 
-const SubscribeButton = styled.a`
-  display: block;
-  padding: 4px 10px;
-  margin: 0 0 0 10px;
-  border: #fff 1px solid;
-  color: #fff;
-  line-height: 1em;
-  border-radius: 10px;
-  opacity: 0.8;
+// const SubscribeButton = styled.a`
+//   display: block;
+//   padding: 4px 10px;
+//   margin: 0 0 0 10px;
+//   border: #fff 1px solid;
+//   color: #fff;
+//   line-height: 1em;
+//   border-radius: 10px;
+//   opacity: 0.8;
 
-  :hover {
-    text-decoration: none;
-    opacity: 1;
-    cursor: pointer;
-  }
-`;
+//   :hover {
+//     text-decoration: none;
+//     opacity: 1;
+//     cursor: pointer;
+//   }
+// `;
 
 const NavPostTitle = styled.span`
   visibility: hidden;

@@ -6,7 +6,7 @@ author: [Thanai]
 date: 2020-09-25T0:00:00.000Z
 draft: false
 tags:
-  - Source
+  - Programming
 excerpt: PySimpleGUIをmacOSで使用すると文字列が表示されないエラーに関して
 redirect_from:
   - /200925_pysimplegui/

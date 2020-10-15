@@ -20,7 +20,7 @@ export const SiteNavSymbol = () => (
       query GetSiteSymbol {
         logo: file(relativePath: { eq: "img/thanaism-symbol.png" }) {
           childImageSharp {
-            fixed(quality: 100, width: 500) {
+            fixed(quality: 100, width: 400) {
               ...GatsbyImageSharpFixed
             }
           }

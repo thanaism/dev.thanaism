@@ -1,13 +1,16 @@
 ---
 layout: post
 title: エラトステネスの篩とMeissel-Lehmer Algorithm
-image: img/noufal-tariq-cWNI6UN6BXw-unsplash.jpg
+image: ../../img/noufal-tariq-cWNI6UN6BXw-unsplash.jpg
 author: [Thanai]
 date: 2020-09-12T0:00:00.000Z
 draft: false
 tags:
   - Source
 excerpt: 整数問題の実力をつけるため、Meissel-Lehmer Algorithmを紐解いていく
+redirect_from:
+  - /200912_meissel-lehmer-algorithm/
+  # note: trailing slashes are required
 ---
 
 ## エラトステネスの篩

@@ -517,6 +517,13 @@ export const PostFullContent = styled.section`
       color: rgba(255, 255, 255, 0.75);
       box-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
     }
+
+    /* Inline code */
+    *:not(pre) > code[class*='language-'] {
+      background-color: #000 !important;
+      color: #EEE !important;
+    }
+
   }
 
   /* Start Syntax Highlighting */

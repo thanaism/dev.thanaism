@@ -41,7 +41,7 @@ excerpt: My Reading List Of Development
     </td>
     <td style="color:#15171A;padding-right:30px;background-color:#f5f5f5;overflow-wrap:break-word;vertical-align:middle;border:0px;">
       こちらも有名本。
-      個人でプログラミングを学んでいると、なかなか**ちゃんとした**テストの書き方もわからないし、その重要性に気付けないと感じた。
+      個人でプログラミングを学んでいると、なかなか<u>ちゃんとした</u>テストの書き方もわからないし、その重要性に気付けないと感じた。
       また、自分のスケールアップに絶対的に必要になると考え選書した。
     </td>
   </tr></tbody>

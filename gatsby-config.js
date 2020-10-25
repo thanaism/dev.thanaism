@@ -43,7 +43,12 @@ module.exports = {
               strict: `ignore`,
             },
           },
-          'gatsby-remark-prismjs',
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              throwInlineCodeLanguageWarning: false
+            },
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           'gatsby-remark-abbr',

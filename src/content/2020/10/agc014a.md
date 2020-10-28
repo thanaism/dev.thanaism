@@ -6,7 +6,7 @@ author: [Thanai]
 date: 2020-09-08T15:00:00.000Z
 draft: false
 tags:
-  - Programming
+  - programming
 excerpt: AGC014のA問題を、より短いコードで、O(1)で解く方法を考える。
 redirect_from:
   - /200908_agc014a/

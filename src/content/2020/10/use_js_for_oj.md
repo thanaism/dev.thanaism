@@ -6,7 +6,7 @@ author: [Thanai]
 date: 2020-10-26T00:00:00.000Z
 draft: false
 tags:
-  - Programming
+  - programming
 excerpt: 標準入力からいきなり苦戦したのでメモ
 ---
 

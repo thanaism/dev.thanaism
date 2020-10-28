@@ -6,7 +6,7 @@ author: [Thanai]
 date: 2020-10-16T0:00:00.000Z
 draft: false
 tags:
-  - Programming
+  - programming
 excerpt: わりと頻出しそうなアルゴリズムなので記録
 ---
 

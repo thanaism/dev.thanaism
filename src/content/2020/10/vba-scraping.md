@@ -6,7 +6,7 @@ author: [Thanai]
 date: 2020-10-28T17:00:00.000Z
 draft: false
 tags:
-  - Programming
+  - programming
 excerpt: とりあえず基本のところだけ
 ---
 

@@ -6,7 +6,7 @@ author: [Thanai]
 date: 2020-09-12T0:00:00.000Z
 draft: false
 tags:
-  - Programming
+  - programming
 excerpt: 整数問題の実力をつけるため、Meissel-Lehmer Algorithmを紐解いていく
 redirect_from:
   - /200912_meissel-lehmer-algorithm/

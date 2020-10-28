@@ -6,7 +6,7 @@ author: [Thanai]
 date: 2020-10-15T0:00:00.000Z
 draft: false
 tags:
-  - Programming
+  - programming
 excerpt: My Reading List Of Development
 ---
 

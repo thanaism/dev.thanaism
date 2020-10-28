@@ -6,7 +6,7 @@ author: [Thanai]
 date: 2020-10-27T00:00:00.000Z
 draft: true
 tags:
-  - Programming
+  - programming
 excerpt: とりあえず全提出データを取得してまとめた
 ---
 

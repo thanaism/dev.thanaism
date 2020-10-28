@@ -171,15 +171,15 @@ End Sub
 
 開発者ツールの`Network`タブを開いた状態でログインしてください。
 
-![img](../../img/e-typing_before-login.jpg)
+![img](../../img/2020/10/e-typing_before-login.jpg)
 
 ログインするとブワァっといろいろ流れますが、一番上の`login.asp`を調べてみましょう。
 
-![img](../../img/e-typing_after-login_1.jpg)
+![img](../../img/2020/10/e-typing_after-login_1.jpg)
 
 はい、それっぽいのが出てきましたね。`Request Method`と`Form Data`にしたがって、コードを実装しましょう。形式は、上のコードを参考にすればなんとなくわかるかと思います。
 
-![img](../../img/e-typing_after-login_2.jpg)
+![img](../../img/2020/10/e-typing_after-login_2.jpg)
 
 ## おわりに
 

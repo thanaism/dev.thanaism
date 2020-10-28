@@ -18,7 +18,7 @@ export const SiteNavSymbol = () => (
   <StaticQuery
     query={graphql`
       query GetSiteSymbol {
-        logo: file(relativePath: { eq: "img/thanaism-symbol.png" }) {
+        logo: file(relativePath: { eq: "avatars/thanaism-symbol.png" }) {
           childImageSharp {
             fixed(quality: 100, width: 400) {
               ...GatsbyImageSharpFixed

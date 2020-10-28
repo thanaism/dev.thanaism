@@ -51,8 +51,8 @@ export interface WebsiteConfig {
 const config: WebsiteConfig = {
   title: 'Thanaism',
   description: 'Improve Your Life.',
-  coverImage: 'img/blog-cover.jpg',
-  logo: 'img/thanaism-logo.png',
+  coverImage: 'avatars/blog-cover.jpg',
+  logo: 'avatars/thanaism-logo.png',
   lang: 'ja',
   siteUrl: 'https://dev.thanaism.com',
   facebook: 'https://www.facebook.com/ghost',

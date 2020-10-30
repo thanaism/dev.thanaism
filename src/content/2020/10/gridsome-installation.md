@@ -135,7 +135,7 @@ declare module '*.vue' {
 ディレクトリ構成はこんな感じです。  
 `src`配下のフォルダをいろいろ書き換えていく感じでしょうね。
 
-```txt
+```
 .
 ├── src
 │   ├── components
@@ -216,7 +216,7 @@ GraphQL のコレクション名と同じ名前の`.vue`ファイルを作れと
 
 まずは、Wrapper になっているっぽいレイアウトの中身から見ていきましょう。
 
-```vue
+```ts
 <template>
   <div class="layout">
     <header class="header">

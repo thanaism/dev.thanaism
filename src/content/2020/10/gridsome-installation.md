@@ -297,7 +297,7 @@ export default function (Vue: VueConstructor, { router, head, isClient }: VueCon
 ## `index.vue`ページに投稿一覧を組み込む
 
 ブログなので、トップに記事一覧を並べてみましょう。  
-まず、いらないところはすべて省いて作ってみます。徹底的に削ぎ落とさないとどこがクリティカルかわからないマンになってしましますので。
+まず、いらないところはすべて省いて作ってみます。徹底的に削ぎ落とさないと**どこがクリティカルか**というのがわからないマンになってしまいますので。
 
 ということで`src/pages/Index.vue`を順番に構成していきましょう。
 
@@ -326,7 +326,15 @@ query {
 いろいろ引っ張ってこれるものはありますが、とりあえずタイトル`title`と投稿日時`date`、あとはリンクを貼るのに必要なファイルパス`path`だけ取得しました。
 
 たとえば他に取得できるものとしては`timeToRead`や`id`などいろいろあります。  
-今回は Gridsome メインなので GraphQL の説明は省きますが、いろいろ試したければ`npx gridsome develop`したら案内される`Explore GraphQL data at: http://localhost:8080/___explore`にいけば GraphQL の playgroud につながるので、`DOCS`で見ればよいでしょう。
+今回は Gridsome メインなので GraphQL の説明は省きますが、いろいろ試したければ GraphQL の playgroud を使うのがよいでしょう。
+
+`npx gridsome develop`したら案内される
+
+```bash
+Explore GraphQL data at: http://localhost:8080/___explore
+```
+
+にいけば playground につながるので、`DOCS`で見ればよいでしょう。
 
 ![img](../../img/2020/10/gridsome-graphql-playground.jpg)
 

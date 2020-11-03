@@ -7,7 +7,7 @@ date: 2020-10-30T15:00:00.000Z
 draft: false
 tags:
   - programming
-excerpt: 投稿時点では未完成。書きながら作っていきます。
+excerpt: とりあえず記事をMarkdownで投稿できるようにするまで整えました。
 ---
 
 ## Gridsome とはなにか

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AtCoder Grand Contest 014 Task A - Cookie Exchanges 考察メモ
-image: ../../img/caspar-camille-rubin-0qvBNep1Y04-unsplash.jpg
+image: ../../img/zdenek-machacek-QU8sVc_J_fI-unsplash.jpg
 author: [Thanai]
 date: 2020-09-08T15:00:00.000Z
 draft: false

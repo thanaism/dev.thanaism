@@ -13,11 +13,42 @@ excerpt: My Reading List Of Development
 ## まえがき
 
 どんな本を読んできたかということを示したり、人に勧めたりするときに便利なので作成したエントリです。
-いったんプログラミング関係のものに絞って作成しようと思います。
+いったんプログラミング関係のものに絞って作成しようと思います。  
+（最終更新：2020/11/14）
+
+## いま読んでいる本
+
+現在、読書中のものがあればいったんここに置きます。
+
+### [マスタリング TCP/IP](https://amzn.to/3pt55Ss)
+
+<table style="table-layout:fixed;white-space:normal;">
+  <tbody><tr>
+    <td style="border:0px;">
+      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=dev00d-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B0827QNDNT&linkId=946d75aa70fb0e2a83f9ee0862a74e3a"></iframe>
+    </td>
+    <td style="color:#15171A;padding-right:30px;background-color:#f5f5f5;overflow-wrap:break-word;vertical-align:middle;border:0px;">
+      今後、ネットワーク関連の知識が重要となる環境に行くことが予想されるので、選書。知人のネットワーク関連のエンジニアにSlackで「なんか全体感をざっくり掴むのによさげな本ないですかね」と投げてリコメンドされたうちの1冊。
+    </td>
+  </tr></tbody>
+</table>
 
 ## 基礎知識系
 
 特定の言語というよりは、デベロッパーとして最低限の素養を得るための書籍。
+
+### [コーディングを支える技術](https://amzn.to/2UnzEuB)
+
+<table style="table-layout:fixed;white-space:normal;">
+  <tbody><tr>
+    <td style="border:0px;">
+      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=dev00d-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07JKLS4KM&linkId=8257108c8f53c81490cf02fb51997421"></iframe>
+    </td>
+    <td style="color:#15171A;padding-right:30px;background-color:#f5f5f5;overflow-wrap:break-word;vertical-align:middle;border:0px;">
+      帯の「<b>なぜ言語設計者はこの文法を作ったのか</b>」というのが、まさに分かる本。しばらくプログラミングの学習をしてきて、字句解析だとか構文木だとか、そうしたコンパイラがどうやって動作しているのかといった知識があまりないことに気付き、選書した。完全初心者だとさすがに敷居が高いかもしれないが、情報系の学科を出ておらず体系的にCSを学んでこなかったものの、これからプログラミングについてより深堀りしたいという人には胸を張ってオススメできる良書。
+    </td>
+  </tr></tbody>
+</table>
 
 ### [リーダブルコード](https://amzn.to/3dwJ13F)
 

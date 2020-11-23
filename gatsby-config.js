@@ -75,6 +75,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
     // 'gatsby-plugin-feed',
+    'gatsby-plugin-twitter',
     'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-postcss',

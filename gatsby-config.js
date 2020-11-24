@@ -76,6 +76,7 @@ module.exports = {
     'gatsby-transformer-yaml',
     // 'gatsby-plugin-feed',
     'gatsby-plugin-twitter',
+    'react-sharingbuttons',
     'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-postcss',

@@ -17,6 +17,8 @@ excerpt: ABC184 E - Third Avenue
 CでWAしまくって、Dはパット見わからなかったので、Eに挑戦しました。  
 あざやかにTLEして2完で爆死しましたので反省の意を込めてどう改善できるか考察します。
 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今回のABC、実質3分の戦いでした。さようなら。 <a href="https://t.co/30rtcKWTPW">pic.twitter.com/30rtcKWTPW</a></p>&mdash; タナイ (@okinawa__noodle) <a href="https://twitter.com/okinawa__noodle/status/1330508579560943617?ref_src=twsrc%5Etfw">November 22, 2020</a></blockquote>
+
 ## 解説ACコード
 
 ```py

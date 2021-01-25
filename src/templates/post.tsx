@@ -230,7 +230,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                   />
                 </PostFullImage>
               )}
-              <PostContent htmlAst={post.htmlAst} />
+              <PostContent htmlAst={post.htmlAst} title={post.frontmatter.title} url={config.siteUrl + location.pathname} />
 
               {/* The big email subscribe modal content */}
               {/* {config.showSubscribe && <Subscribe title={config.title} />} */}
@@ -431,18 +431,20 @@ export const PostFullTitle = styled.h1`
 `;
 
 const PostFullImage = styled.figure`
-  margin: 25px 0 50px;
-  height: 800px;
+  margin: 0 120px 15px;
+  height: 200px;
+  width: 800px;
   background: ${colors.lightgrey} center center;
   background-size: cover;
   border-radius: 5px;
 
   @media (max-width: 1170px) {
-    margin: 25px -6vw 50px;
+    margin: 0 0 15px;
     border-radius: 0;
     img {
       max-width: 1170px;
     }
+    width: 100%;
   }
 
   @media (max-width: 800px) {

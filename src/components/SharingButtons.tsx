@@ -1,6 +1,15 @@
 import React from 'react';
 // import { useStaticQuery, graphql } from 'gatsby';
-import { Facebook, Twitter } from 'react-sharingbuttons';
+import { 
+  FacebookShareButton, 
+  FacebookIcon, 
+  LineShareButton, 
+  LineIcon,
+  LinkedinShareButton, 
+  LinkedinIcon,
+  TwitterShareButton,
+  TwitterIcon
+} from 'react-share';
 
 export interface SharingButtonsProps {
     title: string;
@@ -10,8 +19,21 @@ export interface SharingButtonsProps {
 const SharingButtons: React.FC<SharingButtonsProps> = ({ title, url }) => {
   return (
     <>
-      <Facebook url={url} />
-      <Twitter url={url} shareText={title} />
+      <FacebookShareButton url={url}>
+        <FacebookIcon size={50} round />
+      </FacebookShareButton>
+
+      <LineShareButton url={url} >
+        <LineIcon size={50} round />
+      </LineShareButton>
+
+      <LinkedinShareButton url={url} >
+        <LinkedinIcon size={50} round />
+      </LinkedinShareButton>
+
+      <TwitterShareButton title={title} via="okinawa__noodle" url={url} >
+        <TwitterIcon size={50} round />
+      </TwitterShareButton>
     </>
   );
 };

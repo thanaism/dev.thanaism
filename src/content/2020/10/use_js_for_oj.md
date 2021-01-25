@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScriptで競プロをする
-image: ../../img/vittorio-zamboni-iq96SvUkuxQ-unsplash.jpg
+image: ../../img/lisette-verwoerd-4lnzD0569kc-unsplash.jpg
 author: [Thanai]
 date: 2020-10-26T00:00:00.000Z
 draft: false

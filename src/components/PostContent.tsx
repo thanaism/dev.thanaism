@@ -277,7 +277,9 @@ export const PostFullContent = styled.section`
   }
 
   h1 {
-    margin: 0.5em 0 0.4em;
+    margin: 5.632rem 0 0.4em;
+    padding-top: 1.5rem;
+    border-bottom: 1px solid #ddd;
     font-size: 4.2rem;
     line-height: 1.25em;
     font-weight: 600;
@@ -390,7 +392,7 @@ export const PostFullContent = styled.section`
   table {
     display: inline-block;
     overflow-x: auto;
-    margin: 0.5em 0 2.5em;
+    margin: 0.5em 0 0.5em;
     max-width: 100%;
     width: auto;
     border-spacing: 0;

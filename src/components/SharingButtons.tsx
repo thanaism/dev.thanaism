@@ -19,20 +19,21 @@ export interface SharingButtonsProps {
 const SharingButtons: React.FC<SharingButtonsProps> = ({ title, url }) => {
   return (
     <>
+      <span>You can share this article with </span>
       <FacebookShareButton url={url}>
-        <FacebookIcon size={50} round />
+        <FacebookIcon size={30} round />
       </FacebookShareButton>
 
       <LineShareButton url={url} >
-        <LineIcon size={50} round />
+        <LineIcon size={30} round />
       </LineShareButton>
 
       <LinkedinShareButton url={url} >
-        <LinkedinIcon size={50} round />
+        <LinkedinIcon size={30} round />
       </LinkedinShareButton>
 
       <TwitterShareButton title={title} via="okinawa__noodle" url={url} >
-        <TwitterIcon size={50} round />
+        <TwitterIcon size={30} round />
       </TwitterShareButton>
     </>
   );

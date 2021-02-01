@@ -81,7 +81,9 @@ K8sは**クラウド界のLinux**と言われている。要するに今アツ�
 
 めちゃくちゃ役に立ったのが[実践Vim](https://amzn.to/36tpyia)という本。
 
-<a href="https://amzn.to/36tpyia" target="_blank"><img src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00HWLJI3U&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=dev00d-22&language=ja_JP" ></a>
+<table><tr><td style="border:0px;">
+    <a href="https://amzn.to/36tpyia" target="_blank"><img src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00HWLJI3U&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=dev00d-22&language=ja_JP" ></a>
+</td></tr></table>
 
 これを1冊だいたい通したら、もうVim以外のエディタは使いたくないという気持ちになった。今も、VS CodeにVimのプラグインを入れて書いている。
 あとは、面白そうなサイトとして[VIMATE](https://vimate.jp/)というのがある。最近できたサイトっぽいのだが、vim初心者が楽しんでvimコマンドを覚えられるようなゲームが提供されている。
@@ -95,7 +97,10 @@ K8sは**クラウド界のLinux**と言われている。要するに今アツ�
 Azure PowerShellを扱うために。テキストベースのBashと違ってPSはオブジェクトで結果が返る。コマンドも馴染みがないのでつらさがある。
 とりあえず、[PowerShell実践ガイドブック](https://amzn.to/3aj7xnF)という本を買ったのだがかなり良かった。まだ全部は読めていないが序盤だけでもだいぶ概要がつかめるようになっている。
 
-<a href="https://amzn.to/3aj7xnF" target="_blank"><img src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07D73G2X7&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=dev00d-22&language=ja_JP" ></a>
+
+<table><tr><td style="border:0px;">
+    <a href="https://amzn.to/3aj7xnF" target="_blank"><img src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07D73G2X7&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=dev00d-22&language=ja_JP" ></a>
+</td></tr></table>
 
 ## Docker/K8s
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Google Meetのノイズキャンセリング
-image: ../../img/sebastian-pena-lambarri-YV593oyMKmo-unsplash.jpg
+title: Google Meetのノイズキャンセリング機能は日本では無効なのか？
+image: ../../img/david-clode-u5K46PukKAo-unsplash.jpg
 author: [Thanai]
-date: 2021-01-31T15:00:00.000Z
-draft: true
+date: 2021-02-02T15:00:00.000Z
+draft: false
 tags:
   - remote work
-excerpt: 何はともあれ記録していく
+excerpt: ノイズキャンセルといっても色々ある
 ---
 
 <!-- prettier-ignore-start -->
@@ -26,19 +26,25 @@ excerpt: 何はともあれ記録していく
 
 Windows標準のボイスレコーダーを使って自分の声を録音してみると、ホワイトノイズが乗っていてめちゃくちゃ気になってました。
 
-マイクの候補としてはいろいろあって、
+自分が使うマイクの候補としてはいろいろあって、
 
-1. 内臓マイク
-1. 外付けwebcam内臓マイク（Logicool）
-1. 据え置きコンデンサマイク（SONY）
-1. ヘッドセット（Logicool）
+1. ノートPC内臓マイク
+1. 外付けwebcam内臓マイク（[Logicool StreamCam](https://amzn.to/3apcuLL)）
+1. 据え置きコンデンサマイク（[SONY ECM-PCV80U](https://amzn.to/3tjd8mC)）
+1. ヘッドセット（[Logicool G433BK](https://amzn.to/3oHic0w)）
 
-外付けwebcamはなぜか優秀でノイズがまったく乗らないけれど、無指向性のマイクなのでキーボードのタイプ音をゴリゴリ拾ってしまうという嫌な感じがありました。
+Logicoolの[StreamCam](https://amzn.to/3apcuLL)はなぜか優秀でノイズがまったく乗らないけれど、無指向性のマイクなのでキーボードのタイプ音をゴリゴリ拾ってしまうという嫌な感じがありました。
 
-それでヘッドセットを購入したわけですが、めちゃくちゃノイズが乗っています。
-正直マジかよって思いました。こんなことならやっぱりJabraにしておけばよかったと。
+それで[G433BK](https://amzn.to/3oHic0w)のヘッドセットを購入したわけですが、やっぱりノートPCのジャックに直つなぎなので、めちゃくちゃノイズが乗っています（これは3.5mmジャックを使うなら宿命ですが）。
+あー、ダメかー、って思いました。こんなことならやっぱりusb-c接続もある[Jabra Evolve2](https://amzn.to/3rk3puJ)にしておけばよかったと。
 
 誰かがこういうノイズを会議中ずっと発していたら自分だったら気が狂ってしまいます。
+
+<table><tr>
+  <td style="border:0px;">
+    <a href="https://amzn.to/3oHic0w" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B071GBFYT4&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=dev00d-22&language=ja_JP" ></a>
+  </td>
+</tr></table>
 
 ## Google Meetのノイズキャンセリング
 
@@ -58,7 +64,20 @@ https://support.google.com/meet/answer/9919960?co=GENIE.Platform%3DAndroid&hl=ja
 
 いわゆる有料で展開してる[Krisp](https://jp.vcube.com/service/krisp)みたいなやつのことですね。
 
+## おわりに
+
 これで安心してヘッドセットを使うことができます。
 
-しかし、メカニカルキーボードはうるさい……。
+**しかし、メカニカルキーボードはうるさい……。**
+
+ちなみに[G433BK](https://amzn.to/3oHic0w)は、本体は軽いし、マイクは（環境音への）ノイキャンついてて、さらに付属品としてUSB-DACも4極→3極2股の変換も付いてるので悪くない選択肢ではあるかなー、と思ってます。
+
+もっと言うとキーボードをタイプとかしないなら[StreamCam](https://amzn.to/3apcuLL)のマイク品質はメチャクチャいいです。
+いろんなYouTuberのレビュー動画見ましたが、StreamCamのマイク品質は他のWebcamと一線を画してますね。無指向ではありますが、ただ話すだけだったらこれ1台で全然OK。
+
+<table><tr><td style="border:0px;">
+  <a href="https://amzn.to/3apcuLL" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B086R71LGW&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=dev00d-22&language=ja_JP" ></a>
+</td></tr></table>
+
+
 <!-- prettier-ignore-end -->

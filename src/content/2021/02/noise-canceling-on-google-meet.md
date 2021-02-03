@@ -8,6 +8,8 @@ draft: false
 tags:
   - remote work
 excerpt: ノイズキャンセルといっても色々ある
+redirect_from:
+  - /2020/01/noise-canceling-on-google-meet/
 ---
 
 <!-- prettier-ignore-start -->

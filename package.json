@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-casper",
-  "description": "Casper for gatsby",
-  "version": "0.0.0",
+  "name": "dev.thanaism",
+  "description": "Gatsby for thanaism",
+  "version": "1.0.0",
   "private": true,
-  "author": "Scott Cooper <scttcper@gmail.com>",
-  "license": "MIT",
+  "author": "thanai",
+  "license": "JSON",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",

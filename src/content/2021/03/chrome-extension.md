@@ -7,6 +7,7 @@ date: 2021-03-11T19:00:00.000Z
 draft: false
 tags:
   - programming
+  - chrome
 excerpt: 技術的にはしょぼいけど地味に便利
 ---
 

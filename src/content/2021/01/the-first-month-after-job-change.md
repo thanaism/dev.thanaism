@@ -30,7 +30,7 @@ excerpt: 何はともあれ記録していく
 上でいきなりK8sとか書いたので、なんだそれはと思った人もいるかもしれない。
 最近、Twitterに「140秒でわかる」シリーズをあげているので、[K8sの回](https://twitter.com/okinawa__noodle/status/1352407276108214273?s=20)を見ればちょっとはわかるかも。
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/140%E7%A7%92%E3%81%A7%E3%82%8F%E3%81%8B%E3%82%8BKubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#140秒でわかるKubernetes</a> 今日は娘が手伝ってくれています😂<br><br>昨晩届いたばかりのLogicool StreamCamを試しに使って撮りました📷 <a href="https://t.co/7TxFIobnvo">pic.twitter.com/7TxFIobnvo</a></p>&mdash; タナイ (@okinawa__noodle) <a href="https://twitter.com/okinawa__noodle/status/1352407276108214273?ref_src=twsrc%5Etfw">January 22, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/140%E7%A7%92%E3%81%A7%E3%82%8F%E3%81%8B%E3%82%8BKubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#140秒でわかるKubernetes</a> 今日は娘が手伝ってくれています😂<br><br>昨晩届いたばかりのLogicool StreamCamを試しに使って撮りました📷 <a href="https://t.co/7TxFIobnvo">pic.twitter.com/7TxFIobnvo</a></p>&mdash; タナイ (@okinawa__noodle) <a href="https://twitter.com/okinawa__noodle/status/1352407276108214273?ref_src=twsrc%5Etfw">January 22, 2021</a></blockquote> 
 
 K8sは**クラウド界のLinux**と言われている。要するに今アツい存在。もとはGoogleが開発していて、今はCNCFに移管されている。
 2016 年ごろ開発元に近いGCPが先陣を切り、2018年にはAzureとAWSが続くことで主要3大クラウドすべてでマネージドK8sがGA（ベータ版を終えた正式版がリリース）されている。
@@ -90,7 +90,7 @@ K8sは**クラウド界のLinux**と言われている。要するに今アツ�
 
 ちなみに私はVimmer診断初級編でレジェンドまでやっておいた。負けず嫌いなので。
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">よっしゃ30秒切ったわ。レジェンドや。<br><br>Vimmer診断初級編<br>タイム : 29秒でした！<br><br>あなたの診断結果は...<br>Vimmerの中のレジェンドと呼ばれています。Vimの事なら大体知っています。Vim以外のエディタを見下す傾向があります。<a href="https://twitter.com/hashtag/Vim?src=hash&amp;ref_src=twsrc%5Etfw">#Vim</a> <a href="https://twitter.com/hashtag/VIMATE?src=hash&amp;ref_src=twsrc%5Etfw">#VIMATE</a><br> <a href="https://t.co/o8RQAJ3ZQK">https://t.co/o8RQAJ3ZQK</a></p>&mdash; タナイ (@okinawa__noodle) <a href="https://twitter.com/okinawa__noodle/status/1353366337628770304?ref_src=twsrc%5Etfw">January 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">よっしゃ30秒切ったわ。レジェンドや。<br><br>Vimmer診断初級編<br>タイム : 29秒でした！<br><br>あなたの診断結果は...<br>Vimmerの中のレジェンドと呼ばれています。Vimの事なら大体知っています。Vim以外のエディタを見下す傾向があります。<a href="https://twitter.com/hashtag/Vim?src=hash&amp;ref_src=twsrc%5Etfw">#Vim</a> <a href="https://twitter.com/hashtag/VIMATE?src=hash&amp;ref_src=twsrc%5Etfw">#VIMATE</a><br> <a href="https://t.co/o8RQAJ3ZQK">https://t.co/o8RQAJ3ZQK</a></p>&mdash; タナイ (@okinawa__noodle) <a href="https://twitter.com/okinawa__noodle/status/1353366337628770304?ref_src=twsrc%5Etfw">January 24, 2021</a></blockquote> 
 
 ## PowerShell
 

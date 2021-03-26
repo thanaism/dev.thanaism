@@ -7,7 +7,7 @@ date: 2021-03-04T17:00:00.000Z
 draft: false
 tags:
   - Gatsby
-excerpt: 見栄えも大事っちゃ大事なので
+excerpt: 見栄えを整えようとしたが面倒になった
 ---
 
 <!-- prettier-ignore-start -->

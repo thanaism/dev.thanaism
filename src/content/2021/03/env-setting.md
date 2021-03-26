@@ -58,7 +58,7 @@ Windowsの場合はkeyhacを使用する。keyhac本体リンクは下記README�
 
 WSL側は以下で。Win側は[公式インストーラー](https://neovim.io/)で（chocolateyとかscoopにいつまでも手が出ない）。
 
-```shell
+```bash
 sudo apt update && sudo apt install neovim -y
 ```
 
@@ -104,14 +104,14 @@ vscodevimでNeoVimを有効にする（exコマンドの利用上必須）。
 
 ### Powerline
 
-```sh
+```bash
 sudo apt update && sudo apt install python3 -y
 pip install powerline-status
 ```
 
 `.bashrc`に以下を追記。
 
-```sh
+```bash
 # setting for powerline
 export PATH="$HOME/.local/bin:$PATH"
 export POWERLINE_COMMAND=powerline
@@ -128,7 +128,7 @@ Macはデフォルトバージョンが古いのでhomebrewで最新版をイン
 
 エイリアスは最低限以下を設定しておく。
 
-```sh
+```bash
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit

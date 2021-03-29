@@ -41,7 +41,14 @@ Windowsの場合はkeyhacを使用する。keyhac本体リンクは下記README�
 
 [GitHub](https://github.com/thanaism/fakeymacs)に設定ファイルをUPしてある。
 
-[ChangeKey](https://forest.watch.impress.co.jp/library/software/changekey/)等で右CtrlとCapsLockをスワップする。
+[ChangeKey](https://forest.watch.impress.co.jp/library/software/changekey/)で以下をスワップする。
+
+- CapsLockとRCtrl
+- PrintScreenとInsert（Keychron K2にInsertキーがないため）
+
+Vimを使っているとコピペに`Shift/Ctrl`+`Insert`はよく使うので。
+
+`"*p`とかでもいいのだが、妙に慣れないので上記の方がよく使う。もうちょっと使うコマンドを最適化できればいいのだが。
 
 ## インストール関係
 

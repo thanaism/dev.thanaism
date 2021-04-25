@@ -10,8 +10,6 @@ tags:
 excerpt: 見栄えを整えようとしたが面倒になった
 ---
 
-<!-- prettier-ignore-start -->
-
 ## ブログにリンクカードを導入したい
 
 noteとかQiitaとかだと、URLからリンクカードが生成されてイケてるので、簡単にできるのならやってしまおうかと思ったのが発端。
@@ -23,7 +21,7 @@ noteとかQiitaとかだと、URLからリンクカードが生成されてイ�
 イメージとしては以下のようなReact要素を埋め込む感じね。
 
 ```jsx
-<Amazon shortUrl="https://amzn.to/3rgQBpj" />
+<Amazon shortUrl="https://amzn.to/3rgQBpj" />;
 ```
 
 `shortUrl`からASINを取得してアフィリエイト用APIからOGP情報に相当する内容を生成してカードとしてセットするようなイメージになるんだと思う。実際、[似たようなことをやっている人](https://blog.chick-p.work/gatsby-component-amazon/)もいる。
@@ -88,6 +86,3 @@ error while loading shared libraries: libXcursor.so.1: cannot open shared object
 ということで、AzureだけじゃなくてぼちぼちReactも勉強していこうと思います。
 
 ちなみに[実践Vim](https://amzn.to/3e4wLd7)を読んでからありとあらゆるテキスト編集がVimになった。今もvscodeのターミナルを全画面表示にしてVimで編集している。インフラに近しい領域で働くのにVim使えませんなんて言ったら打ち首獄門のうえ磔にされそうなので[実践Vim](https://amzn.to/3e4wLd7)は本当に読んでおいてよかった。
-
-
-<!-- prettier-ignore-end -->

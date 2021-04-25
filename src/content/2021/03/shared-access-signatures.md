@@ -10,8 +10,6 @@ tags:
 excerpt: AZ-500の勉強がてら
 ---
 
-<!-- prettier-ignore-start -->
-
 ## SASってなに
 
 SASは、Azure Storageの共有アクセス署名（**Shared Access Signature**）のこと。
@@ -24,15 +22,11 @@ URIの末尾に署名を付与する形。[Docs](https://docs.microsoft.com/ja-j
 
 SASにはいくつか種類がある。
 
-<!-- prettier-ignore-end -->
-
 | SAS                 | auth                | scope           |
 | :------------------ | :------------------ | :-------------- |
 | service SAS         | storage account key | storage account |
 | account SAS         | storage account key | single resource |
 | user delegation SAS | Azure AD            | single resource |
-
-<!-- prettier-ignore-start -->
 
 MS的にはAzure ADを利用するユーザー委任SASを使うのがベストプラクティスだとしている。
 
@@ -61,5 +55,3 @@ MS的にはAzure ADを利用するユーザー委任SASを使うのがベスト�
 また、アクセスポリシーは明示的な「許可」のシステムであるので、ポリシーが競合を起こすことはなさそうだ。
 
 つまり、一度発行してしまった許可を取り消すには、**その許可自体を変更する必要がある**。あとから"拒否"のポリシーを追加するような運用はできない。
-
-<!-- prettier-ignore-end -->

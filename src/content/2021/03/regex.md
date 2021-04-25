@@ -11,8 +11,6 @@ tags:
 excerpt: 原著タイトルが「Mastering Regular Expressions」を謳うだけはある
 ---
 
-<!-- prettier-ignore-start -->
-
 ## 買った本
 
 Amazon商品画像を貼るのがわりと手間なのでツイートのリンクで失礼（ツイートはカード化されるので綺麗に見える）。
@@ -68,5 +66,3 @@ Amazon商品画像を貼るのがわりと手間なのでツイートのリン�
 たとえば、正規表現もそうだし、UNIX/Linuxに関する知識や、Git、Vim、Markdown記法なども該当するだろう。
 
 これらは広く長く使われているだけの理由がある。それらを自分の一部にすることはいわばデメリットのない**おいしいとこどり**、「[詳説 正規表現](https://amzn.to/3cwWcTC)」はまさにリターン確実な投資である。
-
-<!-- prettier-ignore-end -->

@@ -104,9 +104,7 @@ excerpt: My Reading List Of Development
   </tr></tbody>
 </table>
 
-<!-- prettier-ignore-start -->
 ### [キタミ式イラストIT塾 基本情報技術者](https://amzn.to/31918Yr)
-<!-- prettier-ignore-end -->
 
 <table style="table-layout:fixed;white-space:normal;">
   <tbody><tr>

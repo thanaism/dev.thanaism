@@ -10,9 +10,7 @@ tags:
 excerpt: やはり実践的な観点で書かれた本を読むのはよい
 ---
 
-<!-- prettier-ignore-start -->
-
-## 読んだ本 
+## 読んだ本
 
 読んだのはこれ。  
 Kindle Unlimitedだと無料だし、ストーリー形式になってるので手軽にサクッと読めます。
@@ -96,6 +94,3 @@ Kindle Unlimitedだと無料だし、ストーリー形式になってるので�
 <table><tr><td style="border:0px;">
   <a href="https://amzn.to/3pIy8B3" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B082F8V923&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=dev00d-22&language=ja_JP" ></a>
 </td></tr></table>
-
-
-<!-- prettier-ignore-end -->

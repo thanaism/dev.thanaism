@@ -11,8 +11,6 @@ tags:
 excerpt: 切り捨て、切り上げ、真に大きい最小の整数、真に小さい最大の整数
 ---
 
-<!-- prettier-ignore-start -->
-
 ## JSC2021のA問題で2WAした
 
 屈辱の2WAである。さすがにA問題で2WAするなど思ってもいなかった。
@@ -98,5 +96,3 @@ $$\frac{a}{b}\lt\frac{a+b-x}{b}\lt\frac{a+b}{b}=\frac{a}{b}+1$$
 ## 最後に
 
 これを書いている途中にも何度もバグりかけた。本当に数弱をなんとかしてほしい。
-
-<!-- prettier-ignore-end -->

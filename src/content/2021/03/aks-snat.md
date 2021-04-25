@@ -10,8 +10,6 @@ tags:
 excerpt: まとまったら会社のブログの方に書く
 ---
 
-<!-- prettier-ignore-start -->
-
 ## 混同しがちなのでいったん整理
 
 Azure Kubernetes Service（以下AKS）で、SNATまわりってどうなってるんだっけ？というのが発端。
@@ -44,7 +42,7 @@ AKSに触り始めた当初は盛大に勘違いしていて、Azure CNIを利�
 LoadBalancer含め、CNI用のVnetと同じリソースグループに自前でリソースをデプロイして紐づけ作業をしたりすることを想像していたのだったか。
 よく考えればそんなわけはなくて、そもそもネットワーク以外にもノードプールとかありまんがな、という話である。
 
-ということで、**Azure CNIであろうがMC_始まりのリソースグループは作成され、**その中にサービスとしてのロードバランサーも作成される。
+ということで、**Azure CNIであろうがMC\_始まりのリソースグループは作成され、**その中にサービスとしてのロードバランサーも作成される。
 
 つまり、Azure CNIとkubenetにこの部分で違いはない。
 
@@ -97,17 +95,17 @@ kind: Service
 metadata:
   name: internal-app
   annotations:
-    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+    service.beta.kubernetes.io/azure-load-balancer-internal: 'true'
 spec:
   type: LoadBalancer
   ports:
-  - port: 80
+    - port: 80
   selector:
     app: internal-app
 ```
 
 > ノード リソース グループ内にAzure ロード バランサーが作成され、AKS クラスターと同じ仮想ネットワークに接続されます。
-サービスの詳細を表示すると、内部ロード バランサーの IP アドレスが EXTERNAL-IP 列に示されます。 このコンテキストでは、"外部" はロード バランサーの外部インスタンスに対するものであり、パブリックな外部 IP アドレスに対するものではありません。
+> サービスの詳細を表示すると、内部ロード バランサーの IP アドレスが EXTERNAL-IP 列に示されます。 このコンテキストでは、"外部" はロード バランサーの外部インスタンスに対するものであり、パブリックな外部 IP アドレスに対するものではありません。
 
 ということらしい。ちゃんと内部ロードバランサーでも内部宛に公開されているIPをEXTERNAL-IP列に表示してくれるとな（というか、そうじゃなかったら普通にめんどい）。
 
@@ -130,5 +128,3 @@ Azureは資格取得を通じて理解が進んできたものの、肝心のKub
 金銭より何より、**昨日の自分より今日の自分は優れている**と思える人生こそ素晴らしいと思う。
 
 [![img](//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07TNP45T3&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=dev00d-22&language=ja_JP)](https://amzn.to/3w15miO)
-
-<!-- prettier-ignore-end -->

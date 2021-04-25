@@ -11,8 +11,6 @@ tags:
 excerpt: 技術的にはしょぼいけど地味に便利
 ---
 
-<!-- prettier-ignore-start -->
-
 ## 人生で初めて作ったChrome拡張
 
 作ったものは本当にごくごくシンプルなのだけど、まずは画像を見てもらうのがいいかもしれない。
@@ -47,5 +45,3 @@ https://chrome.google.com/webstore/detail/ms-docs-lang-switching-ex/cnjicflfhpoc
 とりあえず[GitHubにはUPしてあります](https://github.com/thanaism/ms-docs-lang-switching-chrome-extenstion)が、恥ずかしいコードなので絶対に見ないでください。
 
 尾　張
-
-<!-- prettier-ignore-end -->

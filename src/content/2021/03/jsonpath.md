@@ -11,8 +11,6 @@ tags:
 excerpt: とりあえずこの3つを全部使いこなせたらかっこよくね？
 ---
 
-<!-- prettier-ignore-start -->
-
 ## jsonパーサー多すぎ問題
 
 インフラとかクラウドやってるとコマンドでjsonをチョキチョキする機会はそれなりに多いと思うのだけど、ツールによって組み込みのパーサーが違うっていう問題がある。
@@ -89,20 +87,20 @@ $ echo '{"hoge": "100"}' | jp hoge
 ```json
 {
   "firstName": "John",
-  "lastName" : "doe",
-  "age"      : 26,
-  "address"  : {
+  "lastName": "doe",
+  "age": 26,
+  "address": {
     "streetAddress": "naist street",
-    "city"         : "Nara",
-    "postalCode"   : "630-0192"
+    "city": "Nara",
+    "postalCode": "630-0192"
   },
   "phoneNumbers": [
     {
-      "type"  : "iPhone",
+      "type": "iPhone",
       "number": "0123-4567-8888"
     },
     {
-      "type"  : "home",
+      "type": "home",
       "number": "0123-4567-8910"
     }
   ]
@@ -166,15 +164,15 @@ Jhon
 # json
 $ cat test.json
 {
-  "firstName": "John", 
-  "lastName": "doe", 
+  "firstName": "John",
+  "lastName": "doe",
   "phoneNumbers": [
     {
-      "type": "iPhone", 
+      "type": "iPhone",
       "number": "090-000-0000"
-    }, 
+    },
     {
-      "type": "home", 
+      "type": "home",
       "number": "000-0000-0000"
     }
   ]
@@ -247,12 +245,12 @@ $ echo '{"foo": "bbarr"}' | jq .foo[1:4]
 ```json
 {
   "people": [
-    {"first": "James", "last": "d"},
-    {"first": "Jacob", "last": "e"},
-    {"first": "Jayden", "last": "f"},
-    {"missing": "different"}
+    { "first": "James", "last": "d" },
+    { "first": "Jacob", "last": "e" },
+    { "first": "Jayden", "last": "f" },
+    { "missing": "different" }
   ],
-  "foo": {"bar": "baz"}
+  "foo": { "bar": "baz" }
 }
 ```
 
@@ -278,7 +276,7 @@ $..first # recursiveに探せて便利
 以下の配列から3以上のみを抜き出したいとする。
 
 ```json
-[1,2,3,4,5,6]
+[1, 2, 3, 4, 5, 6]
 ```
 
 ```bash
@@ -299,5 +297,3 @@ $..first # recursiveに探せて便利
 ## 書きかけ
 
 まだまだ多くのパターンや可能性があると思うが、現状必要に迫られているパターンがないので機会に恵まれたときに気が向いたら追記する。
-
-<!-- prettier-ignore-end -->

@@ -10,8 +10,6 @@ tags:
 excerpt: My Reading List Of Non-Development
 ---
 
-<!-- prettier-ignore-start -->
-
 ## まえがき
 
 どんな本を読んできたかということを示したり、人に勧めたりするときに便利なので作成したエントリです。
@@ -89,7 +87,3 @@ excerpt: My Reading List Of Non-Development
     </td>
   </tr></tbody>
 </table>
-
-
-
-<!-- prettier-ignore-end -->

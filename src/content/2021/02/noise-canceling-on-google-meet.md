@@ -12,8 +12,6 @@ redirect_from:
   - /2020/01/noise-canceling-on-google-meet/
 ---
 
-<!-- prettier-ignore-start -->
-
 ## 結論
 
 先に結論をば。
@@ -22,7 +20,6 @@ redirect_from:
 
 なので、マイクのホワイトノイズは気にしなくて大丈夫っぽいです。
 気にするべきはタイプ音とか吐息とか、そういう環境音ですね。
-
 
 ## 経緯
 
@@ -80,6 +77,3 @@ https://support.google.com/meet/answer/9919960?co=GENIE.Platform%3DAndroid&hl=ja
 <table><tr><td style="border:0px;">
   <a href="https://amzn.to/3apcuLL" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B086R71LGW&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=dev00d-22&language=ja_JP" ></a>
 </td></tr></table>
-
-
-<!-- prettier-ignore-end -->

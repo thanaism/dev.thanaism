@@ -10,8 +10,6 @@ tags:
 excerpt: AZ-500での比重が大きそうなので
 ---
 
-<!-- prettier-ignore-start -->
-
 ## AZ-500の試験範囲はIDとアクセス管理は30%が占める
 
 [Learn](https://docs.microsoft.com/en-us/learn/certifications/exams/az-500)を見るとAZ-500の試験範囲は下記のように記述がある。
@@ -49,5 +47,3 @@ Docsをいろいろあさってみると、具体的には以下のような要�
 Docsを読んで理解できてないなー、と思ったところがあったら随時追記する運用にしたい。
 
 いったん終わり。
-
-<!-- prettier-ignore-end -->

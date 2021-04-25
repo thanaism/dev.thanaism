@@ -10,8 +10,6 @@ tags:
 excerpt: 何はともあれ記録していく
 ---
 
-<!-- prettier-ignore-start -->
-
 # 怒涛の1ヶ月が過ぎた
 
 なにはともあれ転職して最初の1ヶ月が過ぎた。といっても最初の2週間は研修だったので、本務としてはまだ週間しか経っていない。
@@ -30,7 +28,7 @@ excerpt: 何はともあれ記録していく
 上でいきなりK8sとか書いたので、なんだそれはと思った人もいるかもしれない。
 最近、Twitterに「140秒でわかる」シリーズをあげているので、[K8sの回](https://twitter.com/okinawa__noodle/status/1352407276108214273?s=20)を見ればちょっとはわかるかも。
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/140%E7%A7%92%E3%81%A7%E3%82%8F%E3%81%8B%E3%82%8BKubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#140秒でわかるKubernetes</a> 今日は娘が手伝ってくれています😂<br><br>昨晩届いたばかりのLogicool StreamCamを試しに使って撮りました📷 <a href="https://t.co/7TxFIobnvo">pic.twitter.com/7TxFIobnvo</a></p>&mdash; タナイ (@okinawa__noodle) <a href="https://twitter.com/okinawa__noodle/status/1352407276108214273?ref_src=twsrc%5Etfw">January 22, 2021</a></blockquote> 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/140%E7%A7%92%E3%81%A7%E3%82%8F%E3%81%8B%E3%82%8BKubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#140秒でわかるKubernetes</a> 今日は娘が手伝ってくれています😂<br><br>昨晩届いたばかりのLogicool StreamCamを試しに使って撮りました📷 <a href="https://t.co/7TxFIobnvo">pic.twitter.com/7TxFIobnvo</a></p>&mdash; タナイ (@okinawa__noodle) <a href="https://twitter.com/okinawa__noodle/status/1352407276108214273?ref_src=twsrc%5Etfw">January 22, 2021</a></blockquote>
 
 K8sは**クラウド界のLinux**と言われている。要するに今アツい存在。もとはGoogleが開発していて、今はCNCFに移管されている。
 2016 年ごろ開発元に近いGCPが先陣を切り、2018年にはAzureとAWSが続くことで主要3大クラウドすべてでマネージドK8sがGA（ベータ版を終えた正式版がリリース）されている。
@@ -90,13 +88,12 @@ K8sは**クラウド界のLinux**と言われている。要するに今アツ�
 
 ちなみに私はVimmer診断初級編でレジェンドまでやっておいた。負けず嫌いなので。
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">よっしゃ30秒切ったわ。レジェンドや。<br><br>Vimmer診断初級編<br>タイム : 29秒でした！<br><br>あなたの診断結果は...<br>Vimmerの中のレジェンドと呼ばれています。Vimの事なら大体知っています。Vim以外のエディタを見下す傾向があります。<a href="https://twitter.com/hashtag/Vim?src=hash&amp;ref_src=twsrc%5Etfw">#Vim</a> <a href="https://twitter.com/hashtag/VIMATE?src=hash&amp;ref_src=twsrc%5Etfw">#VIMATE</a><br> <a href="https://t.co/o8RQAJ3ZQK">https://t.co/o8RQAJ3ZQK</a></p>&mdash; タナイ (@okinawa__noodle) <a href="https://twitter.com/okinawa__noodle/status/1353366337628770304?ref_src=twsrc%5Etfw">January 24, 2021</a></blockquote> 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">よっしゃ30秒切ったわ。レジェンドや。<br><br>Vimmer診断初級編<br>タイム : 29秒でした！<br><br>あなたの診断結果は...<br>Vimmerの中のレジェンドと呼ばれています。Vimの事なら大体知っています。Vim以外のエディタを見下す傾向があります。<a href="https://twitter.com/hashtag/Vim?src=hash&amp;ref_src=twsrc%5Etfw">#Vim</a> <a href="https://twitter.com/hashtag/VIMATE?src=hash&amp;ref_src=twsrc%5Etfw">#VIMATE</a><br> <a href="https://t.co/o8RQAJ3ZQK">https://t.co/o8RQAJ3ZQK</a></p>&mdash; タナイ (@okinawa__noodle) <a href="https://twitter.com/okinawa__noodle/status/1353366337628770304?ref_src=twsrc%5Etfw">January 24, 2021</a></blockquote>
 
 ## PowerShell
 
 Azure PowerShellを扱うために。テキストベースのBashと違ってPSはオブジェクトで結果が返る。コマンドも馴染みがないのでつらさがある。
 とりあえず、[PowerShell実践ガイドブック](https://amzn.to/3aj7xnF)という本を買ったのだがかなり良かった。まだ全部は読めていないが序盤だけでもだいぶ概要がつかめるようになっている。
-
 
 <table><tr><td style="border:0px;">
     <a href="https://amzn.to/3aj7xnF" target="_blank"><img src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07D73G2X7&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=dev00d-22&language=ja_JP" ></a>
@@ -138,4 +135,3 @@ awsでもAzureでも、CLIで出力のjsonをパースするのに使える。
 で、そういう拒絶反応が何に対して生じるか、というのは本当に人それぞれなので自分に合った環境をどうにかして維持できるよう最大限努力することが大事だな、と思った次第。
 
 いったん手にしてしまえば楽しんでやっている人に、そうでない人は敵わないはずなのであとはおのずとよいサイクルへ入っていくだろう、という予測も込めて。
-<!-- prettier-ignore-end -->

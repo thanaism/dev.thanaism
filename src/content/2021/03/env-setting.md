@@ -11,8 +11,6 @@ tags:
 excerpt: 毎回探している気がするので
 ---
 
-<!-- prettier-ignore-start -->
-
 ## 環境設定についてまとめておく
 
 どうせ大した回数やらないと思って記録していなかったらわりと痛い目を見たので記録しておく。
@@ -94,11 +92,11 @@ vscodevimでNeoVimを有効にする（exコマンドの利用上必須）。
 設定ファイルは以下を最低限に。
 
 ```json
-"multiLinePasteWarning": false, 
+"multiLinePasteWarning": false,
 
 // defaults部分
-  "cursorShape": "filledBox",             
-                
+  "cursorShape": "filledBox",
+
 // WSL部分
 "name": "Ubuntu-20.04",
 "fontFace": "HackGenNerd",
@@ -149,5 +147,3 @@ git config --global alias.st status
 ## その他
 
 気付いたら追記していく。
-
-<!-- prettier-ignore-end -->

@@ -10,9 +10,6 @@ tags:
 excerpt: 日系大手の病巣を赤裸々に書くシリーズ
 ---
 
-<!-- prettier-ignore-start -->
-<!-- prettier-ignore-end -->
-
 ## 自己効力感の欠損
 
 昔から、周りの人に「説明がうまいね」と言われる機会は少なくなかった。

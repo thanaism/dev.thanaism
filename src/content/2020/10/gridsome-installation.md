@@ -52,7 +52,6 @@ $ npm i @gridsome/source-filesystem
 Gatsby と同様にプラグインを入れたら Gridsome に使っていることを教えるために設定を書き換える必要があります。  
 以下のように`gridsome.config.js`を書き換えればよいです。
 
-<!-- prettier-ignore-start -->
 ```js
 module.exports = {
   siteName: 'Gridsome',
@@ -62,18 +61,17 @@ module.exports = {
       options: {
         path: 'content/posts/**/*.md',
         typeName: 'Post',
-      }
-    }
-  ]
-}
+      },
+    },
+  ],
+};
 ```
-<!-- prettier-ignore-end -->
 
 ## TypeScript の導入
 
-Gridsome はデフォルトだと js です。何はともあれ TypeScript を使いたいので導入します。
+Gridsomeはデフォルトだとjsです。何はともあれTypeScriptを使いたいので導入します。
 
-公式だと yarn が推奨されていますが、npm を理解しないうちに yarn を使っちゃ**やーん**ということで npm でインストールします。あっ、まって。ブラウザバックしないで。
+公式だとyarnが推奨されていますが、npmを理解しないうちにyarnを使っちゃ**やーん**ということでnpmでインストールします。あっ、まって。ブラウザバックしないで。
 
 ```bash
 $ npm i --save-dev typescript ts-loader gridsome-plugin-typescript
@@ -82,15 +80,13 @@ $ npm i --save-dev typescript ts-loader gridsome-plugin-typescript
 プラグインを入れたので、再度`gridsome.config.js`を書き換えます。  
 以下を追記します。
 
-<!-- prettier-ignore-start -->
 ```js
 plugins: [
   {
     use: 'gridsome-plugin-typescript',
-  }
-]
+  },
+];
 ```
-<!-- prettier-ignore-end -->
 
 続いて、`tsconfig.json`をプロジェクトフォルダ直下に追加します。
 

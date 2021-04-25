@@ -2,6 +2,9 @@
 # Node.js-Specific Ignores
 # =========================
 
+#circleci
+.circleci/
+
 # Build directory
 public/
 

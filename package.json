@@ -19,6 +19,7 @@
     "@emotion/styled-base": "10.0.31",
     "@mdx-js/react": "^1.6.18",
     "@nfront/global-styles": "^1.2.1",
+    "@weknow/gatsby-remark-codepen": "^0.1.0",
     "acorn": "^6.4.2",
     "cssnano": "4.1.10",
     "date-fns": "2.15.0",

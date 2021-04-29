@@ -37,6 +37,7 @@ module.exports = {
               height: 400
             }
           },
+          'gatsby-remark-code-titles',
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {

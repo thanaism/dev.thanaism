@@ -705,6 +705,66 @@ export const PostFullContent = styled.section`
   .katex-html {
     font-size: 2.0rem;
   }
+  .gatsby-highlight {
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+  }
+  .gatsby-highlight pre[class*="language-"] {
+    -webkit-overflow-scrolling: touch;
+  }
+  .gatsby-highlight pre[class*="language-"]::before {
+    background: black;
+    border-radius: 0 0 0.25rem 0.25rem;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 0.025rem;
+    padding: 0.1rem 0.5rem;
+    position: absolute;
+    right: 1rem;
+    text-align: right;
+    //text-transform: uppercase;
+    top: 0;
+  }
+  .gatsby-highlight pre[class="language-py"]::before {
+    content: "py";
+    background: #ff8095;
+    color: black;
+  }
+  .gatsby-highlight pre[class="language-rust"]::before {
+    content: "rs";
+    background: rgb(173,219,103);
+    color: black;
+  }
+  .gatsby-highlight pre[class="language-js"]::before {
+    content: "js";
+    background: #f7df1e;
+    color: black;
+  }
+  .gatsby-highlight pre[class="language-bash"]::before {
+    content: "sh";
+    background: #a980f5;
+    color: black;
+  }
+  .gatsby-highlight pre[class="language-md"]::before {
+    content: "md";
+    background: white;
+    color: black;
+  }
+  .gatsby-highlight pre[class="language-java"]::before {
+    content: "java";
+    background: rgb(255,203,139);
+    color: black;
+  }
+  .gatsby-code-title {
+    background: #2e96b5;
+    color: #eee;
+    padding: 3px 6px;
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: bold;
+    display: table;
+    border-radius: 4px 4px 0 0;
+  }
 `;
 
 export default PostContent;

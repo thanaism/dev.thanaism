@@ -123,10 +123,10 @@ let smallest = [0,100,200].iter().min();
 
 ```py
 large = max(0,100)
-lergest1 = max([0,100,200])
+largest1 = max([0,100,200])
 
 # tupleの()は省略できるので以下も有効
-lergest2 = max(0,100,200)
+largest2 = max(0,100,200)
 ```
 
 ```js

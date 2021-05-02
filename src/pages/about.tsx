@@ -57,46 +57,18 @@ const About: React.FC = () => (
             <PostFullContent className="post-full-content">
               <div className="post-content">
                 <h5>
-                  My very first attempt using Gatsby
-                  <br />
-                  from WordPress: <a href="https://thanaism.com">thanaism.com</a>
+                 Moved from WordPress: <a href="https://thanaism.com">thanaism.com</a>
                 </h5>
-                <blockquote>
-                  「それがお前が<b>“向こう側(WordPress)”</b>で得た力か!」
-                  <br />
-                  「だが足りない、足りないぞ!!」
-                  <br />
-                  「お前に足りないものは、それは――」
-                  <br />
-                  「情熱、思想、理念、頭脳、気品、優雅さ、勤勉さ!」
-                  <br />
-                  「そして何よりも ―― <b>速 さ が 足 り な い !!</b>」<br />
-                </blockquote>
                 <p>
-                  WordPressはプラグインの更新とか頻繁にあってめんどくさいし、表示も重いです。
-                  なんかもうモダンって感じもしません。
-                  なによりエディタがちゃんとMarkdownをサポートしていないのが本当にしんどい。
-                  何かいいツールはないものかと探していました。
-                  そしてついに見つけあてた爆速かつMarkdown対応のGatsbyに引っ越すことにしました。
-                  Gatsbyってやつはマジで最高で、とりあえずデプロイするだけなら数分で終えることができます。
-                  めっちゃ手軽。
-                  WordPressよ、さようならって感じです。
+                  クラウドエンジニアの<a href="https://twitter.com/okinawa__noodle">タナイ</a>が運営するブログです。<br></br>
+                  業務ではAzureがメインですが、趣味の競プロに関する記事が多いかもしれません。
                 </p>
                 <p>
-                  画像とかAmazon商品リンクバナーとかを受け入れるちゃんとした体制がまだ整っていないので、WordPress側の記事はぼちぼち移行していこうと思います。
+                  このブログは、ReactベースのSSGであるGatsbyで動いています。<br></br>
+                  <a href="https://github.com/thanaism/dev.thanaism">GitHubリポジトリはこちら</a>。
                 </p>
                 <p>
-                  Gatsbyの機能はまだちゃんと見れていませんが、とにかく<code>.md</code>対応が最高です。
-                  vscodeでMarkdownPreview見ながら素早く編集できますし、投稿するのも<code>git push</code>すれば一発で終わります。
-                </p>
-                <p>
-                  そして、独自ドメインにこだわらないなら、完全無料です。
-                  私はWordPressで使ってたドメインからサブドメインを切ってきてますが、そのうちこっちがドメインを乗っ取ることになろうかと思います。
-                </p>
-                <p>
-                  <u>
-                    本サイトは、Amazon.co.jpを宣伝しリンクすることによってサイトが紹介料を獲得できる手段を提供することを目的に設定されたアフィリエイトプログラムである、Amazonアソシエイト・プログラムの参加者です。
-                  </u>
+                  本サイトは、Amazon.co.jpを宣伝しリンクすることによってサイトが紹介料を獲得できる手段を提供することを目的に設定されたアフィリエイトプログラムである、Amazonアソシエイト・プログラムの参加者です。
                 </p>
 
               </div>

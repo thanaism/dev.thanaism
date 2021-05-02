@@ -11,6 +11,8 @@ tags:
 excerpt: RustとPythonとJavaScriptと一部Java
 ---
 
+※2021/5/2に追記しました。
+
 ## 競技プログラミングに頻出の処理
 
 どんな言語であろうと基本処理は**1秒も悩むことなくソラで書きたい**。
@@ -112,6 +114,8 @@ public class Main {
 
 ### min/max
 
+（2021/5/2：Rustの小数型`min()`メソッドについて追記）
+
 ```rust
 let large = std::cmp::max(0,100);
 let small = std::cmp::min(0,100);
@@ -119,6 +123,11 @@ let largest = std::cmp::max(0,100,200);  // コンパイルエラー
 
 // 3値以上の比較はiter()のメソッドを利用する
 let smallest = [0,100,200].iter().min();
+
+// 小数型は少し変わる
+let x: f64 = 0.5;
+let y = x.min(0.2);
+assert_eq!(y,0.2);
 ```
 
 ```py
@@ -300,6 +309,17 @@ d2 = dict()
 ```js
 let d1 = {};
 let d2 = new Object();
+```
+
+## 文字列操作
+
+### 条件に一致する文字列を抽出する
+
+この[問題](https://atcoder.jp/contests/zone2021/tasks/zone2021_a)で利用したが、Rustだと`matches()`メソッドが使える。便利だ（2021/5/2追記）。
+
+```rust
+let s = "x123x456x789x0x".to_string();
+assert_eq!("xxxxx",s.matches("x").collect::<String>());
 ```
 
 ## な、長い……

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 競プロ典型90問の★3をRustで解く
+title: 競プロ典型90問の★4をRustで解く
 image: ../img/emre-153_VPk1NZQ-unsplash.jpg
 author: [Thanai]
 date: 2021-05-01T23:00:00.000+09:00

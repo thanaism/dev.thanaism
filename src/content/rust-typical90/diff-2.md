@@ -3,7 +3,7 @@ layout: post
 title: 競プロ典型90問の★2をRustで解く
 image: ../img/pacto-visual-cWOzOnSoh6Q-unsplash.jpg
 author: [Thanai]
-date: 2021-04-30T23:00:00.000+09:00
+date: 2021-05-07T19:00:00.000+09:00
 draft: false
 tags:
   - Rust
@@ -30,16 +30,22 @@ excerpt: Rust入門をかねて解いていく
 前処理をするために、0で初期化したベクタを生成します。  
 最初にパッと思いついたのは以下の2通りです。
 
+これは、` です。``rustPythonだと `-(-a//b)`とも書けます。
+
 ```rust
-let mut vec: Vec<usize> = (0..n).map(|_|0).collect();
-let mut vec: Vec<usize> = std::iter::repeat(0).take(n).collect();
+
 ```
+
+let mut vec: Vec<usize> = (0..n).map(|\_|0).collect();
+let mut vec: Vec<usize> = std::iter::repeat(0).take(n).collect();
+
+````
 
 しかし、以下の方法があることを知りました。`vec!`マクロ、覚えていきましょう。
 
 ```rust
 let mut vec = vec![0usize; n];
-```
+````
 
 ```rust
 fn main(){
@@ -165,8 +171,31 @@ fn main(){
 }
 ```
 
+## #33 Not Too Bright
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_ag)。
+
+まんまと引っかかりました。問題文はよく読みましょう。
+
+さて、除算に関するテクは[以前に記事にしました](https://dev.thanaism.com/2021/04/div/)が、今回は切り上げ除算ですね。
+
+これは、`(a+b-1)/b`です。Pythonだと`-(-a//b)`とも書けます。
+
+```rust
+fn main() {
+  proconio::input!{ (h,w):(i32,i32) }
+  let mut ans;
+  if h==1 { ans=w }
+  else if w==1 { ans=h }
+  else { ans=((h+1)/2)*((w+1)/2) }
+  println!("{}",ans);
+}
+```
+
 ## おわりに
 
 問題が追加されたら、あわせて追記していこうと思います。
 
 時間があれば★3の記事も<s>書きたいと思っています</s>[書きました](https://dev.thanaism.com/rust-typical90/diff-3/)。
+
+★4も[書きはじめました](https://dev.thanaism.com/rust-typical90/diff-4/)。

@@ -22,7 +22,7 @@ excerpt: 頑張ってできるだけ自力で解く
 
 よりよいコードがあれば[GitHub](https://github.com/thanaism/online-judge/tree/master/rust/src/bin)にPRを送っていただければ助かります。
 
-**★4はまだ出題に解くのが追いついていない状況です。**追いつけるようにがんばります。
+<s>★4はまだ出題に解くのが追いついていない状況です。追いつけるようにがんばります。</s>天才なので追いつきました。
 
 ## #3 Longest Circular Road
 
@@ -265,6 +265,47 @@ fn main() {
 }
 ```
 
+## #34 There are few types of elements
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_ah)。
+
+やっと追いつきました。いかにも尺取り法という感じの問題ですね。
+
+$a_i$が大きいので、`HashMap`で管理していきます。ここで注意なのはRustの`HashMap`は`IndexMut`トレイトを実装していません。
+
+C++的なノリで`dic[key] += 1`というような書き方はできません。しかし、これをするために`entry API`の実装がありますのでそちらを使います。
+
+`dic.entry(key).or_insert(default_value) += 1`というような書き方をします。さらに便利なことに、これはPythonの`defaultdict`的な挙動をします。つまり、キーに対応する値がない場合は指定した値を挿入し、ある場合はそのまま返します。
+
+いちいち場合分けを書く必要はありません。詳しくは[いい記事](https://qiita.com/hystcs/items/75183bcf38bf95cc2ce0)があったのでそちらを参照してください。
+
+```rust
+fn main() {
+    proconio::input!{
+        (n,k):(usize,usize),
+        a:[usize;n]
+    }
+    let mut right = 0;
+    let mut ans = 0;
+    let mut cnt = 0;
+    let mut dic = std::collections::HashMap::new();
+    for left in 0..n {
+        while right<n {
+            if *dic.entry(a[right]).or_insert(0)==0 {
+                if cnt==k { break }
+                else { cnt+=1 }
+            }
+            *dic.entry(a[right]).or_insert(0) += 1;
+            right += 1;
+        }
+        ans = ans.max(right-left);
+        if *dic.entry(a[left]).or_insert(0)==1 { cnt -= 1 }
+        *dic.entry(a[left]).or_insert(0) -= 1;
+    }
+    println!("{}",ans);
+}
+```
+
 ## おわりに
 
-<s>まだ全然解けていませんが、</s>**あと1問ですね！**問題の追加に追いつけるようにしたいと思います。
+<s>まだ全然解けていませんが、問題の追加に追いつけるようにしたいと思います。</s>問題の追加にあわせて追記していこうと思います。

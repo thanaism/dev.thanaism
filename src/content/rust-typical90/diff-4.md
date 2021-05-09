@@ -3,7 +3,7 @@ layout: post
 title: 競プロ典型90問の★4をRustで解く
 image: ../img/emre-153_VPk1NZQ-unsplash.jpg
 author: [Thanai]
-date: 2021-05-08T18:00:00.000+09:00
+date: 2021-05-09T11:00:00.000+09:00
 draft: false
 tags:
   - Rust
@@ -218,6 +218,53 @@ fn bfs(connected: &Vec<Vec<usize>>, dist: &mut Vec<i32>) {
 }
 ```
 
+## #28 Cluttered Paper
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_ab)。
+
+imos法の問題ですね。2次元のものは存在は知っていたもののはじめて実装しました。
+
+こういう系の問題、配列外参照でよくバグらせてたのですが、この程度のサイズならある程度ガバなサイズで取ってしまうのがバグらせ防止にいいかもと思いました。MLEするようなサイズじゃないですし、10%くらいおまけしたろの精神で今後はやっていこうと思います。
+
+ちなみに2次元imos法は、グリッドグラフなら左上と右下が`+1`ですが、今回は座標軸なので左下と右上が`+1`にしています。  
+累積和を取る順番を工夫すれば逆でもうまくやれるのかもしれませんが、バグらせたくないので一旦は覚えてしまいます。
+
+```rust
+fn main() {
+    proconio::input!{
+        n: usize,
+        l: [(usize,usize,usize,usize); n]
+    }
+    let mut imos = vec![vec![0i32;1100];1100];
+    for &(x1,y1,x2,y2) in &l {
+        imos[x1][y1] += 1;
+        imos[x2][y1] -= 1;
+        imos[x2][y2] += 1;
+        imos[x1][y2] -= 1;
+    }
+    for i in 0..1010 {
+        for j in 0..1010 {
+            imos[i+1][j] += imos[i][j];
+        }
+    }
+    for i in 0..1010 {
+        for j in 0..1010 {
+            imos[i][j+1] += imos[i][j];
+        }
+    }
+    let mut ans = vec![0;n+1];
+    for i in 0..1010 {
+        for j in 0..1010 {
+            let k = imos[i][j] as usize;
+            ans[k] += 1;
+        }
+    }
+    for i in 1..=n {
+        println!("{}",ans[i]);
+    }
+}
+```
+
 ## おわりに
 
-<s>まだ全然解けていませんが、</s>**あと2問ですね！**問題の追加に追いつけるようにしたいと思います。
+<s>まだ全然解けていませんが、</s>**あと1問ですね！**問題の追加に追いつけるようにしたいと思います。

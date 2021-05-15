@@ -730,6 +730,11 @@ export const PostFullContent = styled.section`
     background: #ff8095;
     color: black;
   }
+  .gatsby-highlight pre[class="language-hs"]::before {
+    content: "hs";
+    background: #ff8095;
+    color: black;
+  }
   .gatsby-highlight pre[class="language-rust"]::before {
     content: "rs";
     background: rgb(173,219,103);

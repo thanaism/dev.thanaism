@@ -4,7 +4,7 @@ title: 週報(05/10-05/16)
 image: ../../img/chewy-5sGjkpNDmLI-unsplash.jpg
 author: [Thanai]
 date: 2021-05-17T19:00:00.000+09:00
-draft: true
+draft: false
 tags:
   - Weekly Report
 excerpt: GitHub Actionsの障害でスッカリ忘れてた

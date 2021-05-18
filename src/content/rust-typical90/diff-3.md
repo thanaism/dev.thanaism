@@ -3,7 +3,7 @@ layout: post
 title: 競プロ典型90問の★3をRustで解く
 image: ../img/timothy-meinberg-AL2-t0GrSko-unsplash.jpg
 author: [Thanai]
-date: 2021-05-06T08:00:00.000+09:00
+date: 2021-05-19T08:00:00.000+09:00
 draft: false
 tags:
   - Rust
@@ -231,8 +231,46 @@ fn main() {
 }
 ```
 
+## #38 Large LCM
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_al)。
+
+うん、Rustには`i128`がある。`i128`で殴ろう。
+
+ちなみに10進数での桁数を知りたい場合は、ざっくり`0.3`掛けるとわかります。
+
+なぜか？底の変換公式から$\log_{10}{x}=\frac{\log_2{x}}{\log_2{10}}$です。分母にもう一度変換公式を使うと、$\log_{10}{x}=\log_2{x}\cdot\log_{10}{2}$となり、$\log_{10}{2}\fallingdotseq0.3$であるからですね。
+
+そして、$127*0.3=38.1$なので、ざっくり$10^{38}$ってことです。つまり、今回の制約であり得る$(10^{18})^2$より大きいので桁が足ります。
+
+```rs
+fn main(){
+    proconio::input!{
+        a:i128,
+        b:i128
+    }
+    let ans = lcm(a,b);
+    if ans>10i128.pow(18u32) {
+        println!{"{}","Large"}
+    } else {
+        println!("{}",ans)
+    }
+}
+
+fn lcm(x:i128,y:i128)->i128{
+    x*y/gcd(x,y)
+}
+
+fn gcd(x:i128,y:i128)->i128{
+    if y==0 {return x}
+    gcd(y,x%y)
+}
+```
+
 ## おわりに
 
 問題が追加されたら、あわせて追記していこうと思います。
 
-まだ解けていませんが、★4の記事もいずれ書きたいと思っています。
+まだ解けていませんが、★4の記事も<s>いずれ書きたいと思っています</s>[書きました](https://dev.thanaism.com/rust-typical90/diff-4/)。
+
+★2は[こちら](https://dev.thanaism.com/rust-typical90/diff-2/)。

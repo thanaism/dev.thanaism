@@ -3,7 +3,7 @@ layout: post
 title: 競プロ典型90問の★4をRustで解く
 image: ../img/emre-153_VPk1NZQ-unsplash.jpg
 author: [Thanai]
-date: 2021-05-09T11:00:00.000+09:00
+date: 2021-05-20T00:30:00.000+09:00
 draft: false
 tags:
   - Rust
@@ -303,6 +303,34 @@ fn main() {
         *dic.entry(a[left]).or_insert(0) -= 1;
     }
     println!("{}",ans);
+}
+```
+
+## #42 Multiple of 9
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_ap)。
+
+Rustだから記述で詰まるというポイントはないように思う。素直に書けばOK。
+
+想定解は`dp[0]=1`としていたが、自分は最初に1から9までに1ずつ加算するという考えでやってしまった。
+
+```rust
+fn main(){
+    proconio::input!{ k:usize }
+    let mut ans = 0;
+    const MOD:usize = 1_000_000_007;
+    if k%9==0 {
+        let mut dp = vec![0;k+1];
+        for i in 1..=9 { dp[i]=1 }
+        for i in 1..=k {
+            for j in 1..=9 {
+                if i>=j { dp[i]+=dp[i-j]; }
+            }
+            dp[i]%=MOD;
+        }
+        ans = dp[k];
+    }
+    println!{"{}",ans};
 }
 ```
 

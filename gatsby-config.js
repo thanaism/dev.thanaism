@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'Thanaism',
-    description: 'Improve Your Life.',
+    description: 'Super Ultra Great Delicious Giant-swing Mountain-storm',
     siteUrl: 'https://dev.thanaism.com', // full path to blog - no ending slash
   },
   mapping: {

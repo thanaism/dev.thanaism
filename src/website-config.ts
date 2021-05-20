@@ -50,7 +50,7 @@ export interface WebsiteConfig {
 
 const config: WebsiteConfig = {
   title: 'Thanaism',
-  description: 'Improve Your Life.',
+  description: 'Super Ultra Great Delicious Giant-swing Mountain-storm',
   coverImage: 'avatars/blog-cover.jpg',
   logo: 'avatars/thanaism-logo.png',
   lang: 'ja',

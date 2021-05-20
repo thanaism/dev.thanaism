@@ -80,7 +80,6 @@ export const PostFullContent = styled.section`
   ul,
   ol,
   dl,
-  pre,
   blockquote,
   .post-full-comments,
   .footnotes {
@@ -97,6 +96,16 @@ export const PostFullContent = styled.section`
     .footnotes {
       margin-bottom: 1.28em;
     }
+  }
+
+  summary {
+    cursor: pointer;
+  }
+  details {
+    font-size: 1.4rem;
+    border: 1px solid #eee;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   li {
@@ -218,7 +227,6 @@ export const PostFullContent = styled.section`
     line-height: 1.5em;
     /* background: color(var(--darkgrey) l(-3%)); */
     /* background: ${lighten('-0.03', colors.darkgrey)}; */
-    border-radius: 5px;
   }
 
   pre ::selection {
@@ -689,16 +697,14 @@ export const PostFullContent = styled.section`
     margin-bottom: 1.75rem;
     margin-left: -1.3125rem;
     margin-right: -1.3125rem;
-    // border-radius: 10px;
-    background: #011627;
-    // background: ##364549;
+    background: #364549;
     -webkit-overflow-scrolling: touch;
     overflow: auto;
   }
 
   .gatsby-highlight pre[class*='language-'] {
-    float: left;
-    min-width: 100%;
+    //float: left;
+    //min-width: 100%;
   }
   /* End Syntax Highlighting */
 
@@ -733,6 +739,11 @@ export const PostFullContent = styled.section`
   .gatsby-highlight pre[class="language-hs"]::before {
     content: "hs";
     background: #ff8095;
+    color: black;
+  }
+  .gatsby-highlight pre[class="language-json"]::before {
+    content: "json";
+    background: #f0f0f0;
     color: black;
   }
   .gatsby-highlight pre[class="language-rust"]::before {

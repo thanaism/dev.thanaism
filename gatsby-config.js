@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'Thanaism',
-    description: 'Improve Your Life.',
+    description: 'Super Ultra Great Delicious Giant-swing Mountain-storm',
     siteUrl: 'https://dev.thanaism.com', // full path to blog - no ending slash
   },
   mapping: {
@@ -74,7 +74,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gatsby-casper.netlify.com',
+        siteUrl: 'https://dev.thanaism.com',
       },
     },
     'gatsby-plugin-emotion',
@@ -82,7 +82,7 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
-    // 'gatsby-plugin-feed',
+    'gatsby-plugin-feed',
     'gatsby-plugin-twitter',
     'react-sharingbuttons',
     'gatsby-plugin-netlify',

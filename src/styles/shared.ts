@@ -106,6 +106,12 @@ export const SocialLinkFb = css`
   }
 `;
 
+export const SocialLinkRss = css`
+  svg {
+    height: 1.6rem;
+  }
+`;
+
 export const SiteHeader = css``;
 
 export const SiteHeaderContent = styled.div`

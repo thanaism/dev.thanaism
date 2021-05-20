@@ -7,10 +7,11 @@ import styled from '@emotion/styled';
 
 import { colors } from '../../styles/colors';
 // import { SocialLink, SocialLinkFb } from '../../styles/shared';
-import { SocialLink } from '../../styles/shared';
+import { SocialLink, SocialLinkRss } from '../../styles/shared';
 import config from '../../website-config';
 // import { Facebook } from '../icons/facebook';
 import { Twitter } from '../icons/twitter';
+import { Rss } from '../icons/rss';
 // import { SubscribeModal } from '../subscribe/SubscribeModal';
 import { SiteNavSymbol } from './SiteNavSymbol';
 
@@ -130,6 +131,15 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   <Twitter />
                 </a>
               )}
+              <a
+                css={[SocialLink,SocialLinkRss]}
+                href="/rss.xml"
+                title="RSS"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Rss />
+              </a>
             </SocialLinks>
             {/* {config.showSubscribe && (
               <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>

@@ -55,14 +55,14 @@ const config: WebsiteConfig = {
   logo: 'avatars/thanaism-logo.png',
   lang: 'ja',
   siteUrl: 'https://dev.thanaism.com',
-  facebook: 'https://www.facebook.com/ghost',
+  //facebook: 'https://www.facebook.com/ghost',
   twitter: 'https://twitter.com/okinawa__noodle',
-  showSubscribe: true,
-  mailchimpAction:
-    'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',
-  mailchimpName: 'b_a89b6987ac248c81b0b7f3a0f_7d777b7d75',
-  mailchimpEmailFieldName: 'MERGE0',
-  googleSiteVerification: 'GoogleCode',
+  showSubscribe: false,
+  //mailchimpAction:
+  //  'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',
+  //mailchimpName: 'b_a89b6987ac248c81b0b7f3a0f_7d777b7d75',
+  //mailchimpEmailFieldName: 'MERGE0',
+  googleSiteVerification: '3gC4ds7Dei4Uo6tmDcRxLAF46k31AxxNg42ekg0KL-U',
   footer: 'is based on Gatsby Casper',
 };
 

@@ -74,7 +74,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gatsby-casper.netlify.com',
+        siteUrl: 'https://dev.thanaism.com',
       },
     },
     'gatsby-plugin-emotion',

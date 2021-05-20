@@ -99,6 +99,16 @@ export const PostFullContent = styled.section`
     }
   }
 
+  summary {
+    cursor: pointer;
+  }
+  details {
+    font-size: 1.4rem;
+    border: 1px solid #eee;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   li {
     word-break: break-word;
     font-size: 1.6rem;
@@ -693,7 +703,8 @@ export const PostFullContent = styled.section`
     background: #011627;
     // background: ##364549;
     -webkit-overflow-scrolling: touch;
-    overflow: auto;
+    // overflow: auto;
+    overflow: hidden;
   }
 
   .gatsby-highlight pre[class*='language-'] {
@@ -733,6 +744,11 @@ export const PostFullContent = styled.section`
   .gatsby-highlight pre[class="language-hs"]::before {
     content: "hs";
     background: #ff8095;
+    color: black;
+  }
+  .gatsby-highlight pre[class="language-json"]::before {
+    content: "json";
+    background: #f0f0f0;
     color: black;
   }
   .gatsby-highlight pre[class="language-rust"]::before {

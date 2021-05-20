@@ -80,7 +80,6 @@ export const PostFullContent = styled.section`
   ul,
   ol,
   dl,
-  pre,
   blockquote,
   .post-full-comments,
   .footnotes {
@@ -228,7 +227,6 @@ export const PostFullContent = styled.section`
     line-height: 1.5em;
     /* background: color(var(--darkgrey) l(-3%)); */
     /* background: ${lighten('-0.03', colors.darkgrey)}; */
-    border-radius: 5px;
   }
 
   pre ::selection {
@@ -699,17 +697,14 @@ export const PostFullContent = styled.section`
     margin-bottom: 1.75rem;
     margin-left: -1.3125rem;
     margin-right: -1.3125rem;
-    // border-radius: 10px;
-    background: #011627;
-    // background: ##364549;
+    background: #364549;
     -webkit-overflow-scrolling: touch;
-    // overflow: auto;
-    overflow: hidden;
+    overflow: auto;
   }
 
   .gatsby-highlight pre[class*='language-'] {
-    float: left;
-    min-width: 100%;
+    //float: left;
+    //min-width: 100%;
   }
   /* End Syntax Highlighting */
 

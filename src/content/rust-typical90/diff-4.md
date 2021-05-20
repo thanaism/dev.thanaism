@@ -3,7 +3,7 @@ layout: post
 title: 競プロ典型90問の★4をRustで解く
 image: ../img/emre-153_VPk1NZQ-unsplash.jpg
 author: [Thanai]
-date: 2021-05-20T00:30:00.000+09:00
+date: 2021-05-21T00:30:00.000+09:00
 draft: false
 tags:
   - Rust
@@ -334,6 +334,61 @@ fn main(){
 }
 ```
 
+## #43 Maze Challenge with Lack of Sleep
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_aq)。
+
+01BFSは知っていたし、それを使いそうなのも分かりましたが、方向ごとに配列を用意するとか思い付けないですね。
+
+これで発想を覚えたので次からは悩まず済むでしょう。
+
+```rust
+use proconio::{input,marker::*};
+const INF:i64 = 1<<60;
+fn main(){
+    input!{
+        h:i64,w:i64,
+        start:(Usize1,Usize1),
+        goal:(Usize1,Usize1),
+        grid:[Chars;h]
+    }
+    let di = vec![-1,0,1,0];
+    let dj = vec![0,1,0,-1];
+    let mut dist = vec![vec![vec![INF;4];1100];1100];
+    let mut que = std::collections::VecDeque::new();
+    let sx = start.0;
+    let sy = start.1;
+    for sz in 0..4 {
+        dist[sx][sy][sz] = 0;
+        que.push_back((sx,sy,sz));
+    }
+    while que.len()>0 {
+        let (i,j,k) = que.pop_front().unwrap();
+        for nz in 0..4 {
+            let ni = i as i64 + di[k];
+            let nj = j as i64 + dj[k];
+            let mut now = dist[i][j][k];
+            if k!=nz { now += 1 }
+            if ni>=0 && ni<h && nj>=0 && nj<w {
+                let nx = ni as usize;
+                let ny = nj as usize;
+                if grid[nx][ny]=='.' && dist[nx][ny][nz]>now {
+                    dist[nx][ny][nz] = now;
+                    if k!=nz { que.push_back((nx,ny,nz)) }
+                    else { que.push_front((nx,ny,nz))}
+                }
+            }
+        }
+    }
+    let mut ans = INF;
+    let gx = goal.0;
+    let gy = goal.1;
+    for gz in 0..4 { ans = ans.min(dist[gx][gy][gz]) }
+    println!("{}",ans);
+}
+```
+
 ## おわりに
 
-<s>まだ全然解けていませんが、問題の追加に追いつけるようにしたいと思います。</s>問題の追加にあわせて追記していこうと思います。
+~~まだ全然解けていませんが、問題の追加に追いつけるようにしたいと思います。~~
+問題の追加にあわせて追記していこうと思います。

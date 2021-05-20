@@ -3,7 +3,7 @@ layout: post
 title: 競プロ典型90問の★3をRustで解く
 image: ../img/timothy-meinberg-AL2-t0GrSko-unsplash.jpg
 author: [Thanai]
-date: 2021-05-19T08:00:00.000+09:00
+date: 2021-05-21T00:30:00.000+09:00
 draft: false
 tags:
   - Rust
@@ -267,10 +267,38 @@ fn gcd(x:i128,y:i128)->i128{
 }
 ```
 
+## #44 Shift and Swapping
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_ar)。
+
+配列操作の時間計算量を認識していないとTLEになる系統の問題は多いですね。
+
+基本のデータ構造の時間計算量は早い段階で理解しておくのがいいでしょう。
+
+```rust
+fn main(){
+    proconio::input!{
+        n:usize,q:usize,
+        mut a:[i64;n],
+        l:[(i64,usize,usize);q]
+    }
+    let mut shift = 0;
+    for k in 0..q {
+        let t = l[k].0;
+        let i = (l[k].1 - 1 + n - shift)%n;
+        let j = (l[k].2 - 1 + n - shift)%n;
+        if t==1 { a.swap(i,j) }
+        if t==2 { shift += 1 }
+        if t==3 { println!("{}",a[i]) }
+    }
+}
+```
+
 ## おわりに
 
 問題が追加されたら、あわせて追記していこうと思います。
 
-まだ解けていませんが、★4の記事も<s>いずれ書きたいと思っています</s>[書きました](https://dev.thanaism.com/rust-typical90/diff-4/)。
+まだ解けていませんが、★4の記事も~~いずれ書きたいと思っています~~
+[書きました](https://dev.thanaism.com/rust-typical90/diff-4/)。
 
 ★2は[こちら](https://dev.thanaism.com/rust-typical90/diff-2/)。

@@ -294,6 +294,35 @@ fn main(){
 }
 ```
 
+## #46 I Love 46
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_at)。
+
+Haskellのインプットフェーズが[ひと区切りついた](https://dev.thanaism.com/2021/05/weekly-report_0517-0523/)ので急に関数型っぽく書いています。
+
+`let mut`を使わずにきれいに記述できると気持ちがいいですね。
+
+```rust
+use itertools::iproduct;
+fn main() {
+    proconio::input!{
+        n:usize,
+        a:[usize;n],
+        b:[usize;n],
+        c:[usize;n]
+    }
+    let m = |x:Vec<usize>|x.into_iter()
+    .fold(vec![0i128;46],|mut v,x|{v[x%46]+=1;v});
+    let ma = m(a);
+    let mb = m(b);
+    let mc = m(c);
+    let ans:i128 = iproduct!(0..46,0..46,0..46)
+        .filter(|(i,j,k)|(i+j+k)%46==0)
+        .fold(0,|acc,(i,j,k)|acc+ma[i]*mb[j]*mc[k]);
+    println!("{}",ans);
+}
+```
+
 ## おわりに
 
 問題が追加されたら、あわせて追記していこうと思います。

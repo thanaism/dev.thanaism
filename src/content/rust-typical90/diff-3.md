@@ -323,6 +323,32 @@ fn main() {
 }
 ```
 
+## #48 I will not drop out
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_av)。
+
+手続き的に書くのも芸がないので、できるだけ関数に寄せてみました。
+
+が、Rustで`sort`は式ではなく文みたいです。うーん。
+
+とりあえず`flatten`とか使うとそれっぽいのでヨシ！
+
+```rust
+fn main() {
+    proconio::input!{
+        (n,k):(usize,usize),
+        mut l:[(usize,usize);n]
+    }
+    let mut q:Vec<usize> = l.into_iter()
+        .map(|x|vec![x.0-x.1,x.1])
+        .flatten()
+        .collect();
+    q.sort();
+    let ans:usize = q.into_iter().rev().take(k).sum();
+    println!("{}",ans);
+}
+```
+
 ## おわりに
 
 問題が追加されたら、あわせて追記していこうと思います。

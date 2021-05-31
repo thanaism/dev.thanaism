@@ -7,7 +7,7 @@ date: 2021-05-31T09:00:00.000+09:00
 draft: false
 tags:
   - Weekly Report
-excerpt: 実績を伴わない努力にはなんの価値もない
+excerpt: 週報 05/24-05/30
 ---
 
 ## 才能の違い

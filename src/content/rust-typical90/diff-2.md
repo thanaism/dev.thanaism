@@ -30,22 +30,20 @@ excerpt: Rust入門をかねて解いていく
 前処理をするために、0で初期化したベクタを生成します。  
 最初にパッと思いついたのは以下の2通りです。
 
-これは、` です。``rustPythonだと `-(-a//b)`とも書けます。
-
 ```rust
-
-```
-
 let mut vec: Vec<usize> = (0..n).map(|\_|0).collect();
 let mut vec: Vec<usize> = std::iter::repeat(0).take(n).collect();
-
 ````
+
+Pythonだと `-(-a//b)`とも書けます。
 
 しかし、以下の方法があることを知りました。`vec!`マクロ、覚えていきましょう。
 
 ```rust
 let mut vec = vec![0usize; n];
 ````
+
+<details><summary>AC code</summary><div>
 
 ```rust
 fn main(){
@@ -73,6 +71,8 @@ fn main(){
 }
 ```
 
+</div></details>
+
 ## #10 Score Sum Queries
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_j)。
@@ -80,6 +80,8 @@ fn main(){
 累積和ですね。また`vec!`マクロを使います。
 
 タプルを使って、`let (l,r)=lr[i];`のように2つ一気に束縛をしています。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 fn main(){
@@ -107,11 +109,15 @@ fn main(){
 }
 ```
 
+</div></details>
+
 ## #22 Cubic Cake
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_v)。
 
 Rustは`gcd()`がないので自分で実装します。関数の定義は戻り値などの型をちゃんと指定する必要があったり、（今回は必要ないですが、）読み取り値をグローバル変数に入れて参照させたりが（たぶん）できないので面倒ではあります。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 fn main(){
@@ -127,6 +133,8 @@ fn gcd(x:isize,y:isize)->isize{
 }
 ```
 
+</div></details>
+
 ## #24 Select + / - One
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_x)。
@@ -134,6 +142,8 @@ fn gcd(x:isize,y:isize)->isize{
 各項で最低限必要な操作回数は$|A_i-B_i|$です。$K$回ちょうどという条件があるため、回数が余ったらいったん足して元に戻すという偶数回の操作をすることで以降は現状維持できます。
 
 Python等の他の言語とは違い、`abs()`メソッドが後置です。また、対象は負の数がある`int`か`float`のみ。`uint`には当たり前ですが対応していません（そもそも負の数がありません）。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 fn main(){
@@ -150,12 +160,16 @@ fn main(){
 }
 ```
 
+</div></details>
+
 ## #27 Sign Up Requests
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_aa)。
 
 Pythonでいうところの`set`である`HashSet`を使います。  
 ちなみにRustでは、アクセスに$log(N)$かかることを代償に昇順で格納される`BTreeSet`というデータ構造も標準ライブラリに搭載されています。名前の通り中身は**B木**です。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 fn main(){
@@ -171,6 +185,8 @@ fn main(){
 }
 ```
 
+</div></details>
+
 ## #33 Not Too Bright
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_ag)。
@@ -180,6 +196,8 @@ fn main(){
 さて、除算に関するテクは[以前に記事にしました](https://dev.thanaism.com/2021/04/div/)が、今回は切り上げ除算ですね。
 
 これは、`(a+b-1)/b`です。Pythonだと`-(-a//b)`とも書けます。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 fn main() {
@@ -191,6 +209,8 @@ fn main() {
   println!("{}",ans);
 }
 ```
+
+</div></details>
 
 ## おわりに
 

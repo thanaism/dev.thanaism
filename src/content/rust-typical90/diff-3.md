@@ -32,6 +32,8 @@ Pythonとやり方が似ていますが、`0..=n`というように末尾を含�
 
 あとはRustの鬼門、文字列操作ですがmutableな文字列には`String`が使えます。
 
+<details><summary>AC code</summary><div>
+
 ```rust
 fn main() {
     proconio::input!{
@@ -59,6 +61,8 @@ fn main() {
 }
 ```
 
+</div></details>
+
 ## #14 We Used to Sing a Song Together
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_n)。
@@ -69,6 +73,10 @@ Rustにおいてmutableな配列は`.sort()`でソートできることを覚え
 
 下記はあえてメソッドチェーンで処理していますが、今回は単純なforで回すほうがシンプルに書けると思います。  
 あくまで勉強がてら、という感じです。
+
+<details><summary>AC code</summary><div>
+
+<details><summary>AC code</summary><div>
 
 ```rust
 fn main() {
@@ -88,12 +96,18 @@ fn main() {
 }
 ```
 
+</div></details>
+
+<details><summary>AC code</summary><div>
+
 ```rust
 // 普通のforで書く場合
 let mut ans = 0isize;
 for i in 0..n{ ans+=(a[i]-b[i]).abs(); }
 println!("{}",ans);
 ```
+
+</div></details>
 
 ## #16 Minumum Coins
 
@@ -104,6 +118,8 @@ println!("{}",ans);
 また、`min()`関数は、`std::cmp`の中にあります。
 
 さらに、答えの初期化に$N$の最大値である$10^9$を使いますが、ここで`1<<30`は$1073741824$であるため代替できます。これはRustに限った話ではないですが、地味に簡単に書けていい感じになりますので好きです。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 fn main(){
@@ -124,6 +140,8 @@ fn main(){
 }
 ```
 
+</div></details>
+
 ## #18 Statue of Chokudai
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_r)。
@@ -141,6 +159,8 @@ Rustでの三角関数は、`abs()`とかと同じで**後置**であること�
 for文で`for i in &e`としていますが、このコードでは別に所有権がムーブしてもあとから参照しないので`for i in e`でも問題ありません。
 
 参照戻しなども混乱しやすいですが、Rustではプリミティブ型には`Copy`トレイトが実装されていることを把握しておくのがよいでしょう。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 use std::f64::consts::PI;
@@ -163,6 +183,8 @@ fn main() {
 }
 ```
 
+</div></details>
+
 ## #20 Log Inequality
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_t)。
@@ -173,6 +195,8 @@ fn main() {
 
 `pow()`の引数は必ず`u32`型であることだけ覚えておけば問題ないでしょう。
 
+<details><summary>AC code</summary><div>
+
 ```rust
 fn main(){
     proconio::input!{
@@ -181,6 +205,8 @@ fn main(){
     println!("{}",if a<c.pow(b) {"Yes"} else {"No"});
 }
 ```
+
+</div></details>
 
 ## #32 AtCoder Ekiden
 
@@ -193,6 +219,8 @@ Rustだと`itertools::Itertools`が使えます。よく使う全列挙の類は
 - ${}_n\mathrm{P}_r$：`(0..n).permutations(r)`
 - ${}_n\mathrm{C}_r$：`(0..n).combinations(r)`
 - ${}_n\mathrm{H}_r$：`(0..n).combinations_with_replacement(r)`
+
+<details><summary>AC code</summary><div>
 
 ```rust
 use itertools::Itertools;
@@ -231,6 +259,8 @@ fn main() {
 }
 ```
 
+</div></details>
+
 ## #38 Large LCM
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_al)。
@@ -242,6 +272,8 @@ fn main() {
 なぜか？底の変換公式から$\log_{10}{x}=\frac{\log_2{x}}{\log_2{10}}$です。分母にもう一度変換公式を使うと、$\log_{10}{x}=\log_2{x}\cdot\log_{10}{2}$となり、$\log_{10}{2}\fallingdotseq0.3$であるからですね。
 
 そして、$127*0.3=38.1$なので、ざっくり$10^{38}$ってことです。つまり、今回の制約であり得る$(10^{18})^2$より大きいので桁が足ります。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 fn main(){
@@ -267,6 +299,8 @@ fn gcd(x:i128,y:i128)->i128{
 }
 ```
 
+</div></details>
+
 ## #44 Shift and Swapping
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_ar)。
@@ -274,6 +308,8 @@ fn gcd(x:i128,y:i128)->i128{
 配列操作の時間計算量を認識していないとTLEになる系統の問題は多いですね。
 
 基本のデータ構造の時間計算量は早い段階で理解しておくのがいいでしょう。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 fn main(){
@@ -294,6 +330,8 @@ fn main(){
 }
 ```
 
+</div></details>
+
 ## #46 I Love 46
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_at)。
@@ -301,6 +339,8 @@ fn main(){
 Haskellのインプットフェーズが[ひと区切りついた](https://dev.thanaism.com/2021/05/weekly-report_0517-0523/)ので急に関数型っぽく書いています。
 
 `let mut`を使わずにきれいに記述できると気持ちがいいですね。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 use itertools::iproduct;
@@ -323,6 +363,8 @@ fn main() {
 }
 ```
 
+</div></details>
+
 ## #48 I will not drop out
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_av)。
@@ -332,6 +374,8 @@ fn main() {
 が、Rustで`sort`は式ではなく文みたいです。うーん。
 
 とりあえず`flatten`とか使うとそれっぽいのでヨシ！
+
+<details><summary>AC code</summary><div>
 
 ```rust
 fn main() {
@@ -349,6 +393,69 @@ fn main() {
 }
 ```
 
+</div></details>
+
+## #50 Stair Jump
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_ax)。
+
+超典型的なDPという感じですね。DPが超苦手な自分でもこれくらいならなんとか分かります。
+
+ある段に到達する経路は、1段前もしくはL段前からしかないので、それを元に漸化式を立てます。
+
+<details><summary>AC code</summary><div>
+
+```rust
+fn main() {
+    proconio::input!{
+        n:usize,
+        l:usize
+    }
+    const MOD:usize = 1_000_000_007;
+    let mut dp = vec![0;n+1];
+    dp[0] = 1;
+    for i in 0..=n {
+        if i+l<=n {
+            dp[i+l] += dp[i];
+            dp[i+l] %= MOD;
+        }
+        if i+1<=n {
+            dp[i+1] += dp[i];
+            dp[i+1] %= MOD;
+        }
+    }
+    println!("{}",dp[n]);
+}
+```
+
+</div></details>
+
+## #52 Dice Product
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_az)。
+
+直積は、和の積で書けますね。巷で話題の形式的冪級数もそういう話なのかもしれません（そっちはよく分かってないですが）。
+
+ということで、この問題を$O(N)$で解くことが出来ました。
+
+<details><summary>AC code</summary><div>
+
+```rust
+fn main(){
+  proconio::input!{
+    n:usize,
+    l:[[usize;6];n]
+  }
+  let mut ans = 1;
+  for i in l.into_iter() { 
+    ans *= i.iter().sum::<usize>();
+    ans %= 1_000_000_007;
+  }
+  println!("{}",ans);
+}
+```
+
+</div></details>
 ## おわりに
 
 問題が追加されたら、あわせて追記していこうと思います。

@@ -35,6 +35,8 @@ Rustだと関数を作る際に書く分量が多いのでちょっと億劫に�
 また、Rustでは関数定義は`main`関数の後ろに書いても問題ありません。関数へのベクタの渡し方に注意が必要です。
 渡したベクタを関数から抜けたあとにも利用するので、*mutable borrows*にする必要があるでしょう。
 
+<details><summary>AC code</summary><div>
+
 ```rust
 use proconio::{input,marker::Usize1};
 use std::collections::VecDeque;
@@ -75,6 +77,8 @@ fn bfs(g:&Vec<Vec<usize>>,d:&mut Vec<isize>,s:usize){
 }
 ```
 
+</div></details>
+
 ## #8 AtCounter
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_h)。
@@ -82,6 +86,8 @@ fn bfs(g:&Vec<Vec<usize>>,d:&mut Vec<isize>,s:usize){
 耳DPというやつらしいですね。Rustだと多次元配列が面倒ですが、AtCoderで利用可能なクレートにはnumpyの`ndarray`的なものが利用できるやつもあるみたいです。次の機会はそれを使おうかしら。
 
 あとRustでは数字リテラルに任意の個数`_`を挿入できます。`1_000_000_007`みたいに書くと桁数え間違いが減っていいです。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 use proconio::{input, marker::Chars};
@@ -103,6 +109,8 @@ fn main() {
 }
 ```
 
+</div></details>
+
 ## #12 Red Painting
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_l)。
@@ -110,6 +118,8 @@ fn main() {
 DSUをソラで実装できてかなり満足の問題でした。ただ、借用まわりのコンパイルエラーがつらかったです。
 
 関数の引数で`mut p: &mut Vec<i64>`と書く部分で、最初の`mut`はなぜ必要なのかまだよくわかってません。このあたりは追い追いですかねー。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 use proconio::{input, marker::Usize1};
@@ -168,6 +178,8 @@ fn unite(x: usize, y: usize, mut p: &mut Vec<i64>) {
 }
 ```
 
+</div></details>
+
 ## #26 Independent Set on a Tree
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_z)。
@@ -176,6 +188,8 @@ fn unite(x: usize, y: usize, mut p: &mut Vec<i64>) {
 想定解はDFSでしたが、自分はBFSのほうが書きやすいのでBFSで書きました。
 
 任意の頂点を1つ取り、その頂点からの最短距離が奇数のものと偶数のもので分けています。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 use proconio::{input,marker::Usize1};
@@ -218,6 +232,8 @@ fn bfs(connected: &Vec<Vec<usize>>, dist: &mut Vec<i32>) {
 }
 ```
 
+</div></details>
+
 ## #28 Cluttered Paper
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_ab)。
@@ -228,6 +244,8 @@ imos法の問題ですね。2次元のものは存在は知っていたものの
 
 ちなみに2次元imos法は、グリッドグラフなら左上と右下が`+1`ですが、今回は座標軸なので左下と右上が`+1`にしています。  
 累積和を取る順番を工夫すれば逆でもうまくやれるのかもしれませんが、バグらせたくないので一旦は覚えてしまいます。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 fn main() {
@@ -265,6 +283,8 @@ fn main() {
 }
 ```
 
+</div></details>
+
 ## #34 There are few types of elements
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_ah)。
@@ -278,6 +298,8 @@ C++的なノリで`dic[&key] += 1`というような書き方はできません�
 具体的には、`*dic.entry(key).or_insert(default_value) += 1`というような書き方をします。さらに便利なことに、これはPythonの`defaultdict`的な挙動をします。つまり、キーに対応する値がない場合は指定した値を挿入し、ある場合はそのまま返します。
 
 いちいち場合分けを書く必要はありません。詳しくは[いい記事](https://qiita.com/hystcs/items/75183bcf38bf95cc2ce0)があったのでそちらを参照してください。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 fn main() {
@@ -306,6 +328,8 @@ fn main() {
 }
 ```
 
+</div></details>
+
 ## #42 Multiple of 9
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_ap)。
@@ -313,6 +337,8 @@ fn main() {
 Rustだから記述で詰まるというポイントはないように思います。素直に書けばOKでしょう。
 
 想定解は`dp[0]=1`としていましたが、自分は最初に1から9までに1ずつ加算するという考えでやってしまってます。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 fn main(){
@@ -334,6 +360,8 @@ fn main(){
 }
 ```
 
+</div></details>
+
 ## #43 Maze Challenge with Lack of Sleep
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_aq)。
@@ -341,6 +369,8 @@ fn main(){
 01BFSは知っていたし、それを使いそうなのも分かりましたが、方向ごとに配列を用意するとか思い付けないですね。
 
 これで発想を覚えたので次からは悩まず済むでしょう。
+
+<details><summary>AC code</summary><div>
 
 ```rust
 use proconio::{input,marker::*};
@@ -387,6 +417,8 @@ fn main(){
     println!("{}",ans);
 }
 ```
+
+</div></details>
 
 ## おわりに
 

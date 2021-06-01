@@ -16,10 +16,10 @@ excerpt: 頑張ってできるだけ自力で解く
 
 最近、Rustをはじめたので[競プロ典型90問](https://atcoder.jp/contests/typical90)を解くという試みです。
 
-今回の記事は★4です。[★2][2]と[★4][4]の記事もあります。
+今回の記事は★4です。[★2][2]と[★3][3]の記事もあります。
 
 [2]: https://dev.thanaism.com/rust-typical90/diff-2
-[4]: https://dev.thanaism.com/rust-typical90/diff-4
+[3]: https://dev.thanaism.com/rust-typical90/diff-3
 
 参考までに、普段はPythonを使っていて、この記事の作成時点では**緑**コーダーです。
 

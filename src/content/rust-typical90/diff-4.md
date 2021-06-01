@@ -3,11 +3,11 @@ layout: post
 title: 競プロ典型90問の★4をRustで解く
 image: ../img/emre-153_VPk1NZQ-unsplash.jpg
 author: [Thanai]
-date: 2021-05-21T00:30:00.000+09:00
+date: 2021-05-21T02:00:00.000+09:00
 draft: false
 tags:
-  - Rust
   - typical90
+  - Rust
   - online judge
 excerpt: 頑張ってできるだけ自力で解く
 ---
@@ -16,13 +16,17 @@ excerpt: 頑張ってできるだけ自力で解く
 
 最近、Rustをはじめたので[競プロ典型90問](https://atcoder.jp/contests/typical90)を解くという試みです。
 
-今回の記事は★4です。[★2](https://dev.thanaism.com/rust-typical90/diff-2)と[★3](https://dev.thanaism.com/rust-typical90/diff-2)の記事もあります。
+今回の記事は★4です。[★2][2]と[★4][4]の記事もあります。
+
+[2]: https://dev.thanaism.com/rust-typical90/diff-2
+[4]: https://dev.thanaism.com/rust-typical90/diff-4
 
 参考までに、普段はPythonを使っていて、この記事の作成時点では**緑**コーダーです。
 
-よりよいコードがあれば[GitHub](https://github.com/thanaism/online-judge/tree/master/rust/src/bin)にPRを送っていただければ助かります。
+よりよいコードがあれば[GitHub](https://github.com/thanaism/online-judge)にPRを送っていただければ助かります。
 
-<s>★4はまだ出題に解くのが追いついていない状況です。追いつけるようにがんばります。</s>天才なので追いつきました。
+<s>★4はまだ出題に解くのが追いついていない状況です。追いつけるようにがんばります。</s>  
+追いつきました。
 
 ## #3 Longest Circular Road
 
@@ -422,5 +426,4 @@ fn main(){
 
 ## おわりに
 
-~~まだ全然解けていませんが、問題の追加に追いつけるようにしたいと思います。~~
-問題の追加にあわせて追記していこうと思います。
+問題の追加に合わせて、追記していこうと思います。

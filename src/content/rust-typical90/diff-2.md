@@ -3,11 +3,11 @@ layout: post
 title: 競プロ典型90問の★2をRustで解く
 image: ../img/pacto-visual-cWOzOnSoh6Q-unsplash.jpg
 author: [Thanai]
-date: 2021-05-07T19:00:00.000+09:00
+date: 2021-05-21T00:00:00.000+09:00
 draft: false
 tags:
-  - Rust
   - typical90
+  - Rust
   - online judge
 excerpt: Rust入門をかねて解いていく
 ---
@@ -18,10 +18,14 @@ excerpt: Rust入門をかねて解いていく
 
 せっかくなので[競プロ典型90問](https://atcoder.jp/contests/typical90)をRustで解いていこうと思います。
 
-今回の記事は★2のみです。  
+今回の記事は★2です。[★3][3]と[★4][4]の記事もあります。
+
+[3]: https://dev.thanaism.com/rust-typical90/diff-3
+[4]: https://dev.thanaism.com/rust-typical90/diff-4
+
 参考までに、普段はPythonを使っていて、この記事の作成時点では**緑**コーダーです。
 
-よりよいコードがあれば[GitHub](https://github.com/thanaism/online-judge/tree/master/rust/src/bin)にPRを送っていただければ助かります。
+よりよいコードがあれば[GitHub](https://github.com/thanaism/online-judge)にPRを送っていただければ助かります。
 
 ## #4 Cross Sum
 
@@ -33,7 +37,7 @@ excerpt: Rust入門をかねて解いていく
 ```rust
 let mut vec: Vec<usize> = (0..n).map(|\_|0).collect();
 let mut vec: Vec<usize> = std::iter::repeat(0).take(n).collect();
-````
+```
 
 Pythonだと `-(-a//b)`とも書けます。
 
@@ -41,7 +45,7 @@ Pythonだと `-(-a//b)`とも書けます。
 
 ```rust
 let mut vec = vec![0usize; n];
-````
+```
 
 <details><summary>AC code</summary><div>
 
@@ -214,8 +218,4 @@ fn main() {
 
 ## おわりに
 
-問題が追加されたら、あわせて追記していこうと思います。
-
-時間があれば★3の記事も<s>書きたいと思っています</s>[書きました](https://dev.thanaism.com/rust-typical90/diff-3/)。
-
-★4も[書きはじめました](https://dev.thanaism.com/rust-typical90/diff-4/)。
+問題の追加に合わせて、追記していこうと思います。

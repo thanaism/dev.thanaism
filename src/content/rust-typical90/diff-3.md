@@ -3,11 +3,11 @@ layout: post
 title: 競プロ典型90問の★3をRustで解く
 image: ../img/timothy-meinberg-AL2-t0GrSko-unsplash.jpg
 author: [Thanai]
-date: 2021-05-21T00:30:00.000+09:00
+date: 2021-05-21T01:00:00.000+09:00
 draft: false
 tags:
-  - Rust
   - typical90
+  - Rust
   - online judge
 excerpt: 知見を忘れないうちにストックする
 ---
@@ -16,10 +16,14 @@ excerpt: 知見を忘れないうちにストックする
 
 最近、Rustをはじめたので[競プロ典型90問](https://atcoder.jp/contests/typical90)を解くという試みです。
 
-今回の記事は★3です。★2は前回、[別の記事](https://dev.thanaism.com/rust-typical90/diff-2)に書きました。  
+今回の記事は★3です。[★2][2]と[★4][4]の記事もあります。
+
+[2]: https://dev.thanaism.com/rust-typical90/diff-2
+[4]: https://dev.thanaism.com/rust-typical90/diff-4
+
 参考までに、普段はPythonを使っていて、この記事の作成時点では**緑**コーダーです。
 
-よりよいコードがあれば[GitHub](https://github.com/thanaism/online-judge/tree/master/rust/src/bin)にPRを送っていただければ助かります。
+よりよいコードがあれば[GitHub](https://github.com/thanaism/online-judge)にPRを送っていただければ助かります。
 
 ## #2 Encyclopedia of Parentheses
 
@@ -76,8 +80,6 @@ Rustにおいてmutableな配列は`.sort()`でソートできることを覚え
 
 <details><summary>AC code</summary><div>
 
-<details><summary>AC code</summary><div>
-
 ```rust
 fn main() {
     proconio::input! {
@@ -95,10 +97,6 @@ fn main() {
     println!("{}", ans);
 }
 ```
-
-</div></details>
-
-<details><summary>AC code</summary><div>
 
 ```rust
 // 普通のforで書く場合
@@ -447,7 +445,7 @@ fn main(){
     l:[[usize;6];n]
   }
   let mut ans = 1;
-  for i in l.into_iter() { 
+  for i in l.into_iter() {
     ans *= i.iter().sum::<usize>();
     ans %= 1_000_000_007;
   }
@@ -456,11 +454,7 @@ fn main(){
 ```
 
 </div></details>
+
 ## おわりに
 
-問題が追加されたら、あわせて追記していこうと思います。
-
-まだ解けていませんが、★4の記事も~~いずれ書きたいと思っています~~
-[書きました](https://dev.thanaism.com/rust-typical90/diff-4/)。
-
-★2は[こちら](https://dev.thanaism.com/rust-typical90/diff-2/)。
+問題の追加に合わせて、追記していこうと思います。

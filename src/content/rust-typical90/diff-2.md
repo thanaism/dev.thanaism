@@ -216,6 +216,41 @@ fn main() {
 
 </div></details>
 
+## #55 Select5
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_bc)。
+
+ガン回しで通るのは分かるんですが、RustよりPyPyのほうが断然速いです。
+
+もっと適した書き方があるんでしょうか……（わかりません）。
+
+<details><summary>AC code</summary><div>
+
+```rust
+fn main(){
+    proconio::input!{
+        (n,p,q):(usize,usize,usize),
+        a:[usize;n]
+    }
+    let mut ans = 0;
+    for i in 0..n{
+        for j in i+1..n{
+            for k in j+1..n{
+                for l in k+1..n{
+                    for m in l+1..n{
+                        let s = a[i]%p*a[j]%p*a[k]%p*a[l]%p*a[m]%p;
+                        if s==q { ans+=1 }
+                    }
+                }
+            }
+        }
+    }
+    println!("{}",ans);
+}
+```
+
+</div></details>
+
 ## おわりに
 
 問題の追加に合わせて、追記していこうと思います。

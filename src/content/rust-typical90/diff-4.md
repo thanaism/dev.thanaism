@@ -293,7 +293,7 @@ fn main() {
 
 問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_ah)。
 
-やっと追いつきました。いかにも尺取り法という感じの問題ですね。
+この問題でやっと出題に記事が追いつきました。いかにも尺取り法という感じの問題ですね。
 
 $a_i$が大きいので、`HashMap`で管理していきます。ここで注意なのはRustの`HashMap`は`IndexMut`トレイトを実装していません。
 

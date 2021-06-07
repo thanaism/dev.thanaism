@@ -4,7 +4,7 @@ title: 虚無埋めをしたけど全然虚無じゃなかった件
 image: ../../img/lucas-favre-WN1VT_5Ww1E-unsplash.jpg
 author: [Thanai]
 date: 2021-06-07T12:30:00.000+09:00
-draft: true
+draft: false
 tags:
   - Weekly Report
 excerpt: 週報 05/31-06/06

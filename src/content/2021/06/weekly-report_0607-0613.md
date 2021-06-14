@@ -3,7 +3,7 @@ layout: post
 title: インプットとアウトプットはトレードオフなのか
 image: ../../img/lucas-t-nUZgRPB2VW4-unsplash.jpg
 author: [Thanai]
-date: 2021-06-14:09:00.000+09:00
+date: 2021-06-14T09:00:00.000+09:00
 draft: false
 tags:
   - Weekly Report

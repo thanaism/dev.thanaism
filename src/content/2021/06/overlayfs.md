@@ -24,7 +24,7 @@ excerpt: コンテナを使うだけでなく少しでもいいので中身も�
 
 もう察しはついたと思うが、とどのつまり本の中で`overlayfs`についての言及があったのでそこをちゃんと理解したいと思った次第である。
 
-今回は、書籍より少しだけ`overlayfs`について調べてみる。
+今回は、書籍より少しだけ詳しく`overlayfs`について調べてみる。
 
 ## overlayfsとは
 
@@ -61,14 +61,14 @@ sudo mount -t overlay overlay -o lowerdir=lower,upperdir=upper,workdir=work merg
 
 `overlay`を2回書いているのが不思議な感じなので、`man mount`してみる。すると、使い方は`mount -t type device dir`とあり、`overlay`タイプを指定し、`merged`をマウント先として`overlay`をマウントしているということがわかる。
 
-ちなみに、以下のように`:`で連結すれば、lowerdir`の部分に複数のディレクトリをまとめて下層レイヤーとして指定することもできる。
+ちなみに、以下のように`:`で連結すれば、`lowerdir`の部分に複数のディレクトリをまとめて下層レイヤーとして指定することもできる。
 
 ```sh
 mkdir lower1 lower2 upper work merged
 sudo mount -t overlay overlay -o lowerdir=lower1:lower2,upperdir=upper,workdir=work merged
 ```
 
-ちなみに`man mount | grep overlay`すると、以下が返ってくる
+ちなみに`man mount | grep overlay`すると、以下が返る。上記の使い方と同じだ。
 
 ```text
 Mount options for overlay
@@ -79,14 +79,14 @@ Mount options for overlay
           mount -t overlay  overlay  \
 ```
 
-また、単に`mount`コマンドを打つと現在マウントされているもののリストが返ってくるので、`mount | grep overlay`すると先ほどマウントした`merged`を含む行が返ってくるはずだ。
+また、単に`mount`コマンドを打つと現在マウントされているもののリストを得ることができる。`mount | grep overlay`すると先ほどマウントした`merged`を含む行が返ってくるはずだ。
 
 ```sh
 $ mount | grep overlay
 overlay on <YOUR-WORKING-DIR>/merged type overlay (rw,relatime,lowerdir=lower/,upperdir=upper/,workdir=work/)
 ```
 
-さて、`mount`コマンドを打ったあとの流れは書籍でもほぼ同じ内容で解説されているので、割愛してもよいのだがそれもあんまりなので書籍より少し詳しい程度に紹介する。
+さて、`mount`コマンドを打ったあとの流れは書籍でもほぼ同じ内容で解説されているため割愛してもよいのだが、それもあんまりなので書籍より少し詳しい程度に紹介する。
 
 まず、`mount`コマンドの直後では、共有ファイルへの書き込みがないのでどのフォルダの中身も空である。
 

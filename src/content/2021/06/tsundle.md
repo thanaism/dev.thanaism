@@ -57,6 +57,7 @@ excerpt: 言い得て妙
 | [ネットワーク技術＆設計入門](https://amzn.to/3xu8B1Y)                | 半分弱   |  低  |
 | [ドメイン駆動設計](https://amzn.to/3cO5f23)                          | 未読     |  低  |
 | [PowerShell実践ガイドブック](https://amzn.to/3cPFUVn)                | ちょっと |  低  |
+| [起業の科学](https://amzn.to/2SECEW5)                                | 未読     |  低  |
 | [数学ガール](https://amzn.to/3gvPFu4)                                | 未読     |  高  |
 | [数学ガール フェルマーの最終定理](https://amzn.to/3xq0YK4)           | 未読     |  低  |
 | [数学ガール ゲーデルの不完全性定理](https://amzn.to/3iO4Ws0)         | 未読     |  低  |

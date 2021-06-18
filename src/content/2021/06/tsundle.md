@@ -36,47 +36,46 @@ excerpt: 言い得て妙
 
 こうしてみると想像以上につまみ食いで読みかけばかりなのがわかる。可視化は大事だ。
 
-| タイトル                                                             | 進捗     | 興味 |
-| :------------------------------------------------------------------- | :------- | :--: |
-| [Linuxのしくみ](https://amzn.to/3gvIodJ)                             | ちょっと |  高  |
-| [ファスト＆スロー　上](https://amzn.to/3wCMCGb)                      | ちょっと |  高  |
-| [ファスト＆スロー　下](https://amzn.to/2SDR3le)                      | 未読     |  高  |
-| [いかにして問題をとくか](https://amzn.to/3xpTXJa)                    | ちょっと |  高  |
-| [理科系の作文技術](https://amzn.to/3gGXxbe)                          | ちょっと |      |
-| [プログラミングRust](https://amzn.to/3zxAqZ4)                        | ちょっと |      |
-| [アルゴリズムとデータ構造](https://amzn.to/3zvP1nT)                  | 半分強   |      |
-| [400字からのレッスン](https://amzn.to/3iOXgFB)                       | 未読     |      |
-| [Spring解体新書](https://amzn.to/3vwrOPh)                            | 半分弱   |      |
-| [Rustで始めるネットワークプログラミング](https://amzn.to/3zHBtWL)    | ちょっと |  低  |
-| [マイクロサービス アーキテクチャ](https://amzn.to/2S2XsWT)           | 未読     |  低  |
-| [JavaScript関数型プログラミング](https://amzn.to/3iO4muk)            | 半分程度 |  低  |
-| [Kubernetes完全ガイド](https://amzn.to/3zA1XcA)                      | 半分弱   |  低  |
-| [Pro Git](https://amzn.to/3iPlaB0)                                   | ちょっと |  高  |
-| [しくみがわかるKubernetes](https://amzn.to/3zwAbgY)                  | 半分以上 |  低  |
-| [コンテナ開発入門](https://amzn.to/2SF1sgE)                          | 半分程度 |  低  |
-| [ネットワーク技術＆設計入門](https://amzn.to/3xu8B1Y)                | 半分弱   |  低  |
-| [ドメイン駆動設計](https://amzn.to/3cO5f23)                          | 未読     |  低  |
-| [PowerShell実践ガイドブック](https://amzn.to/3cPFUVn)                | ちょっと |  低  |
-| [起業の科学](https://amzn.to/2SECEW5)                                | 未読     |  低  |
-| [数学ガール](https://amzn.to/3gvPFu4)                                | 未読     |  高  |
-| [数学ガール フェルマーの最終定理](https://amzn.to/3xq0YK4)           | 未読     |  低  |
-| [数学ガール ゲーデルの不完全性定理](https://amzn.to/3iO4Ws0)         | 未読     |  低  |
-| [数学ガール 乱択アルゴリズム](https://amzn.to/3wMbcVn)               | 未読     |      |
-| [数学ガール ガロア理論](https://amzn.to/3iIpIZY)                     | 未読     |      |
-| [数学ガール ポアンカレ予想](https://amzn.to/3zAHGDs)                 | 未読     |      |
-| [数学ガールの秘密ノート 式とグラフ](https://amzn.to/3xsVpup)         | 未読     |  低  |
-| [数学ガールの秘密ノート 整数で遊ぼう](https://amzn.to/3gzbMjC)       | 未読     |  高  |
-| [数学ガールの秘密ノート 丸い三角関数](https://amzn.to/35weY93)       | 未読     |  低  |
-| [数学ガールの秘密ノート 数列の広場](https://amzn.to/3iKJZhl)         | 未読     |      |
-| [数学ガールの秘密ノート 微分を追いかけて](https://amzn.to/2UdVlAr)   | 未読     |  低  |
-| [数学ガールの秘密ノート ベクトルの真実](https://amzn.to/3iJzaw9)     | 未読     |  低  |
-| [数学ガールの秘密ノート やさしい統計](https://amzn.to/3vvlcAF)       | 未読     |  低  |
-| [数学ガールの秘密ノート 積分を見つめて](https://amzn.to/3zBiNHR)     | 未読     |  低  |
-| [数学ガールの秘密ノート 行列が描くもの](https://amzn.to/3zybWza)     | 未読     |      |
-| [数学ガールの秘密ノート ビットとバイナリー](https://amzn.to/3xoXaJ5) | 未読     |      |
-| [数学ガールの秘密ノート 学ぶための対話](https://amzn.to/3iOoAUO)     | 未読     |  高  |
-| [数学ガールの秘密ノート 複素数の広がり](https://amzn.to/3wys0Pp)     | 未読     |      |
-| [数学ガールの秘密ノート 確率の冒険](https://amzn.to/3q4xejC)         | 半分程度 |      |
+| タイトル                                                             | 進捗 | 興味 |
+| :------------------------------------------------------------------- | :--- | :--: |
+| [Linuxのしくみ](https://amzn.to/3gvIodJ)                             | 途中 |  高  |
+| [ファスト＆スロー 上](https://amzn.to/3wCMCGb)                       | 途中 |  高  |
+| [ファスト＆スロー 下](https://amzn.to/2SDR3le)                       | 未読 |  高  |
+| [いかにして問題をとくか](https://amzn.to/3xpTXJa)                    | 途中 |  高  |
+| [理科系の作文技術](https://amzn.to/3gGXxbe)                          | 途中 |      |
+| [プログラミングRust](https://amzn.to/3zxAqZ4)                        | 途中 |      |
+| [アルゴリズムとデータ構造](https://amzn.to/3zvP1nT)                  | 途中 |      |
+| [400字からのレッスン](https://amzn.to/3iOXgFB)                       | 未読 |      |
+| [Spring解体新書](https://amzn.to/3vwrOPh)                            | 途中 |      |
+| [Rustで始めるネットワークプログラミング](https://amzn.to/3zHBtWL)    | 途中 |  低  |
+| [マイクロサービス アーキテクチャ](https://amzn.to/2S2XsWT)           | 未読 |  低  |
+| [JavaScript関数型プログラミング](https://amzn.to/3iO4muk)            | 途中 |  低  |
+| [Kubernetes完全ガイド](https://amzn.to/3zA1XcA)                      | 途中 |  低  |
+| [Pro Git](https://amzn.to/3iPlaB0)                                   | 途中 |  高  |
+| [しくみがわかるKubernetes](https://amzn.to/3zwAbgY)                  | 途中 |  低  |
+| [コンテナ開発入門](https://amzn.to/2SF1sgE)                          | 途中 |  低  |
+| [ネットワーク技術＆設計入門](https://amzn.to/3xu8B1Y)                | 途中 |  低  |
+| [ドメイン駆動設計](https://amzn.to/3cO5f23)                          | 未読 |  低  |
+| [PowerShell実践ガイドブック](https://amzn.to/3cPFUVn)                | 途中 |  低  |
+| [起業の科学](https://amzn.to/2SECEW5)                                | 未読 |  低  |
+| [数学ガール](https://amzn.to/3gvPFu4)                                | 未読 |  高  |
+| [数学ガール フェルマーの最終定理](https://amzn.to/3xq0YK4)           | 未読 |  低  |
+| [数学ガール ゲーデルの不完全性定理](https://amzn.to/3iO4Ws0)         | 未読 |  低  |
+| [数学ガール 乱択アルゴリズム](https://amzn.to/3wMbcVn)               | 未読 |      |
+| [数学ガール ガロア理論](https://amzn.to/3iIpIZY)                     | 未読 |      |
+| [数学ガール ポアンカレ予想](https://amzn.to/3zAHGDs)                 | 未読 |      |
+| [数学ガールの秘密ノート 式とグラフ](https://amzn.to/3xsVpup)         | 未読 |  低  |
+| [数学ガールの秘密ノート 整数で遊ぼう](https://amzn.to/3gzbMjC)       | 未読 |  高  |
+| [数学ガールの秘密ノート 丸い三角関数](https://amzn.to/35weY93)       | 未読 |  低  |
+| [数学ガールの秘密ノート 数列の広場](https://amzn.to/3iKJZhl)         | 未読 |      |
+| [数学ガールの秘密ノート 微分を追いかけて](https://amzn.to/2UdVlAr)   | 未読 |  低  |
+| [数学ガールの秘密ノート ベクトルの真実](https://amzn.to/3iJzaw9)     | 未読 |  低  |
+| [数学ガールの秘密ノート やさしい統計](https://amzn.to/3vvlcAF)       | 未読 |  低  |
+| [数学ガールの秘密ノート 積分を見つめて](https://amzn.to/3zBiNHR)     | 未読 |  低  |
+| [数学ガールの秘密ノート 行列が描くもの](https://amzn.to/3zybWza)     | 未読 |      |
+| [数学ガールの秘密ノート ビットとバイナリー](https://amzn.to/3xoXaJ5) | 未読 |      |
+| [数学ガールの秘密ノート 学ぶための対話](https://amzn.to/3iOoAUO)     | 未読 |  高  |
+| [数学ガールの秘密ノート 複素数の広がり](https://amzn.to/3wys0Pp)     | 未読 |      |
 
 ## my yondle
 
@@ -86,34 +85,35 @@ Twitterでもツリーを作っているが、一定期間が立つとOGPが消�
 
 このリストは2021年に入ってから読んだものに絞ってある。
 
-| 冊数 | タイトル                                                       | レビュー |
-| :--: | :------------------------------------------------------------- | :------- |
-|  29  | [数学ガールの秘密ノート 場合の数](https://amzn.to/3gDsPzC)     | ★★★★★    |
-|  28  | [頭のよくなる文章術](https://amzn.to/35yQDPS)                  | ★☆☆☆☆    |
-|  27  | [イラストでわかるDockerとKubernetes](https://amzn.to/2UbVe8u)  | ★★★★★    |
-|  26  | [プログラマの数学](https://amzn.to/3xq33pm)                    | ★★★★★    |
-|  25  | [結局、人生はアウトプットで決まる](https://amzn.to/3gJrwiR)    | ★★★★☆    |
-|  24  | [入門 監視](https://amzn.to/3iNrhpj)                           | ★★★★☆    |
-|  23  | [インフラエンジニアの教科書](https://amzn.to/3vtiLOZ)          | ★★★☆☆    |
-|  22  | [ITインフラ監視［実践］入門](https://amzn.to/3xuapYO)          | ★☆☆☆☆    |
-|  21  | [すごいHaskellたのしく学ぼう！](https://amzn.to/3q3gnNY)       | ★★★★★    |
-|  20  | [若者はなぜ3年で辞めるのか？](https://amzn.to/3gDGNSe)         | ★★★★☆    |
-|  19  | [詳説 正規表現](https://amzn.to/35uuylI)                       | ★★★★★    |
-|  18  | [在宅HACKS!](https://amzn.to/3iUXISK)                          | ★★☆☆☆    |
-|  17  | [UNIXという考え方](https://amzn.to/3q9AKsP)                    | ★★★★☆    |
-|  16  | [キタミ式イラストIT塾 基本情報技術者](https://amzn.to/3wLE2os) | ★★☆☆☆    |
-|  15  | [栢木先生の基本情報技術者教室](https://amzn.to/3xvQ7hw)        | ★★★☆☆    |
-|  14  | [仕事ごっこ](https://amzn.to/3cNMGLz)                          | ★★★★☆    |
-|  13  | [ズルい処世術で困難を突破する](https://amzn.to/3vxYB6w)        | ★★★☆☆    |
-|  12  | [クラウド時代のネットワーク入門](https://amzn.to/3gy6iWg)      | ★★★☆☆    |
-|  11  | [リモートワークの達人](https://amzn.to/3wzyZaR)                | ★★★★☆    |
-|  10  | [科学的な適職](https://amzn.to/2SDUKHC)                        | ★★★☆☆    |
-|  9   | [コンサル一年目が学ぶこと](https://amzn.to/3gLiJNo)            | ★★★★☆    |
-|  8   | [世界で一番やさしい資料作りの教科書](https://amzn.to/3q4ejoI)  | ★★★★☆    |
-|  7   | [世界で一番やさしい会議の教科書](https://amzn.to/2U46W4Q)      | ★★★★☆    |
-|  6   | [地頭力を鍛える](https://amzn.to/3gDV9C7)                      | ★★★☆☆    |
-|  5   | [実践Vim](https://amzn.to/3vEADXy)                             | ★★★★★    |
-|  4   | [娘のトリセツ](https://amzn.to/2TIa1av)                        | ★★★☆☆    |
-|  3   | [速習 Azure Administrator](https://amzn.to/3vxH3HN)            | ★★★☆☆    |
-|  2   | [心理的安全性のつくりかた](https://amzn.to/3cNSGnc)            | ★★★★☆    |
-|  1   | [やりぬく人の9つの習慣](https://amzn.to/3zxObXR)               | ★★★☆☆    |
+| タイトル                                                       | 冊数 | レビュー |
+| :------------------------------------------------------------- | :--: | :------- |
+| [数学ガールの秘密ノート 確率の冒険](https://amzn.to/3q4xejC)   |  30  | ★★★★★    |
+| [数学ガールの秘密ノート 場合の数](https://amzn.to/3gDsPzC)     |  29  | ★★★★★    |
+| [頭のよくなる文章術](https://amzn.to/35yQDPS)                  |  28  | ★☆☆☆☆    |
+| [イラストでわかるDockerとKubernetes](https://amzn.to/2UbVe8u)  |  27  | ★★★★★    |
+| [プログラマの数学](https://amzn.to/3xq33pm)                    |  26  | ★★★★★    |
+| [結局、人生はアウトプットで決まる](https://amzn.to/3gJrwiR)    |  25  | ★★★★☆    |
+| [入門 監視](https://amzn.to/3iNrhpj)                           |  24  | ★★★★☆    |
+| [インフラエンジニアの教科書](https://amzn.to/3vtiLOZ)          |  23  | ★★★☆☆    |
+| [ITインフラ監視［実践］入門](https://amzn.to/3xuapYO)          |  22  | ★☆☆☆☆    |
+| [すごいHaskellたのしく学ぼう！](https://amzn.to/3q3gnNY)       |  21  | ★★★★★    |
+| [若者はなぜ3年で辞めるのか？](https://amzn.to/3gDGNSe)         |  20  | ★★★★☆    |
+| [詳説 正規表現](https://amzn.to/35uuylI)                       |  19  | ★★★★★    |
+| [在宅HACKS!](https://amzn.to/3iUXISK)                          |  18  | ★★☆☆☆    |
+| [UNIXという考え方](https://amzn.to/3q9AKsP)                    |  17  | ★★★★☆    |
+| [キタミ式イラストIT塾 基本情報技術者](https://amzn.to/3wLE2os) |  16  | ★★☆☆☆    |
+| [栢木先生の基本情報技術者教室](https://amzn.to/3xvQ7hw)        |  15  | ★★★☆☆    |
+| [仕事ごっこ](https://amzn.to/3cNMGLz)                          |  14  | ★★★★☆    |
+| [ズルい処世術で困難を突破する](https://amzn.to/3vxYB6w)        |  13  | ★★★☆☆    |
+| [クラウド時代のネットワーク入門](https://amzn.to/3gy6iWg)      |  12  | ★★★☆☆    |
+| [リモートワークの達人](https://amzn.to/3wzyZaR)                |  11  | ★★★★☆    |
+| [科学的な適職](https://amzn.to/2SDUKHC)                        |  10  | ★★★☆☆    |
+| [コンサル一年目が学ぶこと](https://amzn.to/3gLiJNo)            |  9   | ★★★★☆    |
+| [世界で一番やさしい資料作りの教科書](https://amzn.to/3q4ejoI)  |  8   | ★★★★☆    |
+| [世界で一番やさしい会議の教科書](https://amzn.to/2U46W4Q)      |  7   | ★★★★☆    |
+| [地頭力を鍛える](https://amzn.to/3gDV9C7)                      |  6   | ★★★☆☆    |
+| [実践Vim](https://amzn.to/3vEADXy)                             |  5   | ★★★★★    |
+| [娘のトリセツ](https://amzn.to/2TIa1av)                        |  4   | ★★★☆☆    |
+| [速習 Azure Administrator](https://amzn.to/3vxH3HN)            |  3   | ★★★☆☆    |
+| [心理的安全性のつくりかた](https://amzn.to/3cNSGnc)            |  2   | ★★★★☆    |
+| [やりぬく人の9つの習慣](https://amzn.to/3zxObXR)               |  1   | ★★★☆☆    |

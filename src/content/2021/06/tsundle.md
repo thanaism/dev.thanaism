@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 積んdleリスト（Kindleの積ん読＝積んdle）
+title: tsundle（Kindleの積ん読）
 image: ../../img/daniel-thurler-YRGsG4oiNIg-unsplash.jpg
 author: [Thanai]
 date: 2021-06-15T20:30:00.000+09:00
@@ -36,46 +36,51 @@ excerpt: 言い得て妙
 
 こうしてみると想像以上につまみ食いで読みかけばかりなのがわかる。可視化は大事だ。
 
-| タイトル                                                             | 進捗 | 興味 |
+| タイトル                                                             | 進捗 | 冊数 |
 | :------------------------------------------------------------------- | :--- | :--: |
-| [Linuxのしくみ](https://amzn.to/3gvIodJ)                             | 途中 |  高  |
-| [ファスト＆スロー 上](https://amzn.to/3wCMCGb)                       | 途中 |  高  |
-| [ファスト＆スロー 下](https://amzn.to/2SDR3le)                       | 未読 |  高  |
-| [いかにして問題をとくか](https://amzn.to/3xpTXJa)                    | 途中 |  高  |
-| [理科系の作文技術](https://amzn.to/3gGXxbe)                          | 途中 |      |
-| [プログラミングRust](https://amzn.to/3zxAqZ4)                        | 途中 |      |
-| [アルゴリズムとデータ構造](https://amzn.to/3zvP1nT)                  | 途中 |      |
-| [400字からのレッスン](https://amzn.to/3iOXgFB)                       | 未読 |      |
-| [Spring解体新書](https://amzn.to/3vwrOPh)                            | 途中 |      |
-| [Rustで始めるネットワークプログラミング](https://amzn.to/3zHBtWL)    | 途中 |  低  |
-| [マイクロサービス アーキテクチャ](https://amzn.to/2S2XsWT)           | 未読 |  低  |
-| [JavaScript関数型プログラミング](https://amzn.to/3iO4muk)            | 途中 |  低  |
-| [Kubernetes完全ガイド](https://amzn.to/3zA1XcA)                      | 途中 |  低  |
-| [Pro Git](https://amzn.to/3iPlaB0)                                   | 途中 |  高  |
-| [しくみがわかるKubernetes](https://amzn.to/3zwAbgY)                  | 途中 |  低  |
-| [コンテナ開発入門](https://amzn.to/2SF1sgE)                          | 途中 |  低  |
-| [ネットワーク技術＆設計入門](https://amzn.to/3xu8B1Y)                | 途中 |  低  |
-| [ドメイン駆動設計](https://amzn.to/3cO5f23)                          | 未読 |  低  |
-| [PowerShell実践ガイドブック](https://amzn.to/3cPFUVn)                | 途中 |  低  |
-| [起業の科学](https://amzn.to/2SECEW5)                                | 未読 |  低  |
-| [数学ガール](https://amzn.to/3gvPFu4)                                | 未読 |  高  |
-| [数学ガール フェルマーの最終定理](https://amzn.to/3xq0YK4)           | 未読 |  低  |
-| [数学ガール ゲーデルの不完全性定理](https://amzn.to/3iO4Ws0)         | 未読 |  低  |
-| [数学ガール 乱択アルゴリズム](https://amzn.to/3wMbcVn)               | 未読 |      |
-| [数学ガール ガロア理論](https://amzn.to/3iIpIZY)                     | 未読 |      |
-| [数学ガール ポアンカレ予想](https://amzn.to/3zAHGDs)                 | 未読 |      |
-| [数学ガールの秘密ノート 式とグラフ](https://amzn.to/3xsVpup)         | 未読 |  低  |
-| [数学ガールの秘密ノート 整数で遊ぼう](https://amzn.to/3gzbMjC)       | 未読 |  高  |
-| [数学ガールの秘密ノート 丸い三角関数](https://amzn.to/35weY93)       | 未読 |  低  |
-| [数学ガールの秘密ノート 数列の広場](https://amzn.to/3iKJZhl)         | 未読 |      |
-| [数学ガールの秘密ノート 微分を追いかけて](https://amzn.to/2UdVlAr)   | 未読 |  低  |
-| [数学ガールの秘密ノート ベクトルの真実](https://amzn.to/3iJzaw9)     | 未読 |  低  |
-| [数学ガールの秘密ノート やさしい統計](https://amzn.to/3vvlcAF)       | 未読 |  低  |
-| [数学ガールの秘密ノート 積分を見つめて](https://amzn.to/3zBiNHR)     | 未読 |  低  |
-| [数学ガールの秘密ノート 行列が描くもの](https://amzn.to/3zybWza)     | 未読 |      |
-| [数学ガールの秘密ノート ビットとバイナリー](https://amzn.to/3xoXaJ5) | 未読 |      |
-| [数学ガールの秘密ノート 学ぶための対話](https://amzn.to/3iOoAUO)     | 未読 |  高  |
-| [数学ガールの秘密ノート 複素数の広がり](https://amzn.to/3wys0Pp)     | 未読 |      |
+| [Linuxのしくみ](https://amzn.to/3gvIodJ)                             | 途中 |  43  |
+| [PAST本](https://amzn.to/3j4P0S1)                                    | -    |  42  |
+| [けんちょん本](https://amzn.to/3zvP1nT)                              | 途中 |  41  |
+| [蟻本](https://amzn.to/3zSK6gX)                                      | 途中 |  40  |
+| [螺旋本](https://amzn.to/3zMfFJo)                                    | 途中 |  39  |
+| [童話でわかるプロジェクトマネジメント](https://amzn.to/35IwwyW)      | 途中 |  38  |
+| [ライフピボット](https://amzn.to/3zRvuyA)                            | -    |  37  |
+| [ファスト＆スロー 上](https://amzn.to/3wCMCGb)                       | 途中 |  36  |
+| [ファスト＆スロー 下](https://amzn.to/2SDR3le)                       | -    |  35  |
+| [いかにして問題をとくか](https://amzn.to/3xpTXJa)                    | 途中 |  34  |
+| [理科系の作文技術](https://amzn.to/3gGXxbe)                          | 途中 |  33  |
+| [プログラミングRust](https://amzn.to/3zxAqZ4)                        | 途中 |  32  |
+| [400字からのレッスン](https://amzn.to/3iOXgFB)                       | -    |  31  |
+| [Spring解体新書](https://amzn.to/3vwrOPh)                            | 途中 |  30  |
+| [Rustで始めるネットワークプログラミング](https://amzn.to/3zHBtWL)    | 途中 |  29  |
+| [マイクロサービス アーキテクチャ](https://amzn.to/2S2XsWT)           | -    |  28  |
+| [JavaScript関数型プログラミング](https://amzn.to/3iO4muk)            | 途中 |  27  |
+| [Kubernetes完全ガイド](https://amzn.to/3zA1XcA)                      | 途中 |  26  |
+| [Pro Git](https://amzn.to/3iPlaB0)                                   | 途中 |  25  |
+| [しくみがわかるKubernetes](https://amzn.to/3zwAbgY)                  | 途中 |  24  |
+| [コンテナ開発入門](https://amzn.to/2SF1sgE)                          | 途中 |  23  |
+| [ネットワーク技術＆設計入門](https://amzn.to/3xu8B1Y)                | 途中 |  22  |
+| [ドメイン駆動設計](https://amzn.to/3cO5f23)                          | -    |  21  |
+| [PowerShell実践ガイドブック](https://amzn.to/3cPFUVn)                | 途中 |  20  |
+| [起業の科学](https://amzn.to/2SECEW5)                                | -    |  19  |
+| [数学ガール](https://amzn.to/3gvPFu4)                                | -    |  18  |
+| [数学ガール フェルマーの最終定理](https://amzn.to/3xq0YK4)           | -    |  17  |
+| [数学ガール ゲーデルの不完全性定理](https://amzn.to/3iO4Ws0)         | -    |  16  |
+| [数学ガール 乱択アルゴリズム](https://amzn.to/3wMbcVn)               | -    |  15  |
+| [数学ガール ガロア理論](https://amzn.to/3iIpIZY)                     | -    |  14  |
+| [数学ガール ポアンカレ予想](https://amzn.to/3zAHGDs)                 | -    |  13  |
+| [数学ガールの秘密ノート 式とグラフ](https://amzn.to/3xsVpup)         | -    |  12  |
+| [数学ガールの秘密ノート 整数で遊ぼう](https://amzn.to/3gzbMjC)       | -    |  11  |
+| [数学ガールの秘密ノート 丸い三角関数](https://amzn.to/35weY93)       | -    |  10  |
+| [数学ガールの秘密ノート 数列の広場](https://amzn.to/3iKJZhl)         | -    |  9   |
+| [数学ガールの秘密ノート 微分を追いかけて](https://amzn.to/2UdVlAr)   | -    |  8   |
+| [数学ガールの秘密ノート ベクトルの真実](https://amzn.to/3iJzaw9)     | -    |  7   |
+| [数学ガールの秘密ノート やさしい統計](https://amzn.to/3vvlcAF)       | -    |  6   |
+| [数学ガールの秘密ノート 積分を見つめて](https://amzn.to/3zBiNHR)     | -    |  5   |
+| [数学ガールの秘密ノート 行列が描くもの](https://amzn.to/3zybWza)     | -    |  4   |
+| [数学ガールの秘密ノート ビットとバイナリー](https://amzn.to/3xoXaJ5) | -    |  3   |
+| [数学ガールの秘密ノート 学ぶための対話](https://amzn.to/3iOoAUO)     | -    |  2   |
+| [数学ガールの秘密ノート 複素数の広がり](https://amzn.to/3wys0Pp)     | -    |  1   |
 
 ## my yondle
 

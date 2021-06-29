@@ -38,13 +38,17 @@ excerpt: 言い得て妙
 
 | タイトル                                                             | 進捗 | 冊数 |
 | :------------------------------------------------------------------- | :--- | :--: |
-| [Linuxのしくみ](https://amzn.to/3gvIodJ)                             | 途中 |  43  |
-| [PAST本](https://amzn.to/3j4P0S1)                                    | -    |  42  |
-| [けんちょん本](https://amzn.to/3zvP1nT)                              | 途中 |  41  |
-| [蟻本](https://amzn.to/3zSK6gX)                                      | 途中 |  40  |
-| [螺旋本](https://amzn.to/3zMfFJo)                                    | 途中 |  39  |
-| [童話でわかるプロジェクトマネジメント](https://amzn.to/35IwwyW)      | 途中 |  38  |
-| [ライフピボット](https://amzn.to/3zRvuyA)                            | -    |  37  |
+| [レガシーコード改善ガイド](https://amzn.to/3h1MEBZ)                  | -    |  47  |
+| [ユースケース駆動開発実践ガイド](https://amzn.to/3vYKrvy)            | -    |  46  |
+| [ドメイン駆動設計入門](https://amzn.to/3xWQjqy)                      | -    |  45  |
+| [実践ドメイン駆動設計](https://amzn.to/3AcBmTe)                      | -    |  44  |
+| [おうちで学べるデータベースのきほん](https://amzn.to/3xabgOI)        | 途中 |  43  |
+| [Linuxのしくみ](https://amzn.to/3gvIodJ)                             | 途中 |  42  |
+| [PAST本](https://amzn.to/3j4P0S1)                                    | -    |  41  |
+| [けんちょん本](https://amzn.to/3zvP1nT)                              | 途中 |  40  |
+| [蟻本](https://amzn.to/3zSK6gX)                                      | 途中 |  39  |
+| [螺旋本](https://amzn.to/3zMfFJo)                                    | 途中 |  38  |
+| [童話でわかるプロジェクトマネジメント](https://amzn.to/35IwwyW)      | 途中 |  37  |
 | [ファスト＆スロー 上](https://amzn.to/3wCMCGb)                       | 途中 |  36  |
 | [ファスト＆スロー 下](https://amzn.to/2SDR3le)                       | -    |  35  |
 | [いかにして問題をとくか](https://amzn.to/3xpTXJa)                    | 途中 |  34  |
@@ -92,6 +96,7 @@ Twitterでもツリーを作っているが、一定期間が立つとOGPが消�
 
 | タイトル                                                       | 冊数 | レビュー |
 | :------------------------------------------------------------- | :--: | :------- |
+| [ライフピボット](https://amzn.to/3zRvuyA)                      |  31  | ★★★★☆    |
 | [数学ガールの秘密ノート 確率の冒険](https://amzn.to/3q4xejC)   |  30  | ★★★★★    |
 | [数学ガールの秘密ノート 場合の数](https://amzn.to/3gDsPzC)     |  29  | ★★★★★    |
 | [頭のよくなる文章術](https://amzn.to/35yQDPS)                  |  28  | ★☆☆☆☆    |

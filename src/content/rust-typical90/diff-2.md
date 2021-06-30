@@ -251,6 +251,112 @@ fn main(){
 
 </div></details>
 
+## #61 Deck
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_bi)。
+
+`VecDeque`を使います。おわり。
+
+<details><summary>AC code</summary><div>
+
+```rust
+use std::collections::VecDeque;
+fn main(){
+	proconio::input!{
+		q:usize,
+		l:[(usize,usize);q]
+	}
+	let mut dq = VecDeque::new();
+	for i in 0..q {
+		if l[i].0==3 {
+			let x = l[i].1-1;
+			println!("{}",dq[x]);
+		}
+		if l[i].0==1 {
+			let x = l[i].1;
+			dq.push_front(x);
+		}
+		if l[i].0==2 {
+			let x = l[i].1;
+			dq.push_back(x);
+		}
+	}
+}
+```
+
+</div></details>
+
+## #67 Base 8 to 9
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_bo)。
+
+Pythonだと簡単ですが、Rustだと文字列操作も冪乗操作も鬼門かと思います。
+
+<details><summary>AC code</summary><div>
+
+```rust
+use proconio::{input,marker::Chars};
+fn main() {
+	input!{
+		(n, k): (Chars, usize)
+	}
+	let mut s = Vec::new();
+	for c in n.clone().into_iter().rev() {
+		s.push(c.to_string().parse::<isize>().unwrap());
+	}
+	for _ in 0..k {
+		let mut ans = 0;
+		for (i,d) in s.clone().into_iter().enumerate() {
+			let p:isize = 8_isize.pow(i as u32);
+			ans += d*p;
+		}
+		s = Vec::new();
+		while ans/9>0 {
+			s.push(if ans%9==8 {5} else {ans%9});
+			ans /= 9;
+		}
+		s.push(if ans%9==8 {5} else {ans%9});
+	}
+	s.iter().rev().for_each(|i|print!("{}",i));
+	println!("");
+}
+```
+
+</div></details>
+
+## #78 Easy Graph Problem
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_bz)。
+
+隣接リストにしてもいいですが、入力の時点で自分より小さいノードだけを数えるようにして解きました。
+
+<details><summary>AC code</summary><div>
+
+```rust
+fn main() {
+	proconio::input!{
+		(n,m):(usize,usize),
+		ls:[(usize,usize);m]
+	}
+	let mut edges = vec![0;n];
+	for i in 0..m {
+		let (a,b) = ls[i];
+		if a<b {
+			edges[b-1] += 1;
+		} else {
+			edges[a-1] += 1;
+		}
+	}
+	let mut ans = 0;
+	for i in 0..n {
+		if edges[i]==1 { ans+=1 }
+	}
+	println!("{}",ans);
+}
+```
+
+</div></details>
+
 ## おわりに
 
 問題の追加に合わせて、追記していこうと思います。

@@ -455,6 +455,203 @@ fn main(){
 
 </div></details>
 
+## #64 Uplift
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_bl)。
+
+セグメント木でゴリ押ししてもよいかもしれませんが、さすがにオーバーキルなので差分のみを考えて解きます。
+
+<details><summary>AC code</summary><div>
+
+```rust
+use proconio::{input,marker::Usize1};
+fn main(){
+	input!{
+		(n,q):(usize,usize),
+		a:[isize;n],
+		ls:[(Usize1,Usize1,isize);q]
+	}
+	let mut d:Vec<isize> = (1..n).map(|i|a[i]-a[i-1]).collect();
+	let mut t:isize = (1..n).fold(0,|acc,x|acc+(a[x]-a[x-1]).abs());
+	for i in 0..q {
+		let (l,r,v) = ls[i];
+		if l>0 {
+			let d1 = d[l-1].abs();
+			d[l-1] += v;
+			t += d[l-1].abs()-d1;
+		}
+		if r+1<n {
+			let d1 = d[r].abs();
+			d[r] -= v;
+			t += d[r].abs()-d1;
+		}
+		println!("{}",t);
+	}
+}
+```
+
+</div></details>
+
+## #69 Colorful Blocks 2
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_bq)。
+
+繰り返し二乗法ですね。下記の実装がわりとエレガントで好きな書き方です。
+
+掛ける数を二乗し続けて、ビットが立っていれば実際に掛けていきます。
+
+こうすることでダブリングのように事前にk乗の値を計算しておかなくても解けます。
+
+<details><summary>AC code</summary><div>
+
+```rust
+fn main(){
+	proconio::input!{
+		(n,k):(usize,i128)
+	}
+	let l = (k-1).max(0);
+	let mut m = (k-2).max(0);
+	const MOD:i128 = 1000_000_007;
+	let mut ans = 1;
+	if n<2 {
+		for i in 0..n {
+			if i==0 { ans = k }
+			else if i==1 { ans *= l }
+			else { ans *= m }
+			ans %= MOD;
+		}
+	} else {
+		let mut x = n-2;
+		while x>0 {
+			if x&1==1 { ans = ans * m % MOD }
+			m = m * m % MOD;
+			x >>= 1;
+		}
+		ans = ans * k % MOD * l % MOD;
+	}
+	println!("{}",ans);
+}
+```
+
+</div></details>
+
+## #75 Magic For Balls
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_bw)。
+
+素因数分解してlog取ればおわりです。
+
+<details><summary>AC code</summary><div>
+
+```rust
+use proconio::input;
+fn main() {
+	input!{n:usize}
+	let mut x = n;
+	let mut cnt = 0;
+	for i in 2..n {
+		if i*i>n {break}
+		while x%i==0 {
+			x /= i;
+			cnt += 1;
+		}
+	}
+	if x!=1 {cnt+=1}
+	let mut ans = 0;
+	let mut i = 1;
+	while i<cnt {
+		ans += 1;
+		i *= 2;
+	}
+	println!("{}",ans);
+}
+```
+
+</div></details>
+
+## #76 Cake Cut
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_bx)。
+
+しゃくとりはdequeで実装すると添字でバグらないためとてもよいです。
+
+これに二分探索を使う発想がありませんでしたが、本当は思いつけないとダメですね。
+
+<details><summary>AC code</summary><div>
+
+```rust
+fn main(){
+	proconio::input!{
+		n:usize,
+		a:[usize;n]
+	}
+	let mut acc = 0;
+	let mut que = std::collections::VecDeque::new();
+	let total = a.clone().iter().fold(0,|x,i|x+i);
+	let mut ok = false;
+	for i in 0..2*n {
+		que.push_back(a[i%n]);
+		acc += a[i%n];
+		while acc*10>total {
+			let x = que.pop_front().unwrap();
+			acc -= x;
+		}
+		if acc*10==total { ok=true;break }
+	}
+	println!("{}",if ok {"Yes"} else {"No"});
+}
+```
+
+</div></details>
+
+## #79 Two by Two
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_ca)。
+
+蟻本で牛がタイルをひっくり返すだかの問題を見た覚えがあり、左上からやればいいのはすぐに分かりました。
+
+実装はとても軽いので★2でもいいのかな、と思いました。
+
+<details><summary>AC code</summary><div>
+
+```rust
+fn main() {
+	proconio::input!{
+		(h,w):(usize,usize),
+		mut a:[[isize;w];h],
+		b:[[isize;w];h]
+	}
+	let mut cnt = 0;
+	for i in 0..h-1 {
+		for j in 0..w-1 {
+			let diff = b[i][j] - a[i][j];
+			if diff!=0 { cnt+=diff.abs() }
+			for k in 0..2 {
+				for l in 0..2 {
+					a[i+k][j+l] += diff;
+				}
+			}
+		}
+	}
+	let mut ans = true;
+	for i in 0..h {
+		for j in 0..w {
+			if a[i][j]!=b[i][j] {
+				ans = false;
+			}
+		}
+	}
+	if ans {
+		println!("{}","Yes");
+		println!("{}",cnt);
+	} else {
+		println!("{}","No");
+	}
+}
+```
+
+</div></details>
+
 ## おわりに
 
 問題の追加に合わせて、追記していこうと思います。

@@ -424,6 +424,150 @@ fn main(){
 
 </div></details>
 
+## #58 Original Calculator
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_bf)。
+
+ダブリングを今回始めて学びました（ので、コードに無様なコメントが入っています）。
+
+<details><summary>AC code</summary><div>
+
+```rust
+fn main(){
+	proconio::input!{
+		(mut n,mut k):(usize,usize)
+	}
+	const MOD:usize = 100_000;
+
+	// kの最大ビット長を求める
+	let mut bit_len = 0;
+	while k>>bit_len>0 { bit_len+=1 }
+
+	// d[i][j]: 表示jに対して2のi乗回操作を行った結果
+	let mut d = vec![vec![0usize;MOD];bit_len];
+
+	// 2の0乗=1回操作を行った際の結果を求める
+	for i in 0..MOD {
+		let mut x = i;
+		let mut s = 0;
+		while x>0 {
+			s += x%10;
+			x /= 10;
+		}
+		d[0][i] = (i+s)%MOD;
+	}
+
+	// 0乗の結果をベースにk乗回操作した結果を算出する
+	for i in 1..bit_len {
+		for j in 0..MOD {
+			let x = d[i-1][j];
+			// 結果はMOD通りしかない
+			// ゆえに結果を入力にして再度結果を得ることができる
+			d[i][j] = d[i-1][x];
+		}
+	}
+
+	// k回の操作を冪指数ごとに分解（＝ダブリング）して求める
+	let mut i = 0;
+	while k>0 {
+		if k&1==1 { n=d[i][n] }
+		k >>= 1;
+		i += 1;
+	}
+	println!("{}",n);
+}
+```
+
+</div></details>
+
+## #63 Monochromatic Subgrid
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_bk)。
+
+bit全探索と`HashMap`を知っているかの問題でした。★3くらいに感じました。
+
+<details><summary>AC code</summary><div>
+
+```rust
+fn main(){
+	proconio::input!{
+		(h,w):(usize,usize),
+		p:[[usize;w];h]
+	}
+	let mut ans = 0;
+	for b in 0..1<<h {
+		let mut d = std::collections::HashMap::new();
+		for j in 0..w {
+			let mut x = 0;
+			let mut cnt = 0;
+			let mut ok = true;
+			for i in 0..h {
+				if b>>i&1==1 {
+					if x==0 {x=p[i][j]}
+					if p[i][j]!=x {
+						ok=false;
+						break
+					}
+					cnt += 1;
+				}
+			}
+			if ok {*d.entry(x).or_insert(0)+=cnt}
+		}
+		for (_,v) in d {
+			ans=ans.max(v);
+		}
+	}
+	println!("{}",ans);
+}
+```
+
+</div></details>
+
+## #70 Plant Planning
+
+問題は[こちら](https://atcoder.jp/contests/typical90/tasks/typical90_br)。
+
+中央値で絶対値最小は知ってないとちょっとキツいな、と思いました。
+
+言われればわかることも、自分で思いつくのは難しいものです。
+
+<details><summary>AC code</summary><div>
+
+```rust
+fn main() {
+	proconio::input!{
+		n: usize,
+		l: [(isize, isize);n]
+	}
+	let mut xs = Vec::new();
+	let mut ys = Vec::new();
+	for (x,y) in l {
+		xs.push(x);
+		ys.push(y);
+	}
+	xs.sort();
+	ys.sort();
+	let mid_x;
+	let mid_y;
+	if n&1==1 {
+		mid_x = xs[n/2]*2;
+		mid_y = ys[n/2]*2;
+	} else {
+		let m = n/2;
+		mid_x = xs[m]+xs[m-1];
+		mid_y = ys[m]+ys[m-1];
+	}
+	let mut ans = 0;
+	for i in 0..n {
+		ans += (xs[i]*2-mid_x).abs();
+		ans += (ys[i]*2-mid_y).abs();
+	}
+	println!("{}",ans/2);
+}
+```
+
+</div></details>
+
 ## おわりに
 
 問題の追加に合わせて、追記していこうと思います。

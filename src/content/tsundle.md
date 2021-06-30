@@ -1,13 +1,16 @@
 ---
 layout: post
 title: tsundle（Kindleの積ん読）
-image: ../../img/daniel-thurler-YRGsG4oiNIg-unsplash.jpg
+image: ./img/daniel-thurler-YRGsG4oiNIg-unsplash.jpg
 author: [Thanai]
-date: 2021-06-15T20:30:00.000+09:00
+date: 2021-07-01T20:30:00.000+09:00
 draft: false
 tags:
   - tsundle
 excerpt: 言い得て妙
+redirect_from:
+  - /2021/06/tsundle/
+  # note: trailing slashes are required
 ---
 
 ## 積んdleリストを作る
@@ -38,6 +41,7 @@ excerpt: 言い得て妙
 
 | タイトル                                                             | 進捗 | 冊数 |
 | :------------------------------------------------------------------- | :--- | :--: |
+| [PythonではじめるKaggleスタートブック](https://amzn.to/2UJSZt9)      | -    |  48  |
 | [レガシーコード改善ガイド](https://amzn.to/3h1MEBZ)                  | -    |  47  |
 | [ユースケース駆動開発実践ガイド](https://amzn.to/3vYKrvy)            | -    |  46  |
 | [ドメイン駆動設計入門](https://amzn.to/3xWQjqy)                      | -    |  45  |

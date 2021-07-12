@@ -41,30 +41,28 @@ redirect_from:
 
 | タイトル                                                             | 進捗 | 冊数 |
 | :------------------------------------------------------------------- | :--- | :--: |
-| [PythonではじめるKaggleスタートブック](https://amzn.to/2UJSZt9)      | -    |  48  |
-| [レガシーコード改善ガイド](https://amzn.to/3h1MEBZ)                  | -    |  47  |
-| [ユースケース駆動開発実践ガイド](https://amzn.to/3vYKrvy)            | -    |  46  |
-| [ドメイン駆動設計入門](https://amzn.to/3xWQjqy)                      | -    |  45  |
-| [実践ドメイン駆動設計](https://amzn.to/3AcBmTe)                      | -    |  44  |
-| [おうちで学べるデータベースのきほん](https://amzn.to/3xabgOI)        | 途中 |  43  |
-| [Linuxのしくみ](https://amzn.to/3gvIodJ)                             | 途中 |  42  |
-| [PAST本](https://amzn.to/3j4P0S1)                                    | -    |  41  |
-| [けんちょん本](https://amzn.to/3zvP1nT)                              | 途中 |  40  |
-| [蟻本](https://amzn.to/3zSK6gX)                                      | 途中 |  39  |
-| [螺旋本](https://amzn.to/3zMfFJo)                                    | 途中 |  38  |
-| [童話でわかるプロジェクトマネジメント](https://amzn.to/35IwwyW)      | 途中 |  37  |
-| [ファスト＆スロー 上](https://amzn.to/3wCMCGb)                       | 途中 |  36  |
-| [ファスト＆スロー 下](https://amzn.to/2SDR3le)                       | -    |  35  |
-| [いかにして問題をとくか](https://amzn.to/3xpTXJa)                    | 途中 |  34  |
-| [理科系の作文技術](https://amzn.to/3gGXxbe)                          | 途中 |  33  |
-| [プログラミングRust](https://amzn.to/3zxAqZ4)                        | 途中 |  32  |
-| [400字からのレッスン](https://amzn.to/3iOXgFB)                       | -    |  31  |
-| [Spring解体新書](https://amzn.to/3vwrOPh)                            | 途中 |  30  |
-| [Rustで始めるネットワークプログラミング](https://amzn.to/3zHBtWL)    | 途中 |  29  |
-| [マイクロサービス アーキテクチャ](https://amzn.to/2S2XsWT)           | -    |  28  |
-| [JavaScript関数型プログラミング](https://amzn.to/3iO4muk)            | 途中 |  27  |
-| [Kubernetes完全ガイド](https://amzn.to/3zA1XcA)                      | 途中 |  26  |
-| [Pro Git](https://amzn.to/3iPlaB0)                                   | 途中 |  25  |
+| [PythonではじめるKaggleスタートブック](https://amzn.to/2UJSZt9)      | -    |  46  |
+| [レガシーコード改善ガイド](https://amzn.to/3h1MEBZ)                  | -    |  45  |
+| [ユースケース駆動開発実践ガイド](https://amzn.to/3vYKrvy)            | -    |  44  |
+| [ドメイン駆動設計入門](https://amzn.to/3xWQjqy)                      | -    |  43  |
+| [実践ドメイン駆動設計](https://amzn.to/3AcBmTe)                      | -    |  42  |
+| [Linuxのしくみ](https://amzn.to/3gvIodJ)                             | 途中 |  41  |
+| [PAST本](https://amzn.to/3j4P0S1)                                    | -    |  40  |
+| [けんちょん本](https://amzn.to/3zvP1nT)                              | 途中 |  39  |
+| [蟻本](https://amzn.to/3zSK6gX)                                      | 途中 |  38  |
+| [螺旋本](https://amzn.to/3zMfFJo)                                    | 途中 |  37  |
+| [童話でわかるプロジェクトマネジメント](https://amzn.to/35IwwyW)      | 途中 |  36  |
+| [ファスト＆スロー 上](https://amzn.to/3wCMCGb)                       | 途中 |  35  |
+| [ファスト＆スロー 下](https://amzn.to/2SDR3le)                       | -    |  34  |
+| [いかにして問題をとくか](https://amzn.to/3xpTXJa)                    | 途中 |  33  |
+| [理科系の作文技術](https://amzn.to/3gGXxbe)                          | 途中 |  32  |
+| [プログラミングRust](https://amzn.to/3zxAqZ4)                        | 途中 |  31  |
+| [400字からのレッスン](https://amzn.to/3iOXgFB)                       | -    |  30  |
+| [Spring解体新書](https://amzn.to/3vwrOPh)                            | 途中 |  29  |
+| [Rustで始めるネットワークプログラミング](https://amzn.to/3zHBtWL)    | 途中 |  28  |
+| [マイクロサービス アーキテクチャ](https://amzn.to/2S2XsWT)           | -    |  27  |
+| [JavaScript関数型プログラミング](https://amzn.to/3iO4muk)            | 途中 |  26  |
+| [Kubernetes完全ガイド](https://amzn.to/3zA1XcA)                      | 途中 |  25  |
 | [しくみがわかるKubernetes](https://amzn.to/3zwAbgY)                  | 途中 |  24  |
 | [コンテナ開発入門](https://amzn.to/2SF1sgE)                          | 途中 |  23  |
 | [ネットワーク技術＆設計入門](https://amzn.to/3xu8B1Y)                | 途中 |  22  |
@@ -100,6 +98,8 @@ Twitterでもツリーを作っているが、一定期間が立つとOGPが消�
 
 | タイトル                                                       | 冊数 | レビュー |
 | :------------------------------------------------------------- | :--: | :------- |
+| [Pro Git](https://amzn.to/3iPlaB0)                             |  33  | ★★★★★    |
+| [おうちで学べるデータベースのきほん](https://amzn.to/3xabgOI)  |  32  | ★★★★★    |
 | [ライフピボット](https://amzn.to/3zRvuyA)                      |  31  | ★★★★☆    |
 | [数学ガールの秘密ノート 確率の冒険](https://amzn.to/3q4xejC)   |  30  | ★★★★★    |
 | [数学ガールの秘密ノート 場合の数](https://amzn.to/3gDsPzC)     |  29  | ★★★★★    |

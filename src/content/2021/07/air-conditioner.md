@@ -75,7 +75,9 @@ excerpt: 100V/200Vや契約容量など
 
 ### Looopでんきの場合
 
-私のケースではLooopでんきでしたので、事情が異なりました。
+私のケースでは<a href="https://px.a8.net/svt/ejp?a8mat=3HGPJ1+7WL9HE+4H9U+5YRHE" rel="nofollow">Looopでんき</a>でしたので、事情が異なりました。
+
+<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3HGPJ1+7WL9HE+4H9U+5YRHE" alt="">
 
 Looopでんきでは契約容量というものがそもそもありません。基本料金0円の完全な従量課金システムのため、サービスブレーカーは本来必要なく、配電盤の限界まで利用することができます。
 

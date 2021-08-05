@@ -131,7 +131,7 @@ terraform state mv -state-out=tmp.tfstate \
 ```
 
 この際、移動と同時に**対象のidentifierを変更することもできます**。  
-変更しない場合は、<target_identifier_before>と<target_identifier_after>を同一にしてください。
+変更しない場合は、`<target_identifier_before>`と`<target_identifier_after>`を同一にしてください。
 
 また、stateの移動はさせずに同一ファイル内で単にrenameしたい場合は、`-state-out=tmp.tfstate`を外して実行します。
 
@@ -162,7 +162,7 @@ terraform state mv -state=tmp.tfstate -state-out=terraform.tfstate \
 
 tfコードの変更がmainブランチにマージされたら、リモートのstateにも変更を反映します。
 
-まず、override.tfを削除します。
+まず、`override.tf`を削除します。
 
 ```sh
 rm override.tf

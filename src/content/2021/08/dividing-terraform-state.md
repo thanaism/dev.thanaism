@@ -95,7 +95,7 @@ terraform init -migrate-state
 
 その後、プロンプトで実行してよいか聞かれるため、`yes`を入力します。具体的には下記のようなプロンプトです。
 
-```sh
+```
 Initializing the backend...
 Backend configuration changed!
 

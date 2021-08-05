@@ -1,6 +1,6 @@
 ---
-layout: Terraformのstate移動とrename
-title: input_title
+layout: post
+title: Terraformのstate移動とrename
 image: ../../img/vivish-photography-4ab-uGbwnGE-unsplash.jpg
 author: [Thanai]
 date: 2021-08-05T19:00:00.000+09:00

@@ -188,7 +188,7 @@ print @mapped;
 無駄な要素を省くと以下。
 
 ```perl
-$,=$/;print map{!/^\d{3}$/?"unmatch pattern: $_":/(.)\1+/?"zorome: $_":$_}split/,/,<>
+$,=$/;print map{!/^\d{3}$/?"unmatch pattern: $_":/(.)\1\1/?"zorome: $_":$_}split/,/,<>
 ```
 
 Rubyよりは短くなった。

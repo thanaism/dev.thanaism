@@ -188,11 +188,17 @@ print @mapped;
 無駄な要素を省くと以下。
 
 ```perl
-$,=$/;print map{!/^\d{3}$/?"unmatch pattern: $_":/^(\d)\1\1$/?"zorome: $_":$_}split/,/,<>
+$,=$/;print map{!/^\d{3}$/?"unmatch pattern: $_":/(.)\1+/?"zorome: $_":$_}split/,/,<>
 ```
 
 Rubyよりは短くなった。
 
 ```rb
 puts gets.split(?,).map{ |s| /^\d{3}$/ !~ s ? "unmatch pattern: #{s}" : /^(\d)\1\1$/ =~ s ? "zorome: #{s}" : s }
+```
+
+Rubyをもう少し頑張ってみたけどPerlには敵わず。
+
+```rb
+puts gets.split(?,).map{(/^\d{3}$/!~_1 ? "unmatch pattern: ":_1[0]*3==_1 ? "zorome: ":"")<<_1}
 ```

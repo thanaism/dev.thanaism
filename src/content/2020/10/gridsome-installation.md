@@ -10,15 +10,15 @@ tags:
 excerpt: とりあえず記事をMarkdownで投稿できるようにするまで整えました。
 ---
 
-## Gridsome とはなにか
+## Gridsomeとはなにか
 
-ざっくりいうと**Vue.js 版の Gatsby**です。
+ざっくりいうと**Vue.js版のGatsby**です。
 
-Vue.js のフレームワーク on フレームワークで、JAMStack(JavaScript + APIs + Markup)です。
+Vue.jsのフレームワークonフレームワークで、JAMStack(JavaScript+APIs+Markup)です。
 
-ようするに、React ベースのこのブログの Vue.js ベース版を試しに作ってみようという試みです。
+ようするに、ReactベースのこのブログのVue.jsベース版を試しに作ってみようという試みです。
 
-## Gridsome のインストール
+## Gridsomeのインストール
 
 とりあえずローカルホストで立ち上がるところまで確認してみましょう。
 
@@ -33,15 +33,15 @@ $ npx gridsome develop
 
 ![img](../../img/2020/10/gridsome-welcome-page.jpg)
 
-## Markdown 形式への対応
+## Markdown形式への対応
 
-素の js の状態では Markdown は扱えないため、Gatsby でいう Remark プラグイン的なものを導入する必要があります。
+素のjsの状態ではMarkdownは扱えないため、GatsbyでいうRemarkプラグイン的なものを導入する必要があります。
 
 - `@gridsome/source-filesystem`
 - `@gridsome/vue-remark`
 
-上記のどちらかを使えばいいっぽいです。両方とも Gridsome のプラグインとして提供されています。  
-主な違いとしては`vue-remark`のほうは Markdown に Vue.js のコンポーネントを組み込めるようです。
+上記のどちらかを使えばいいっぽいです。両方ともGridsomeのプラグインとして提供されています。  
+主な違いとしては`vue-remark`のほうはMarkdownにVue.jsのコンポーネントを組み込めるようです。
 
 が、記事の可搬性を考えたときにプラットフォームへの依存性はあまり強めたくないので、今回は`source-filesystem`を使うことにしました。
 
@@ -49,7 +49,7 @@ $ npx gridsome develop
 $ npm i @gridsome/source-filesystem
 ```
 
-Gatsby と同様にプラグインを入れたら Gridsome に使っていることを教えるために設定を書き換える必要があります。  
+Gatsbyと同様にプラグインを入れたらGridsomeに使っていることを教えるために設定を書き換える必要があります。  
 以下のように`gridsome.config.js`を書き換えればよいです。
 
 ```js
@@ -115,14 +115,14 @@ declare module '*.vue' {
 }
 ```
 
-ここまでくれば Gridsome で TypeScript が使用できるはずです。
+ここまでくればGridsomeでTypeScriptが使用できるはずです。
 満を持してコンポーネントの`<script>`タグを`<script lang="ts">`に置き換えてしまいましょう。
 
 `$ npx gridsome develop`して、ちゃんと立ち上がることを確認しておきます。
 
-## Vue.js の基本
+## Vue.jsの基本
 
-そもそも Gridsome の前に Vue.js の使い方がよく分かっていないので、サクッとさらっていきます。
+そもそもGridsomeの前にVue.jsの使い方がよく分かっていないので、サクッとさらっていきます。
 
 とりあえず、`gridsome create`で自動で作成された各ディレクトリに`README.md`があるので読んでみます。
 
@@ -174,7 +174,7 @@ declare module '*.vue' {
 
 > Pages are usually used for normal pages or for listing items from a GraphQL collection.
 
-単一ページや、GraphQL で取得されるデータ（たとえばブログの各記事）のリスト表示用のページに使われるっぽい。
+単一ページや、GraphQLで取得されるデータ（たとえばブログの各記事）のリスト表示用のページに使われるっぽい。
 
 ### src/templates
 
@@ -182,14 +182,14 @@ declare module '*.vue' {
 > To create a template for a collection called `WordPressPost`
 > create a file named `WordPressPost.vue` in this folder.
 
-GraphQL のコレクション名と同じ名前の`.vue`ファイルを作れと書いてありますね。  
+GraphQLのコレクション名と同じ名前の`.vue`ファイルを作れと書いてありますね。  
 今回は`Post.vue`とかを作ればいいっぽいです。
 
 ### static
 
 > Add static files here. Files in this directory will be copied directly to `dist` folder during build. For example, /static/robots.txt will be located at [https://yoursite.com/robots.txt](https://yoursite.com/robots.txt).
 
-ファイルそのものに URL を割り当てたい場合このフォルダにぶちこめばいいっぽいです。  
+ファイルそのものにURLを割り当てたい場合このフォルダにぶちこめばいいっぽいです。  
 今回はあまり関係なさそうですね。
 
 ## vue コンポーネントの構成
@@ -206,11 +206,11 @@ GraphQL のコレクション名と同じ名前の`.vue`ファイルを作れと
 - About ページ
   `src/pages/About.vue` => 枠 + 内容はベタ書き
 - ヘッダーとか
-  `src/layouts/Default.vue` => 各ページの Wrapper として使える？
+  `src/layouts/Default.vue` => 各ページのWrapperとして使える？
 
 ### Default.vue でレイアウトを定義する
 
-まずは、Wrapper になっているっぽいレイアウトの中身から見ていきましょう。
+まずは、Wrapperになっているっぽいレイアウトの中身から見ていきましょう。
 
 ```ts
 <template>
@@ -241,12 +241,12 @@ query {
 </style>
 ```
 
-見た感じ`template`の部分が React で`return`している JSX(TSX)に相当する部分ですね。
+見た感じ`template`の部分がReactで`return`しているJSX(TSX)に相当する部分ですね。
 
-`<g-link>`という見慣れないタグがありますが、どうやら Gridsome 特有のタグのようです。  
-React の`<Router>`とか`<Link>`みたいな感じですかね。サイト内リンクを貼るときはこれを使うんでしょう。
+`<g-link>`という見慣れないタグがありますが、どうやらGridsome特有のタグのようです。  
+Reactの`<Router>`とか`<Link>`みたいな感じですかね。サイト内リンクを貼るときはこれを使うんでしょう。
 
-あと、オリジナルの Vue だと`<router-link>`というタグを使うらしいです。  
+あと、オリジナルのVueだと`<router-link>`というタグを使うらしいです。  
 このあたりは書き方の違いだけですね。
 
 あとは`<slot/>`とかいうのがいます。これがおそらくラップする対象のコンポーネントが入る場所だろうと思います。
@@ -264,10 +264,10 @@ Vue.component('Layout', DefaultLayout)
 
 ## `main.js`を`main.ts`にする
 
-せっかく触れたのでここを TypeScript にしてしまいましょう。  
+せっかく触れたのでここをTypeScriptにしてしまいましょう。  
 単純にリネームだけすると型が指定されていないとクソほど怒られるので、型定義をしてあげます。
 
-そりゃ TypeScript なんだから型は定義しないといけません。
+そりゃTypeScriptなんだから型は定義しないといけません。
 
 ```ts
 import DefaultLayout from '~/layouts/Default.vue';
@@ -297,9 +297,9 @@ export default function (Vue: VueConstructor, { router, head, isClient }: VueCon
 
 ということで`src/pages/Index.vue`を順番に構成していきましょう。
 
-### GraphQL クエリについて
+### GraphQLクエリについて
 
-まずは、`<template>`タグの中身を書いていく前に、GraphQL のクエリを設定していきましょう。
+まずは、`<template>`タグの中身を書いていく前に、GraphQLのクエリを設定していきましょう。
 
 ```tsx
 <page-query>
@@ -318,11 +318,11 @@ query {
 </page-query>
 ```
 
-さっき入れた`@gridsome/source-filesystem`が markdown を勝手に GraphQL で引っ張れるようにしてくれているのでそれを使っています。  
+さっき入れた`@gridsome/source-filesystem`がmarkdownを勝手にGraphQLで引っ張れるようにしてくれているのでそれを使っています。  
 いろいろ引っ張ってこれるものはありますが、とりあえずタイトル`title`と投稿日時`date`、あとはリンクを貼るのに必要なファイルパス`path`だけ取得しました。
 
 たとえば他に取得できるものとしては`timeToRead`や`id`などいろいろあります。  
-今回は Gridsome メインなので GraphQL の説明は省きますが、いろいろ試したければ GraphQL の playgroud を使うのがよいでしょう。
+今回はGridsomeメインなのでGraphQLの説明は省きますが、いろいろ試したければGraphQLのplaygroudを使うのがよいでしょう。
 
 `npx gridsome develop`したら案内される
 
@@ -330,7 +330,7 @@ query {
 Explore GraphQL data at: http://localhost:8080/___explore
 ```
 
-にいけば playground につながるので、`DOCS`で見ればよいでしょう。
+にいけばplaygroundにつながるので、`DOCS`で見ればよいでしょう。
 
 ![img](../../img/2020/10/gridsome-graphql-playground.jpg)
 
@@ -346,11 +346,11 @@ Explore GraphQL data at: http://localhost:8080/___explore
 </template>
 ```
 
-とりあえず、さきほど見た`<Layout>`タグでラップしたあと、`<PostCard>`タグを使って GraphQL で取得した全投稿を`v-for`文でループします。
+とりあえず、さきほど見た`<Layout>`タグでラップしたあと、`<PostCard>`タグを使ってGraphQLで取得した全投稿を`v-for`文でループします。
 
-どうやら Vue.js では HTML タグに attribute を付与したいときは、`:key=`のように先頭に':'を付けるようです。
+どうやらVue.jsではHTMLタグにattributeを付与したいときは、`:key=`のように先頭に':'を付けるようです。
 
-つまり、ここでやっているのは、`edge in $page.allPost.edges`は`page-query`で取得した`allPost`の`edges`コレクションを Foreach で回して、各`edge`に対して`edge.node.id`だとか`edge.node`を取得して attribute として設定している、ということになります。
+つまり、ここでやっているのは、`edge in $page.allPost.edges`は`page-query`で取得した`allPost`の`edges`コレクションをForeachで回して、各`edge`に対して`edge.node.id`だとか`edge.node`を取得してattributeとして設定している、ということになります。
 
 なるほど、という感じですね。
 
@@ -360,7 +360,7 @@ Explore GraphQL data at: http://localhost:8080/___explore
 
 とりあえず、まだ作ってない`PostCard`コンポーネントを読み込む処理だけ作っておきましょう。
 
-TypeScript で書くためには、`export default Vue.extend()`しておけばよいようです。  
+TypeScriptで書くためには、`export default Vue.extend()`しておけばよいようです。  
 あと、モジュールをインポートするときには`.vue`拡張子をつけてあげてください。
 
 ```ts
@@ -400,7 +400,7 @@ export default Vue.extend({
 
 `<script>`の中では、親コンポーネントである`Index.vue`から受け取る`post`を`props`で定義します。
 
-あと、Vue.js も React と同じように`<template>`の中身は単一の HTMLElement として渡す必要があるようなので`div`でラップしています。  
+あと、Vue.jsもReactと同じように`<template>`の中身は単一のHTMLElementとして渡す必要があるようなので`div`でラップしています。  
 単なるカードなので`props`での値の受け渡し以外は特筆すべきことはあまりありません。
 
 また、変数を用いたリンク先を指定するときは、`g-link`の中身に`to=`ではなく`:to=`を使用します。
@@ -410,7 +410,7 @@ export default Vue.extend({
 それでは最後に投稿の内容を表示する`src/templates/Post.vue`テンプレートを作っていきましょう。  
 さきほどの`PostCard`コンポーネントにあった`<g-link :to="post.path">`の行き先ですね。
 
-テンプレートは GraphQL のコレクションと同じ名称を使用します。  
+テンプレートはGraphQLのコレクションと同じ名称を使用します。  
 中身としては`Index.vue`で使ったのとほぼ同じ内容で構成することができます。
 
 ```tsx
@@ -449,14 +449,14 @@ date: 2020-11-02
 Lorem ipsum ...
 ```
 
-記事のプロパティは Gatsby 同様に yaml 形式で記述すればよいので GraphQL を統一してあげれば Gatsby と Gridsome 間で記事を自由に移動できますね。
+記事のプロパティはGatsby同様にyaml形式で記述すればよいのでGraphQLを統一してあげればGatsbyとGridsome間で記事を自由に移動できますね。
 
 ## トップページの状態
 
-とりあえず、本当に最低限の構成で Gridsome でブログを構築しました。  
+とりあえず、本当に最低限の構成でGridsomeでブログを構築しました。  
 実際に運営するのであればシンタックスハイライトだとかを含めたスタイルをしっかり当てていく必要がありますが、今回は Gridsome の構成を知るのが目的なのでスタイルは意図的に削除しています。
 
-なにがどこにリンクしているかはもう分かっているので、あとは足したい項目を付け加えていけば OK です。  
+なにがどこにリンクしているかはもう分かっているので、あとは足したい項目を付け加えていけばOKです。  
 あと、`Default.vue`からヘッダーも削除しています。
 
 ![imag](../../img/2020/10/gridsome-index.jpg)
@@ -470,7 +470,7 @@ Lorem ipsum ...
 
 ## おわりに
 
-とりあえずこれで Gridsome の導入編は終了です。  
-ここまでやっておいてなんですが、Vue.js の勉強という意味では Nuxt.js とかでちゃんとアプリケーションを作らないといけないかな、と感じました。
+とりあえずこれでGridsomeの導入編は終了です。  
+ここまでやっておいてなんですが、Vue.jsの勉強という意味ではNuxt.jsとかでちゃんとアプリケーションを作らないといけないかな、と感じました。
 
-スタイルを整えたり Gatsby の再生産をするのも面倒なので、Gridsome はデプロイはせずに、しばらくは Gatsby でやろうと思います。
+スタイルを整えたりGatsbyの再生産をするのも面倒なので、Gridsomeはデプロイはせずに、しばらくはGatsbyでやろうと思います。

@@ -13,7 +13,7 @@ excerpt: Advent Calendar 2021 競技プログラミングを始めたばかり�
 
 ## はじめに
 
-Advent Calendar 2021「競技プログラミングを始めたばかりの人に伝えたいこと」2日目の記事です。
+Advent Calendar 2021「[競技プログラミングを始めたばかりの人に伝えたいこと](qiita.com/advent-calendar/2021/pre-competitive)」2日目の記事です。
 
 投稿を決めたのは6日目ですが、空いてたので入れちゃいました。
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: みんながあまり言わない競プロの利点
-image: ../../img/erik-mclean-sepnkxMZSzo-unsplash.jpg
+image: ../../img/nathan-trampe-GeDrP-52aJU-unsplash.jpg
 author: [Thanai]
 date: 2021-12-02T07:00:00.000+09:00
 draft: false

@@ -50,6 +50,22 @@ excerpt: 大きな法則を見つけた
 
 </div></details>
 
+<details><summary>ネタバレ④</summary><div></br>
+
+2階の実験室にある棚をよく見ると、不自然に何も置かれていない段がある。
+
+触ろうとすると、「no」「touch」と言われるが……。
+
+</div></details>
+
+<details><summary>ネタバレ⑤</summary><div></br>
+
+訪問イベントで、助けに行かず待っていると2階で〈何か〉をしたあの人が降りてくる。
+
+「some」で回答する。
+
+</div></details>
+
 ## おわりに
 
 解読が進みつつあって、かなり楽しい。

@@ -90,9 +90,11 @@ Azure Blob Storageにはオブジェクト単位のリダイレクトの機能�
 
 で、HTTPS化にあたっては当然ながら証明書を発行しないといけないのだが、AWSだとAmazonが認証局なのでAzureと違ってネイキッドドメインでも無料で証明書を発行してくれる（Azure CDNの場合は、サブドメインのみ）。これに関しては本当にすばらしいと感じた。
 
-Azureでネイキッドドメインの証明書をどうにかしようとすると、まず証明書自体はLet's encryptで無料で発行してくることができる。しかし、その証明書をAzure Key Vaultに保存するのに3米ドルくらいかかる。Azure CDNは、Azure Application Gatewayなどと違って、証明書の直接アタッチができないようなので、Key Vaultが必須となるのだ。
+Azureでネイキッドドメインの証明書をどうにかしようとすると、まず証明書自体はLet's encryptで無料で発行してくることができる。しかし、その証明書をAzure Key Vaultに保存するのに~~3米ドルくらいかかる~~（訂正：どうもAzureと統合された証明書発行期間で発行された証明書の自動更新を「更新」と呼んでるっぽくて単なるインポートは全然安いかもしれないです）。Azure CDNは、Azure Application Gatewayなどと違って、証明書の直接アタッチができないようなので、Key Vaultが必須となるのだ。
 
-Let's encryptの証明書の有効期限も考えると年間で無視できない額になってくるので頭痛のタネだったりする。
+~~Let's encryptの証明書の有効期限も考えると年間で無視できない額になってくるので頭痛のタネだったりする。~~
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Key Vault、証明書の更新に$3かかるってあるから普通のインポートも更新扱いかと思ってたけど、もしかして統合された証明書の自動更新がこの値段ってだけで、新しい証明書のインポートによる版の更新は「その他すべての操作」になるのかな <a href="https://t.co/pNwvoF8FOH">pic.twitter.com/pNwvoF8FOH</a></p>&mdash; タナイ (@okinawa__noodle) <a href="https://twitter.com/okinawa__noodle/status/1518405306342342656?ref_src=twsrc%5Etfw">April 25, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### CDNをネイキッドドメインに紐付ける
 

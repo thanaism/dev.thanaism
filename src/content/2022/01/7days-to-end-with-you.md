@@ -1,12 +1,12 @@
 ---
 layout: post
 title: 7 Days to End with You 攻略途中メモ
-image: ../../img/2022/01/7days-to-end-with-you_title.png
+image: ../../img/daniel-josef-AMssSjUaTY4-unsplash.jpg
 author: [Thanai]
 date: 2022-01-27T09:00:00.000+09:00
 draft: false
 tags:
-  - 7 Days to End with You
+    - 7 Days to End with You
 excerpt: 大きな法則を見つけた
 ---
 
@@ -34,9 +34,9 @@ excerpt: 大きな法則を見つけた
 
 <details><summary>ネタバレ②</summary><div></br>
 
-- ネタバレ①で得た数字の情報と本棚の本を組み合わせると色の表現が推測できる
-- 2階の部屋で大小に関する表現が推測できる
-- 数字と色がわかると、植物の世話や料理が正しく作れるようになる
+-   ネタバレ①で得た数字の情報と本棚の本を組み合わせると色の表現が推測できる
+-   2階の部屋で大小に関する表現が推測できる
+-   数字と色がわかると、植物の世話や料理が正しく作れるようになる
 
 </div></details>
 

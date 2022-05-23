@@ -35,7 +35,7 @@ git commit --amend -m 'This is my special commit message'
 
 ---
 
-```
+```bash
 git commit --amend -m 'This is my special commit message'
 ```
 
@@ -175,6 +175,34 @@ git merge --no-commit --no-ff
 ```
 
 👆こう書く。
+
+### 補足
+
+Twitterで[コメント](https://twitter.com/ussvgr/status/1528719031183998981?s=20&t=0rLxoOouTC2VvzHKoExJZw)があって気付いた。
+
+`$`や`#`や`%`を先頭に付記することで、そのコマンドを実行する主体が管理者ユーザーなのか一般ユーザーなのかを示す場合がある。
+
+しかし、`#`には注意が必要だ。
+
+コマンドを記述するコードブロックに`sh`や`bash`を指定している場合、コメント行として解釈されてしまう。
+
+これを回避するには、`bash`ではなく`shell-session`を指定する必要があるが、認知度が低いと思われる。
+
+````
+```shell-session
+# tail -f /var/log/messages
+```
+````
+
+```shell-session
+# tail -f /var/log/messages
+```
+
+また、ユーザーの権限を意識せずに書かれてしまっている文書も散見されるため、**意図して`$`なのかが判別しにくい**。
+
+そのため、その明示には`sudo`を用いることをおすすめしたい。
+
+Ubuntuの場合、デフォルト状態ではrootのパスワードは設定されていないし、`su`を使うケース自体が少ないと考えられるのもある。
 
 ## 複数のコマンドを1つのコードブロックで書かない
 

@@ -11,10 +11,9 @@ tags:
 excerpt: 普通のERC20とERC721にちょっと細工をする
 ---
 
-# ステーキングでFTがたまるNFTをつくりたい
+# FTが貯まるステーキングNFTを作りたい
 
-そんな要望をAbyssCryptoの代表[なおきち](https://twitter.com/naokichipocket)からもらった。
-
+そんな要望をAbyssCryptoの代表[なおきち](https://twitter.com/naokichipocket)からもらった。  
 ちなみにAbyssCryptoというのは私がエンジニアとして手伝っている水産業を振興するNFTプロジェクトだ。
 
 ステーキング、つまりNFTを保有し続けるとそれに応じてFT（通貨）が貯まる設計にしたい。
@@ -28,7 +27,6 @@ excerpt: 普通のERC20とERC721にちょっと細工をする
 テストネットならこれでもいいが、メインネットへのデプロイを考えているなら現実的ではない。
 
 2つ目のやり方はこれから紹介するやり方だ。
-
 コードは[GitHubにUPしている](https://github.com/thanaism/solidity-ideas)ので、見たい方は参考にしてほしい。
 
 # 設計の概要
@@ -39,7 +37,9 @@ excerpt: 普通のERC20とERC721にちょっと細工をする
 
 ## balanceOfの前提条件
 
-大前提となるのは、`ステーキングによる蓄積額`＝`最後にNFTがTransferされてからの経過日数`✕`1日あたりの蓄積額`である。
+大前提となるのは、  
+`ステーキングによる蓄積額`＝`最後にNFTがTransferされてからの経過日数`✕`1日あたりの蓄積額`  
+である。
 
 したがって、FTコントラクトが`各トークンの最終Transfer日時`および`各ユーザーが所有するNFTの全tokenId`を知れる必要がある。
 

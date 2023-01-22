@@ -4,7 +4,7 @@ title: 育休50日目
 image: ../../img/christin-hume-Hcfwew744z4-unsplash.jpg
 author: [Thanai]
 date: 2022-07-20T04:30:00.000+09:00
-draft: true
+draft: false
 tags:
     - life
 excerpt: 記録しておかないと忘れてしまいそうなので

@@ -66,7 +66,7 @@ Java 8以降はLTSのバージョンが移り変わるため、一度作って�
 
 JDKはaptで入れることもできるが、私はHomebrewを使用した。
 
-```zsh
+```bash
 brew install openjdk@11
 ```
 

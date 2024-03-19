@@ -1,6 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Global, css } from '@emotion/core';
+import { Global, css } from '@emotion/react';
 import { lighten } from 'polished';
 
 // eslint-disable-next-line @typescript-eslint/prefer-ts-expect-error
@@ -12,13 +11,20 @@ interface IndexProps {
   className?: string;
 }
 
+export const Head = () => {
+  return (<>
+      <link
+        rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 style=%22dominant-baseline:central;text-anchor:middle;font-size:90px;%22>👁‍🗨</text></svg>"
+        type="image/x-icon"
+      />
+    </>
+  );
+};
+
 const IndexLayout: React.FC<IndexProps> = props => {
   return (
     <div className={props.className}>
-      <Helmet>
-        {/*<link rel="icon" href={favicon} type="image/x-icon" />*/}
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 style=%22dominant-baseline:central;text-anchor:middle;font-size:90px;%22>👁‍🗨</text></svg>" type="image/x-icon" />
-      </Helmet>
       <Global
         styles={css`
           html,
@@ -105,17 +111,21 @@ const IndexLayout: React.FC<IndexProps> = props => {
             font-size: 100%;
             vertical-align: baseline;
           }
+
           body {
             line-height: 1;
           }
+
           ol,
           ul {
             list-style: none;
           }
+
           blockquote,
           q {
             quotes: none;
           }
+
           blockquote:before,
           blockquote:after,
           q:before,
@@ -123,49 +133,60 @@ const IndexLayout: React.FC<IndexProps> = props => {
             content: '';
             content: none;
           }
+
           table {
             border-spacing: 0;
             border-collapse: collapse;
           }
+
           img {
             max-width: 100%;
           }
+
           html {
             box-sizing: border-box;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-              Cantarell;
+            Cantarell;
 
             -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;
           }
+
           *,
           *:before,
           *:after {
             box-sizing: inherit;
           }
+
           a {
             background-color: transparent;
           }
+
           a:active,
           a:hover {
             outline: 0;
           }
+
           b,
           strong {
             font-weight: bold;
           }
+
           i,
           em,
           dfn {
             font-style: italic;
           }
+
           h1 {
             margin: 0.67em 0;
             font-size: 2em;
           }
+
           small {
             font-size: 80%;
           }
+
           sub,
           sup {
             position: relative;
@@ -173,21 +194,27 @@ const IndexLayout: React.FC<IndexProps> = props => {
             line-height: 0;
             vertical-align: baseline;
           }
+
           sup {
             top: -0.5em;
           }
+
           sub {
             bottom: -0.25em;
           }
+
           img {
             border: 0;
           }
+
           svg:not(:root) {
             overflow: hidden;
           }
+
           mark {
             background-color: #fdffb6;
           }
+
           code,
           kbd,
           pre,
@@ -195,6 +222,7 @@ const IndexLayout: React.FC<IndexProps> = props => {
             font-family: monospace, monospace;
             font-size: 1em;
           }
+
           button,
           input,
           optgroup,
@@ -204,14 +232,17 @@ const IndexLayout: React.FC<IndexProps> = props => {
             color: inherit;
             font: inherit;
           }
+
           button {
             overflow: visible;
             border: none;
           }
+
           button,
           select {
             text-transform: none;
           }
+
           button,
           html input[type='button'],
           input[type='reset'],
@@ -220,50 +251,62 @@ const IndexLayout: React.FC<IndexProps> = props => {
 
             -webkit-appearance: button;
           }
+
           button[disabled],
           html input[disabled] {
             cursor: default;
           }
+
           button::-moz-focus-inner,
           input::-moz-focus-inner {
             padding: 0;
             border: 0;
           }
+
           input {
             line-height: normal;
           }
+
           input:focus {
             outline: none;
           }
+
           input[type='checkbox'],
           input[type='radio'] {
             box-sizing: border-box;
             padding: 0;
           }
+
           input[type='number']::-webkit-inner-spin-button,
           input[type='number']::-webkit-outer-spin-button {
             height: auto;
           }
+
           input[type='search'] {
             box-sizing: content-box;
 
             -webkit-appearance: textfield;
           }
+
           input[type='search']::-webkit-search-cancel-button,
           input[type='search']::-webkit-search-decoration {
             -webkit-appearance: none;
           }
+
           legend {
             padding: 0;
             border: 0;
           }
+
           textarea {
             overflow: auto;
           }
+
           table {
             border-spacing: 0;
             border-collapse: collapse;
           }
+
           td,
           th {
             padding: 0;
@@ -276,11 +319,12 @@ const IndexLayout: React.FC<IndexProps> = props => {
 
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
           }
+
           body {
             overflow-x: hidden;
             color: ${lighten('-0.3', colors.midgrey)};
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-              Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: 1.6rem;
             line-height: 1.6em;
             font-weight: 400;
@@ -405,6 +449,7 @@ const IndexLayout: React.FC<IndexProps> = props => {
           blockquote cite {
             font-weight: bold;
           }
+
           blockquote cite a {
             font-weight: normal;
           }
@@ -435,6 +480,7 @@ const IndexLayout: React.FC<IndexProps> = props => {
             font-size: 5.5rem;
             font-weight: 600;
           }
+
           @media (max-width: 500px) {
             h1 {
               font-size: 2.2rem;
@@ -445,6 +491,7 @@ const IndexLayout: React.FC<IndexProps> = props => {
             margin: 1.5em 0 0.5em 0;
             font-size: 2.2rem;
           }
+
           @media (max-width: 500px) {
             h2 {
               font-size: 1.8rem;
@@ -456,6 +503,7 @@ const IndexLayout: React.FC<IndexProps> = props => {
             font-size: 1.8rem;
             font-weight: 500;
           }
+
           @media (max-width: 500px) {
             h3 {
               font-size: 1.7rem;
@@ -481,6 +529,7 @@ const IndexLayout: React.FC<IndexProps> = props => {
           }
 
           /* globals from screen.css */
+
           body {
             background: #fff;
           }
@@ -490,6 +539,7 @@ const IndexLayout: React.FC<IndexProps> = props => {
               color: rgba(255, 255, 255, 0.75);
               background: ${colors.darkmode};
             }
+
             img {
               opacity: 0.9;
             }

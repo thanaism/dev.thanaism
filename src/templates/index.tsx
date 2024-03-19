@@ -1,9 +1,8 @@
 import { graphql } from 'gatsby';
 import { FixedObject } from 'gatsby-image';
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 import { Footer } from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
@@ -50,45 +49,51 @@ export interface IndexProps {
   };
 }
 
-const IndexPage: React.FC<IndexProps> = props => {
+export const Head = (props:IndexProps) => {
   const { width, height } = props.data.header.childImageSharp.fixed;
 
   return (
+    <>
+      <html lang={config.lang} />
+      <title>{config.title}</title>
+      <meta name="description" content={config.description} />
+      <meta property="og:site_name" content={config.title} />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={config.title} />
+      <meta property="og:description" content={config.description} />
+      <meta property="og:url" content={config.siteUrl} />
+      <meta
+        property="og:image"
+        content={`${config.siteUrl}${props.data.header.childImageSharp.fixed.src}`}
+      />
+      {config.facebook && <meta property="article:publisher" content={config.facebook} />}
+      {config.googleSiteVerification && (
+        <meta name="google-site-verification" content={config.googleSiteVerification} />
+      )}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={config.title} />
+      <meta name="twitter:description" content={config.description} />
+      <meta name="twitter:url" content={config.siteUrl} />
+      <meta
+        name="twitter:image"
+        content={`${config.siteUrl}${props.data.header.childImageSharp.fixed.src}`}
+      />
+      {config.twitter && (
+        <meta
+          name="twitter:site"
+          content={`@${config.twitter.split('https://twitter.com/')[1]}`}
+        />
+      )}
+      <meta property="og:image:width" content={width.toString()} />
+      <meta property="og:image:height" content={height.toString()} />
+    </>
+  );
+};
+
+const IndexPage: React.FC<IndexProps> = props => {
+
+  return (
     <IndexLayout css={HomePosts}>
-      <Helmet>
-        <html lang={config.lang} />
-        <title>{config.title}</title>
-        <meta name="description" content={config.description} />
-        <meta property="og:site_name" content={config.title} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={config.title} />
-        <meta property="og:description" content={config.description} />
-        <meta property="og:url" content={config.siteUrl} />
-        <meta
-          property="og:image"
-          content={`${config.siteUrl}${props.data.header.childImageSharp.fixed.src}`}
-        />
-        {config.facebook && <meta property="article:publisher" content={config.facebook} />}
-        {config.googleSiteVerification && (
-          <meta name="google-site-verification" content={config.googleSiteVerification} />
-        )}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={config.title} />
-        <meta name="twitter:description" content={config.description} />
-        <meta name="twitter:url" content={config.siteUrl} />
-        <meta
-          name="twitter:image"
-          content={`${config.siteUrl}${props.data.header.childImageSharp.fixed.src}`}
-        />
-        {config.twitter && (
-          <meta
-            name="twitter:site"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
-          />
-        )}
-        <meta property="og:image:width" content={width.toString()} />
-        <meta property="og:image:height" content={height.toString()} />
-      </Helmet>
       <Wrapper>
         <div
           css={[outer, SiteHeader, SiteHeaderStyles]}
@@ -164,7 +169,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { draft: { ne: true } } }
       limit: $limit
       skip: $skip

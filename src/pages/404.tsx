@@ -1,7 +1,7 @@
 import { graphql, Link } from 'gatsby';
 import React from 'react';
 
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
 import SiteNav from '../components/header/SiteNav';
@@ -60,7 +60,7 @@ const NotFoundPage: React.FC<NotFoundTemplateProps> = props => {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(limit: 3, sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(limit: 3, sort: { frontmatter: { date: DESC } }) {
       edges {
         node {
           timeToRead

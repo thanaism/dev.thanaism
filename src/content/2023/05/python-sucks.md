@@ -2,7 +2,7 @@
 layout: post
 title: Python滅ぼす協会に入会したい
 image: ../../img/nasa-Q1p7bh3SHj8-unsplash.jpg
-author: [Thanai]
+author: ["@Thanai"]
 date: 2023-05-22T00:00:00.000+09:00
 draft: false
 tags:

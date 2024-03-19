@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import { setLightness } from 'polished';
 import React from 'react';
 import styled from '@emotion/styled';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 import { colors } from '../styles/colors';
 import { outer, inner } from '../styles/shared';
@@ -16,13 +16,16 @@ export const Footer: React.FC = () => {
           <Link to="/">{config.title}</Link> &copy; {new Date().getFullYear()}{' '}
           {config.footer && (
             <React.Fragment>
-            | {config.title} <a
-            href="https://github.com/scttcper/gatsby-casper"
-            target="_blank"
-            rel="noopener noreferrer"
-            >{config.footer}</a>
+              | {config.title}{' '}
+              <a
+                href="https://github.com/scttcper/gatsby-casper"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {config.footer}
+              </a>
             </React.Fragment>
-            )}
+          )}
         </section>
         <SiteFooterNav>
           <Link to="/">Latest Posts</Link>

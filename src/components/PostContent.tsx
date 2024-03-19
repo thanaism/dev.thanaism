@@ -29,10 +29,6 @@ const PostContent: React.FC<PostContentProps> = ({ htmlAst, title, url }) => {
   return (
     <PostFullContent className="post-full-content">
       {/* TODO: this will apply the class when rehype-react is published https://github.com/rhysd/rehype-react/pull/11 */}
-      <SharingButtons
-        title={title}
-        url={url}
-      />
       <Ast className="post-content" ast={htmlAst} />
     </PostFullContent>
   );
@@ -665,7 +661,7 @@ export const PostFullContent = styled.section`
 
   .token.operator{
     color: #ff8095;
-  } 
+  }
   // .token.boolean {
   //   color: rgb(255, 88, 116);
   // }

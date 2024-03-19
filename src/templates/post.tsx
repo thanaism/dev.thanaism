@@ -4,10 +4,9 @@ import Img, { FluidObject } from 'gatsby-image';
 import * as _ from 'lodash';
 import { lighten, setLightness } from 'polished';
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
 import 'katex/dist/katex.min.css';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
 import { Footer } from '../components/Footer';
@@ -102,7 +101,7 @@ export interface PageContext {
   };
 }
 
-const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
+export const Head = ({ data,  location }: PageTemplateProps) => {
   const post = data.markdownRemark;
   let width = '';
   let height = '';
@@ -110,6 +109,68 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
     width = post.frontmatter.image.childImageSharp.fluid.sizes.split(', ')[1].split('px')[0];
     height = String(Number(width) / post.frontmatter.image.childImageSharp.fluid.aspectRatio);
   }
+
+  return (
+
+    <>
+      <html lang={config.lang} />
+      <title>{post.frontmatter.title}</title>
+
+      <meta name="description" content={post.frontmatter.excerpt || post.excerpt} />
+      <meta property="og:site_name" content={config.title} />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content={post.frontmatter.title} />
+      <meta property="og:description" content={post.frontmatter.excerpt || post.excerpt} />
+      <meta property="og:url" content={config.siteUrl + location.pathname} />
+      {post.frontmatter.image?.childImageSharp && (
+        <meta
+          property="og:image"
+          content={`${config.siteUrl}${post.frontmatter.image.childImageSharp.fluid.src}`}
+        />
+      )}
+      <meta property="article:published_time" content={post.frontmatter.date} />
+      {/* not sure if modified time possible */}
+      {/* <meta property="article:modified_time" content="2018-08-20T15:12:00.000Z" /> */}
+      {post.frontmatter.tags && (
+        <meta property="article:tag" content={post.frontmatter.tags[0]} />
+      )}
+
+      {/* {config.facebook && <meta property="article:publisher" content={config.facebook} />}
+        {config.facebook && <meta property="article:author" content={config.facebook} />} */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={post.frontmatter.title} />
+      <meta name="twitter:description" content={post.frontmatter.excerpt || post.excerpt} />
+      <meta name="twitter:url" content={config.siteUrl + location.pathname} />
+      {post.frontmatter.image?.childImageSharp && (
+        <meta
+          name="twitter:image"
+          content={`${config.siteUrl}${post.frontmatter.image.childImageSharp.fluid.src}`}
+        />
+      )}
+      <meta name="twitter:label1" content="Written by" />
+      {/*<meta name="twitter:data1" content={post.frontmatter.author[0].id} />*/}
+      <meta name="twitter:label2" content="Filed under" />
+      {post.frontmatter.tags && <meta name="twitter:data2" content={post.frontmatter.tags[0]} />}
+      {config.twitter && (
+        <meta
+          name="twitter:site"
+          content={`@${config.twitter.split('https://twitter.com/')[1]}`}
+        />
+      )}
+      {config.twitter && (
+        <meta
+          name="twitter:creator"
+          content={`@${config.twitter.split('https://twitter.com/')[1]}`}
+        />
+      )}
+      {width && <meta property="og:image:width" content={width} />}
+      {height && <meta property="og:image:height" content={height} />}
+    </>
+  );
+};
+
+const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
+  const post = data.markdownRemark;
 
   const date = new Date(post.frontmatter.date);
   // 2018-08-20
@@ -119,60 +180,6 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
 
   return (
     <IndexLayout className="post-template">
-      <Helmet>
-        <html lang={config.lang} />
-        <title>{post.frontmatter.title}</title>
-
-        <meta name="description" content={post.frontmatter.excerpt || post.excerpt} />
-        <meta property="og:site_name" content={config.title} />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={post.frontmatter.title} />
-        <meta property="og:description" content={post.frontmatter.excerpt || post.excerpt} />
-        <meta property="og:url" content={config.siteUrl + location.pathname} />
-        {post.frontmatter.image?.childImageSharp && (
-          <meta
-            property="og:image"
-            content={`${config.siteUrl}${post.frontmatter.image.childImageSharp.fluid.src}`}
-          />
-        )}
-        <meta property="article:published_time" content={post.frontmatter.date} />
-        {/* not sure if modified time possible */}
-        {/* <meta property="article:modified_time" content="2018-08-20T15:12:00.000Z" /> */}
-        {post.frontmatter.tags && (
-          <meta property="article:tag" content={post.frontmatter.tags[0]} />
-        )}
-
-        {/* {config.facebook && <meta property="article:publisher" content={config.facebook} />}
-        {config.facebook && <meta property="article:author" content={config.facebook} />} */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={post.frontmatter.title} />
-        <meta name="twitter:description" content={post.frontmatter.excerpt || post.excerpt} />
-        <meta name="twitter:url" content={config.siteUrl + location.pathname} />
-        {post.frontmatter.image?.childImageSharp && (
-          <meta
-            name="twitter:image"
-            content={`${config.siteUrl}${post.frontmatter.image.childImageSharp.fluid.src}`}
-          />
-        )}
-        <meta name="twitter:label1" content="Written by" />
-        <meta name="twitter:data1" content={post.frontmatter.author[0].id} />
-        <meta name="twitter:label2" content="Filed under" />
-        {post.frontmatter.tags && <meta name="twitter:data2" content={post.frontmatter.tags[0]} />}
-        {config.twitter && (
-          <meta
-            name="twitter:site"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
-          />
-        )}
-        {config.twitter && (
-          <meta
-            name="twitter:creator"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
-          />
-        )}
-        {width && <meta property="og:image:width" content={width} />}
-        {height && <meta property="og:image:height" content={height} />}
-      </Helmet>
       <Wrapper css={PostTemplate}>
         <header className="site-header">
           <div css={[outer, SiteNavMain]}>
@@ -230,7 +237,11 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                   />
                 </PostFullImage>
               )}
-              <PostContent htmlAst={post.htmlAst} title={post.frontmatter.title} url={config.siteUrl + location.pathname} />
+              <PostContent
+                htmlAst={post.htmlAst}
+                title={post.frontmatter.title}
+                url={config.siteUrl + location.pathname}
+              />
 
               {/* The big email subscribe modal content */}
               {/* {config.showSubscribe && <Subscribe title={config.title} />} */}
@@ -257,9 +268,11 @@ const PostTemplate = css`
     background: #fff;
     padding-bottom: 4vw;
   }
+
   p {
     font-size: 1.6rem;
   }
+
   // h2,
   // h3,
   // h4,
@@ -335,7 +348,7 @@ const PostFullCustomExcerpt = styled.p`
   margin: 20px 0 0;
   color: var(--midgrey);
   font-family: -apple-system, Segoe UI, Helvetica Neue, Hiragino Kaku Gothic ProN, 'メイリオ',
-    meiryo, sans-serif;
+  meiryo, sans-serif;
   font-size: 2.3rem;
   line-height: 1.4em;
   font-weight: 350;
@@ -444,6 +457,7 @@ const PostFullImage = styled.figure`
     img {
       max-width: 1170px;
     }
+
     width: 100%;
   }
 
@@ -457,7 +471,7 @@ const PostFullImage = styled.figure`
 `;
 
 export const query = graphql`
-  query($slug: String, $primaryTag: String) {
+  query ($slug: String, $primaryTag: String) {
     logo: file(relativePath: { eq: "avatars/thanaism-logo.png" }) {
       childImageSharp {
         fixed {
@@ -501,7 +515,7 @@ export const query = graphql`
     relatedPosts: allMarkdownRemark(
       filter: { frontmatter: { tags: { in: [$primaryTag] }, draft: { ne: true } } }
       limit: 5
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
     ) {
       totalCount
       edges {

@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import { darken } from 'polished';
 import React from 'react';
 
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
 import { colors } from '../../styles/colors';
@@ -131,15 +131,15 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   <Twitter />
                 </a>
               )}
-              <a
-                css={[SocialLink,SocialLinkRss]}
-                href="/rss.xml"
-                title="RSS"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Rss />
-              </a>
+              {/*<a*/}
+              {/*  css={[SocialLink, SocialLinkRss]}*/}
+              {/*  href="/rss.xml"*/}
+              {/*  title="RSS"*/}
+              {/*  target="_blank"*/}
+              {/*  rel="noopener noreferrer"*/}
+              {/*>*/}
+              {/*  <Rss />*/}
+              {/*</a>*/}
             </SocialLinks>
             {/* {config.showSubscribe && (
               <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>

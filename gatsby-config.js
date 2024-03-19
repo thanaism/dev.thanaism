@@ -12,10 +12,10 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-image',
     {
       resolve: 'gatsby-plugin-sharp',
       options: {
-        quality: 100,
         stripMetadata: true,
       },
     },
@@ -31,11 +31,11 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve:"@weknow/gatsby-remark-codepen",
+            resolve: '@weknow/gatsby-remark-codepen',
             options: {
-              theme: "dark",
-              height: 400
-            }
+              theme: 'dark',
+              height: 400,
+            },
           },
           'gatsby-remark-code-titles',
           {
@@ -59,7 +59,6 @@ module.exports = {
           },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
-          'gatsby-remark-abbr',
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -70,21 +69,18 @@ module.exports = {
         ],
       },
     },
-    'gatsby-transformer-json',
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
         siteUrl: 'https://dev.thanaism.com',
       },
     },
+    'gatsby-transformer-json',
+    'gatsby-transformer-yaml',
     'gatsby-plugin-emotion',
     'gatsby-plugin-typescript',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-react-helmet',
-    'gatsby-transformer-yaml',
-    'gatsby-plugin-feed',
     'gatsby-plugin-twitter',
-    'react-sharingbuttons',
     'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-postcss',
@@ -96,18 +92,12 @@ module.exports = {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-177379248-1',
-        // Puts tracking script in the head instead of the body
-        head: true,
-        // IP anonymization for GDPR compliance
-        anonymize: true,
-        // Disable analytics for users with `Do Not Track` enabled
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ['/preview/**'],
-        // Specifies what percentage of users should be tracked
-        sampleRate: 100,
-        // Determines how often site speed tracking beacons will be sent
-        siteSpeedSampleRate: 10,
+        head: true, // Puts tracking script in the head instead of the body
+        anonymize: true, // IP anonymization for GDPR compliance
+        respectDNT: true, // Disable analytics for users with `Do Not Track` enabled
+        exclude: ['/preview/**'], // Avoids sending pageview hits from custom paths
+        sampleRate: 100, // Specifies what percentage of users should be tracked
+        siteSpeedSampleRate: 10, // Determines how often site speed tracking beacons will be sent
       },
     },
     'gatsby-redirect-from',

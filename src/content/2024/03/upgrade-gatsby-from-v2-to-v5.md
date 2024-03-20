@@ -98,6 +98,14 @@ https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
 - Feed自動生成のプラグインのoptionが変わったようだが面倒なので機能ごと削除
 - その他、`gatsby-remark-abbr`だとかの使っていないプラグインを削除
 
+## いざ、Netlifyでデプロイ
+
+ローカルで無事ビルドも通るようになったので、いざNetlifyでデプロイしたら、普通にこけた。
+
+なんでかなーと思ってビルド設定を見ると、なんとnode12で動いていた。そりゃ通らんわということでnode20を使用するように変更。
+
+これで無事、本番ビルドとデプロイが通った。
+
 ## 未解決事項
 
 ### author.yamlの紐付け

@@ -94,7 +94,7 @@ https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
 
 いくつかのpluginがv5に対応していなさそうで、それらの解決が困難だったのでいったん利用箇所ごと削除することにした。
 
-- SNSシェアボタンがReact18に対応していないので削除
+- SNSシェアボタンがReact18に対応していないので~~コンポーネントごと削除~~（作り直した）
 - Feed自動生成のプラグインのoptionが変わったようだが面倒なので機能ごと削除
 - その他、`gatsby-remark-abbr`だとかの使っていないプラグインを削除
 

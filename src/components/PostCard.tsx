@@ -59,7 +59,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
           </PostCardExcerpt>
         </Link>
         <PostCardMeta className="post-card-meta">
-          <AuthorList authors={post.frontmatter.author} tooltip="small" />
+          {/*<AuthorList authors={post.frontmatter.author} tooltip="small" />*/}
           <PostCardBylineContent className="post-card-byline-content">
             <span>
               {post.frontmatter.author.map((author, index) => {

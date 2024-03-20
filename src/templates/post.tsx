@@ -178,6 +178,10 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
   // 20 AUG 2018
   const displayDatetime = format(date, 'dd LLL yyyy');
 
+  const postUrl = `https://dev.thanaism.com${location.pathname}`
+  const hatenaBookmarkUrl = `http://b.hatena.ne.jp/add?mode=confirm&url=${postUrl}&title=${post.frontmatter.title}`;
+  const twitterShareUrl = `https://twitter.com/share?url=${postUrl}&related=okinawa__noodle&via=okinawa__noodle&text=${encodeURIComponent(post.frontmatter.title)}`;
+
   return (
     <IndexLayout className="post-template">
       <Wrapper css={PostTemplate}>
@@ -206,22 +210,40 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                 </PostFullCustomExcerpt>
                 <PostFullByline className="post-full-byline">
                   <section className="post-full-byline-content">
-                    <AuthorList authors={post.frontmatter.author} tooltip="large" />
+                    {/*<AuthorList authors={post.frontmatter.author} tooltip="large" />*/}
                     <section className="post-full-byline-meta">
-                      <h4 className="author-name">
-                        {post.frontmatter.author.map(author => (
-                          <Link key={author.id} to={`/author/${_.kebabCase(author.id)}/`}>
-                            {author.id}
-                          </Link>
-                        ))}
-                      </h4>
-                      <div className="byline-meta-content">
-                        <time className="byline-meta-date" dateTime={datetime}>
-                          {displayDatetime}
-                        </time>
-                        <span className="byline-reading-time">
+                      <div style={{ display: 'flex', justifyContent: 'space-between', width: "100%", alignItems: 'center' }}>
+                        {/*<h4 className="author-name">*/}
+                        {/*  {post.frontmatter.author.map(author => (*/}
+                        {/*    <Link key={author.id} to={`/author/${_.kebabCase(author.id)}/`}>*/}
+                        {/*      {author.id}*/}
+                        {/*    </Link>*/}
+                        {/*  ))}*/}
+                        {/*</h4>*/}
+                        <div className="byline-meta-content">
+                          <time className="byline-meta-date" dateTime={datetime}>
+                            {displayDatetime}
+                          </time>
+                          <span className="byline-reading-time">
                           <span className="bull">&bull;</span> {post.timeToRead} min read
                         </span>
+                        </div>
+                        <div style={{ display: 'flex', gap: '4px' }}>
+                          <span className="byline-reading-time">share:</span>
+                          <a href={hatenaBookmarkUrl} rel="nofollow noopener" target="_blank">
+                            <img
+                              src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png"
+                              alt="このエントリーをはてなブックマークに追加" width="20" height="20" />
+                          </a>
+                          <a href={twitterShareUrl} rel="nofollow noopener" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20">
+                              <path fill="#000" d="M0 0h32v32H0z" />
+                              <path
+                                d="M17.97 14.162L26.705 4h-2.07l-7.587 8.824L10.99 4H4l9.163 13.343L4 28h2.07l8.013-9.318 6.4 9.318h6.988L17.97 14.162zm-2.837 3.3l-.93-1.33L6.818 5.56h3.18l5.962 8.532.927 1.33 7.75 11.09h-3.18l-6.324-9.05z"
+                                fill="#fff" />
+                            </svg>
+                          </a>
+                        </div>
                       </div>
                     </section>
                   </section>
@@ -384,13 +406,14 @@ const PostFullByline = styled.div`
   }
 
   .post-full-byline-meta {
-    margin: 2px 0 0;
+    margin: 0 0 0;
     /* color: color(var(--midgrey) l(+10%)); */
     color: ${lighten('0.1', colors.midgrey)};
     font-size: 1.2rem;
     line-height: 1.2em;
     letter-spacing: 0.2px;
     text-transform: uppercase;
+    width: 100%;
   }
 
   .post-full-byline-meta h4 {

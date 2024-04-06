@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 言語ごとの競プロ基本処理シンタックスまとめ
-image: ../../img/alexander-possingham-CeWNEEsHPbA-unsplash.jpg
+image: ../../img/header/2021/04/5f7bcc1f.jpg
 author: [Thanai]
 date: 2021-04-29T10:00:00.000+09:00
 draft: false

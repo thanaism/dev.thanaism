@@ -1,7 +1,7 @@
 ---
 layout: post
 title: dcを習得するためにMacへ最新版をインストール
-image: ../../img/harley-davidson-wxSb4-Lxt3Y-unsplash.jpg
+image: ../../img/header/2021/07/ae7e76b0.jpg
 author: [Thanai]
 date: 2021-07-25T14:00:00.000+09:00
 draft: false

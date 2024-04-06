@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 7 Days to End with You 攻略途中メモ
-image: ../../img/daniel-josef-AMssSjUaTY4-unsplash.jpg
+image: ../../img/header/2022/01/1239ceab.jpg
 author: [Thanai]
 date: 2022-01-27T09:00:00.000+09:00
 draft: false

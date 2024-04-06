@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 「世界で一番やさしい会議の教科書」を読んだ
-image: ../../img/david-clode-ekthrVC_DVs-unsplash.jpg
+image: ../../img/header/2021/02/7cddbde5.jpg
 author: [Thanai]
 date: 2021-02-03T01:00:00.000Z
 draft: false

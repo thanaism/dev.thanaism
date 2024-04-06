@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Perlチャレンジ
-image: ../../img/baptiste-david-UJ4-1Kbj_no-unsplash.jpg
+image: ../../img/header/2021/10/8fc22bbe.jpg
 author: [Thanai]
 date: 2021-10-06T23:00:00.000+09:00
 draft: false

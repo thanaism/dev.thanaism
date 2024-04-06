@@ -1,7 +1,7 @@
 ---
 layout: post
 title: インプットとアウトプットはトレードオフなのか
-image: ../../img/lucas-t-nUZgRPB2VW4-unsplash.jpg
+image: ../../img/header/2021/06/8c43a181.jpg
 author: [Thanai]
 date: 2021-06-14T09:00:00.000+09:00
 draft: false

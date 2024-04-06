@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gatsby v2 から v5 へのアップグレード
-image: ../../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
+image: ../../img/header/2024/03/40b8bb8f.jpg
 author: [Thanai]
 date: 2024-03-20T02:00:00.000+09:00
 draft: false

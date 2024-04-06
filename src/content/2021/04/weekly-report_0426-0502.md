@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 週報(04/26-05/02)
-image: ../../img/james-sutton-dQ5G0h7sLno-unsplash.jpg
+image: ../../img/header/2021/05/ea8de76e.jpg
 author: [Thanai]
 date: 2021-05-02T00:00:00.000+09:00
 draft: false

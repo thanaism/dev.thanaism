@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ディスプレイサイズと解像度によるドットサイズの変化
-image: ../../img/dominik-lange-Lej_oqHljbk-unsplash.jpg
+image: ../../img/header/2021/01/482c8bb4.jpg
 author: [Thanai]
 date: 2021-01-16T01:00:00.000Z
 draft: false

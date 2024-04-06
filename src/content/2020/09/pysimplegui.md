@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PySimpleGUIでDrawTextしても何も表示されない問題の解決
-image: ../../img/vincent-van-zalinge-_d0zgyMmYT8-unsplash.jpg
+image: ../../img/header/2020/09/cb724e49.jpg
 author: [Thanai]
 date: 2020-09-25T0:00:00.000Z
 draft: false

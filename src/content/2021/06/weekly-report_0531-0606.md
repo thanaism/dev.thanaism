@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 虚無埋めをしたけど全然虚無じゃなかった件
-image: ../../img/lucas-favre-WN1VT_5Ww1E-unsplash.jpg
+image: ../../img/header/2021/06/bc0b75c8.jpg
 author: [Thanai]
 date: 2021-06-07T12:30:00.000+09:00
 draft: false

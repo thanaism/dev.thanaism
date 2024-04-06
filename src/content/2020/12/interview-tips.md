@@ -1,7 +1,7 @@
 ---
 layout: post
 title: みんな面接ヘタすぎるから俺が面接の極意を伝える
-image: ../../img/lukasz-rawa-zmFkIvbjsFI-unsplash.jpg
+image: ../../img/header/2020/12/9fe92018.jpg
 author: [Thanai]
 date: 2020-12-26T17:00:00.000Z
 draft: true

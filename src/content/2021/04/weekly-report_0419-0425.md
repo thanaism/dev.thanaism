@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 週報(4/19-4/25)
-image: ../../img/mikhail-vasilyev-Qmox1MkYDnY-unsplash.jpg
+image: ../../img/header/2021/04/bdcbff77.jpg
 author: [Thanai]
 date: 2021-04-26T09:00:00.000+09:00
 draft: false

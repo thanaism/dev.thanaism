@@ -1,7 +1,7 @@
 ---
 layout: post
 title: プログラミング言語の基本文法を比較する
-image: ../../img/paulo-brandao-YLgTmdb7r1o-unsplash.jpg
+image: ../../img/header/2020/10/13e90be4.jpg
 author: [Thanai]
 date: 2020-10-29T17:00:00.000Z
 draft: false

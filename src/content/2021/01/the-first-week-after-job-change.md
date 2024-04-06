@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 未経験からエンジニアに転職して最初の1週間が終わった
-image: ../../img/hans-van-tol-P1syptb0tTw-unsplash.jpg
+image: ../../img/header/2021/01/8e314106.jpg
 author: [Thanai]
 date: 2021-01-09T15:00:00.000Z
 draft: false

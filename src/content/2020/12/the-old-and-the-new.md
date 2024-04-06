@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 配布物から見る前職と転職先の小さくも大きな差異
-image: ../../img/lukasz-rawa-zmFkIvbjsFI-unsplash.jpg
+image: ../../img/header/2020/12/188ed367.jpg
 author: [Thanai]
 date: 2020-12-24T17:00:00.000Z
 draft: true

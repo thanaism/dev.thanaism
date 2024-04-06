@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScriptで競プロをする
-image: ../../img/lisette-verwoerd-4lnzD0569kc-unsplash.jpg
+image: ../../img/header/2020/10/920af32a.jpg
 author: [Thanai]
 date: 2020-10-26T00:00:00.000Z
 draft: false

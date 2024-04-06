@@ -1,6 +1,6 @@
 ---
 title: Haskellの畳み込みを完全に理解する
-image: ../../img/42-north-OE7H8Zp1mw8-unsplash.jpg
+image: ../../img/header/2021/05/488fb895.jpg
 author: [Thanai]
 date: 2021-05-15T15:00:00.000+09:00
 draft: false

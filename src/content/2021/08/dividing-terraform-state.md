@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Terraformのstate移動とrename
-image: ../../img/vivish-photography-4ab-uGbwnGE-unsplash.jpg
+image: ../../img/header/2021/08/e5195f5b.jpg
 author: [Thanai]
 date: 2021-08-05T19:00:00.000+09:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: overlayfsをさわってみる
-image: ../../img/laurenz-kleinheider-rBtIyNVT8K0-unsplash.jpg
+image: ../../img/header/2021/06/4f816246.jpg
 author: [Thanai]
 date: 2021-06-10T19:00:00.000+09:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: エラトステネスの篩とMeissel-Lehmer Algorithm
-image: ../../img/noufal-tariq-cWNI6UN6BXw-unsplash.jpg
+image: ../../img/header/2020/09/b03464e1.jpg
 author: [Thanai]
 date: 2020-09-12T0:00:00.000Z
 draft: false

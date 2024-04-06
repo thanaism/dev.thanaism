@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I've won 10 Azure certifications!
-image: ../../img/andrew-pons-cLHPacdtpSY-unsplash.jpg
+image: ../../img/header/2021/08/9a77d931.jpg
 author: [Thanai]
 date: 2021-08-26T09:00:00.000+09:00
 draft: false

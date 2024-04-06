@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CodePenの埋め込みに対応させてみた
-image: ../../img/paul-hanaoka-w2DsS-ZAP4U-unsplash.jpg
+image: ../../img/header/2021/04/b00dbd65.jpg
 author: [Thanai]
 date: 2021-04-28T00:00:00.000+09:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Azure StorageのSASとstored access policy
-image: ../../img/hiroko-yoshii-9y7y26C-l4Y-unsplash.jpg
+image: ../../img/header/2021/03/2ec17329.jpg
 author: [Thanai]
 date: 2021-03-29T23:00:00.000Z
 draft: false

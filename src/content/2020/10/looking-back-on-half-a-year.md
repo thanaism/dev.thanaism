@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 決意から半年でどれだけ人生を変えることが出来たか振り返る
-image: ../../img/zdenek-machacek-Vu4-Il_2Kdo-unsplash.jpg
+image: ../../img/header/2020/10/af579723.jpg
 author: [Thanai]
 date: 2020-10-11T0:00:00.000Z
 draft: true

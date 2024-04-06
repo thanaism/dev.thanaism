@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Azure Kubernetes ServiceのSNATについて
-image: ../../img/paco-joss-4GL53Okjaic-unsplash.jpg
+image: ../../img/header/2021/03/d8e269da.jpg
 author: [Thanai]
 date: 2021-03-26T17:00:00.000Z
 draft: false

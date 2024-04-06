@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vue.jsの勉強を兼ねてGridsomeでブログを作ってみる
-image: ../../img/shaun-bell-7vUO2k7yQ4w-unsplash.jpg
+image: ../../img/header/2020/10/1d72f012.jpg
 author: [Thanai]
 date: 2020-10-30T15:00:00.000Z
 draft: false

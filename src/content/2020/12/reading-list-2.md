@@ -1,7 +1,7 @@
 ---
 layout: post
 title: プログラミング以外のリーディングリスト
-image: ../../img/james-wainscoat-alU8WTW87mQ-unsplash.jpg
+image: ../../img/header/2020/12/db225132.jpg
 author: [Thanai]
 date: 2020-12-20T0:00:00.000Z
 draft: false

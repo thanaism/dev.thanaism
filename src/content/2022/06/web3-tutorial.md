@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Web3開発キャッチアップの覚え書き
-image: ../../img/marvin-meyer-SYTO3xs06fU-unsplash.jpg
+image: ../../img/header/2022/06/7903ebd7.jpg
 author: [Thanai]
 date: 2022-06-14T13:30:00.000+09:00
 draft: false

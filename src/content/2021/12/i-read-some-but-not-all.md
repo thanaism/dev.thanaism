@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2021年に私が「読まなかった」本
-image: ../../img/yuvraj-singh-JJpnPI8Hpgo-unsplash.jpg
+image: ../../img/header/2021/12/5a3f0199.jpg
 author: [Thanai]
 date: 2021-12-17T19:00:00.000+09:00
 draft: false

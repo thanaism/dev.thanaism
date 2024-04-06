@@ -1,7 +1,7 @@
 ---
 layout: post
 title: gatsby-remark-link-cardの導入失敗
-image: ../../img/david-clode-brgKHpVpVYI-unsplash.jpg
+image: ../../img/header/2021/03/45589a98.jpg
 author: [Thanai]
 date: 2021-03-04T17:00:00.000Z
 draft: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 会社の技術ブログ運営を成功させる方法を考える
-image: ../../img/surface-rkr_jnaGzIk-unsplash.jpg
+image: ../../img/header/2022/02/4d5599ba.jpg
 author: [Thanai]
 date: 2022-02-10T01:00:00.000+09:00
 draft: false

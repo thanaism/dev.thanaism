@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 技術的な記事を書くならコードブロックにこだわろう
-image: ../../img/robin-worrall-FPt10LXK0cg-unsplash.jpg
+image: ../../img/header/2022/05/8a8ae17f.jpg
 author: [Thanai]
 date: 2022-05-23T19:00:00.000+09:00
 draft: false

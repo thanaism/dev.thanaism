@@ -1,7 +1,7 @@
 ---
 layout: post
 title: コストを支払うべきは、書き手である
-image: ../../img/luca-bravo-XJXWbfSo2f0-unsplash.jpg
+image: ../../img/header/2022/02/ef3254fd.jpg
 author: [Thanai]
 date: 2022-02-15T22:00:00.000+09:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ABCのABCと茶diffを全部解いた
-image: ../../img/joshua-koblin-tgfWXmlhNZc-unsplash.jpg
+image: ../../img/header/2021/11/b7da6a2a.jpg
 author: [Thanai]
 date: 2021-11-13T01:00:00.000+09:00
 draft: false

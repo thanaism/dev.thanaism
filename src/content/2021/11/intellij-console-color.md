@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WindowsでIntelliJ IDEAを使うときだけコンソールの色がバグる
-image: ../../img/isaac-alvarez-K7Ski5Pa_Cs-unsplash.jpg
+image: ../../img/header/2021/11/d016f69a.jpg
 author: [Thanai]
 date: 2021-11-29T14:00:00.000+09:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 賃貸でのエアコン購入時に知っておくべき電源の話
-image: ../../img/nick-wood-Y0u3Pj5giyI-unsplash.jpg
+image: ../../img/header/2021/07/785fd994.jpg
 author: [Thanai]
 date: 2021-07-31T17:00:00.000+09:00
 draft: false

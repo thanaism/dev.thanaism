@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TerraformとBicep両方さわってみて思ったこと
-image: ../../img/matthew-bennett-YWWgHw4PY24-unsplash.jpg
+image: ../../img/header/2021/08/9811d822.jpg
 author: [Thanai]
 date: 2021-08-07T01:00:00.000+09:00
 draft: false

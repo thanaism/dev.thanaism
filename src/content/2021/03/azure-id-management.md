@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AzureのIDとアクセスの管理
-image: ../../img/rigel-oufkOSyYcXE-unsplash.jpg
+image: ../../img/header/2021/03/6c5701b8.jpg
 author: [Thanai]
 date: 2021-03-30T23:00:00.000Z
 draft: false

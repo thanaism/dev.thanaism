@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installing Terraform on WSL and Upgrading
-image: ../../img/eric-michael-KA9W4k0pOn4-unsplash.jpg
+image: ../../img/header/2021/08/50d20199.jpg
 author: [Thanai]
 date: 2021-08-16T19:00:00.000+09:00
 draft: false

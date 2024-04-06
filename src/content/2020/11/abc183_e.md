@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AtCoder Beginner Contest 183 E - Queen on Grid
-image: ../../img/joshua-j-cotten-q77K0zIDTmI-unsplash.jpg
+image: ../../img/header/2020/11/2f9a8b72.jpg
 author: [Thanai]
 date: 2020-11-17T14:12:00.000Z
 draft: false

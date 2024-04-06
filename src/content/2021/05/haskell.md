@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 父さんPythonやめてHaskellをやっていこうと思うんだ
-image: ../../img/mikhail-vasilyev-NodtnCsLdTE-unsplash.jpg
+image: ../../img/header/2021/05/be5e5346.jpg
 author: [Thanai]
 date: 2021-05-13T23:00:00.000+09:00
 draft: false

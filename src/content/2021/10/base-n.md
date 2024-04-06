@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 基数変換
-image: ../../img/christopher-burns-ZrfnOyYUfi4-unsplash.jpg
+image: ../../img/header/2021/10/3b9b9d11.jpg
 author: [Thanai]
 date: 2021-10-17T00:00:00.000+09:00
 draft: false

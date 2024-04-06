@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 会社でのダメ出しに自分は説明下手だと勘違いしかけていたが絶対そんなことはないと気付いた
-image: ../../img/alistair-dent-HZAcR-tDSCI-unsplash.jpg
+image: ../../img/header/2020/11/16f07b5c.jpg
 author: [Thanai]
 date: 2020-11-25T12:00:00.000Z
 draft: true

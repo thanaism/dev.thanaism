@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google Meetのノイズキャンセリング機能は日本では無効なのか？
-image: ../../img/david-clode-u5K46PukKAo-unsplash.jpg
+image: ../../img/header/2021/02/4ee30ee6.jpg
 author: [Thanai]
 date: 2021-02-02T15:00:00.000Z
 draft: false

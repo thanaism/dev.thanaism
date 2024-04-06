@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 最も愛されているプログラミング言語Rustをやっていく
-image: ../../img/claudio-guglieri-K2RH1QZdLF4-unsplash.jpg
+image: ../../img/header/2021/04/75871e71.jpg
 author: [Thanai]
 date: 2021-04-24T00:00:00.000+09:00
 draft: false

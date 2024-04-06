@@ -1,7 +1,7 @@
 ---
 layout: post
 title: プログラミング関係のリーディングリスト
-image: ../../img/sue-tucker-KbSPV3OQEaM-unsplash.jpg
+image: ../../img/header/2020/10/99785c70.jpg
 author: [Thanai]
 date: 2020-10-15T0:00:00.000Z
 draft: false

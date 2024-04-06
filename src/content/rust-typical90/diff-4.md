@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 競プロ典型90問の★4をRustで解く
-image: ../img/emre-153_VPk1NZQ-unsplash.jpg
+image: ../img/header/rust-typical90/fe14ba94.jpg
 author: [Thanai]
 date: 2021-05-21T02:00:00.000+09:00
 draft: false

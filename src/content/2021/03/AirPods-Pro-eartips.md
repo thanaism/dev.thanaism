@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AirPods Proの純正エアーチップで耳がただれる問題の解消
-image: ../../img/creative-nerds-xfkazTJo7oI-unsplash.jpg
+image: ../../img/header/2021/03/540704e7.jpg
 author: [Thanai]
 date: 2021-03-21T01:00:00.000Z
 draft: false

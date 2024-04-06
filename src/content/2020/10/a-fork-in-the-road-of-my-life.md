@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 人生の岐路
-image: ../../img/zdenek-machacek-Vu4-Il_2Kdo-unsplash.jpg
+image: ../../img/header/2020/10/8489d25a.jpg
 author: [Thanai]
 date: 2020-10-14T0:00:00.000Z
 draft: true

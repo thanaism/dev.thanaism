@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ステーキング対応のトークンをつくる
-image: ../../img/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg
+image: ../../img/header/2022/09/c7a68cab.jpg
 author: [Thanai]
 date: 2022-09-16T02:00:00.000+09:00
 draft: false

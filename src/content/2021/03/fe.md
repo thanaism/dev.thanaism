@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 基本情報技術者試験（FE）を受けた
-image: ../../img/cofish-aquarium-6F6upB4ldYk-unsplash.jpg
+image: ../../img/header/2021/03/c8fa827d.jpg
 author: [Thanai]
 date: 2021-03-18T01:00:00.000Z
 draft: false

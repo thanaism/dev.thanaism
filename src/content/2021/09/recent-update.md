@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 直近で書いた記事まとめ
-image: ../../img/harley-davidson-kSNQz1lTBPQ-unsplash.jpg
+image: ../../img/header/2021/09/1aa12c1e.jpg
 author: [Thanai]
 date: 2021-09-29T00:00:00.000+09:00
 draft: false

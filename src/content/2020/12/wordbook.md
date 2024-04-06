@@ -1,7 +1,7 @@
 ---
 layout: post
 title: エンジニアなら知っておきたい単語リスト
-image: ../../img/lukasz-rawa-zmFkIvbjsFI-unsplash.jpg
+image: ../../img/header/2020/12/a285aa6d.jpg
 author: [Thanai]
 date: 2020-12-16T17:00:00.000Z
 draft: false

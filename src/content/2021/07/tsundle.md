@@ -1,7 +1,7 @@
 ---
 layout: post
 title: tsundle（Kindleの積ん読）
-image: ./img/daniel-thurler-YRGsG4oiNIg-unsplash.jpg
+image: ../../img/header/2021/07/cf9f5ca8.jpg
 author: [Thanai]
 date: 2021-07-01T20:30:00.000+09:00
 draft: false

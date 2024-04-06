@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 今さらながらカメラの仕組みが気になり始めた
-image: ../../img/joshua-j-cotten-VhFL7UgzUy4-unsplash.jpg
+image: ../../img/header/2021/01/f36b3707.jpg
 author: [Thanai]
 date: 2021-01-10T15:00:00.000Z
 draft: false

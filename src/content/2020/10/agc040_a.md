@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AGC040 A - >< の備忘録
-image: ../../img/vincent-van-zalinge-vUNQaTtZeOo-unsplash.jpg
+image: ../../img/header/2020/10/e932a1bd.jpg
 author: [Thanai]
 date: 2020-10-16T0:00:00.000Z
 draft: false

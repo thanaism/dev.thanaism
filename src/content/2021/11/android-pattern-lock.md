@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Androidのパターンロックが何通り存在するのかを求めるプログラム
-image: ../../img/lucas-favre-ylE8yffKxk8-unsplash.jpg
+image: ../../img/header/2021/11/d662632b.jpg
 author: [Thanai]
 date: 2021-11-02T19:00:00.000+09:00
 draft: false

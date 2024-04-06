@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SpringBoot 2.3以降でjavax.validationのimportができない
-image: ../../img/dhiva-krishna-X16zXcbxU4U-unsplash.jpg
+image: ../../img/header/2021/11/6d2cf4e4.jpg
 author: [Thanai]
 date: 2021-11-27T16:00:00.000+09:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 聞き手のメタ認知を促す
-image: ../../img/adi-goldstein-EUsVwEOsblE-unsplash.jpg
+image: ../../img/header/2022/02/b3eefa5b.jpg
 author: [Thanai]
 date: 2022-02-18T12:00:00.000+09:00
 draft: false

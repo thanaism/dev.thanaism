@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MS Docsを読むのがちょっと楽になるChrome拡張機能の審査が通った
-image: ../../img/leon-hinz-cYHSzotrlBo-unsplash.jpg
+image: ../../img/header/2021/03/91e6422a.jpg
 author: [Thanai]
 date: 2021-03-11T19:00:00.000Z
 draft: false

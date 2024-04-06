@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 環境設定の備忘メモ
-image: ../../img/muneer-ahmed-ok-oMrqk8Aod1Y-unsplash.jpg
+image: ../../img/header/2021/03/e6277c04.jpg
 author: [Thanai]
 date: 2021-03-26T15:00:00.000Z
 draft: false

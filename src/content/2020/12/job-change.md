@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 大手メーカーの安定を捨て未経験からエンジニアへ転職
-image: ../../img/andrew-peluso-2EvHY2pLXz4-unsplash.jpg
+image: ../../img/header/2020/12/c6aebc08.jpg
 author: [Thanai]
 date: 2020-12-14T17:00:00.000Z
 draft: false

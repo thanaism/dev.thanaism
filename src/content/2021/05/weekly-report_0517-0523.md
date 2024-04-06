@@ -1,7 +1,7 @@
 ---
 layoutlayout: post
 title: 圏論とHaskellのつながり
-image: ../../img/francisco-requena-A9tP39BIn28-unsplash.jpg
+image: ../../img/header/2021/05/8d2a6926.jpg
 author: [Thanai]
 date: 2021-05-23T23:00:00.000+09:00
 draft: false

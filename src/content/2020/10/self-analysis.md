@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ここ半年で大きく人生も変わってきたので改めて自己分析をする
-image: ../../img/mathew-schwartz-5iFZBM7qgWc-unsplash.jpg
+image: ../../img/header/2020/10/46fe5781.jpg
 author: [Thanai]
 date: 2020-10-09T0:00:00.000Z
 draft: false

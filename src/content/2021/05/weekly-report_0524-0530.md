@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 才能の違いからくる劣等感は実績でしか払拭できない
-image: ../../img/dan-garri-guyHDx_KeOY-unsplash.jpg
+image: ../../img/header/2021/05/02bfff3a.jpg
 author: [Thanai]
 date: 2021-05-31T09:00:00.000+09:00
 draft: false

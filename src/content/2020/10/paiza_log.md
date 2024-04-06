@@ -1,7 +1,7 @@
 ---
 layout: post
 title: paizaのSランク取得とD問題の全埋め
-image: ../../img/vittorio-zamboni-iq96SvUkuxQ-unsplash.jpg
+image: ../../img/header/2021/11/462494b9.jpg
 author: [Thanai]
 date: 2021-11-02T22:00:00.000+09:00
 draft: false

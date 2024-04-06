@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 競プロ典型90問の★3をRustで解く
-image: ../img/timothy-meinberg-AL2-t0GrSko-unsplash.jpg
+image: ../img/header/rust-typical90/fdfe6c40.jpg
 author: [Thanai]
 date: 2021-05-21T01:00:00.000+09:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AtCoder Beginner Contest 184 E - Third Avenue
-image: ../../img/alistair-dent-HZAcR-tDSCI-unsplash.jpg
+image: ../../img/header/2020/11/d020df2c.jpg
 author: [Thanai]
 date: 2020-11-23T14:12:00.000Z
 draft: false

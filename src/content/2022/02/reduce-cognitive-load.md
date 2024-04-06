@@ -1,7 +1,7 @@
 ---
 layout: post
 title: デザイン4原則：読み手の認知負荷を下げる
-image: ../../img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg
+image: ../../img/header/2022/02/48f7a76a.jpg
 author: [Thanai]
 date: 2022-02-10T20:00:00.000+09:00
 draft: false

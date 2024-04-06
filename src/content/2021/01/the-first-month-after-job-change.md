@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 転職して最初の1ヶ月が過ぎた
-image: ../../img/sebastian-pena-lambarri-YV593oyMKmo-unsplash.jpg
+image: ../../img/header/2021/01/b1f0d127.jpg
 author: [Thanai]
 date: 2021-01-31T15:00:00.000Z
 draft: false

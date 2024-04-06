@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 未経験からのエンジニア転職を振り返って、本当に役に立った学習・行動をまとめる
-image: ../../img/sneha-cecil-NOWC4AtCIC4-unsplash.jpg
+image: ../../img/header/2020/12/e00a651a.jpg
 author: [Thanai]
-date: 2020-12-8T12:00:00.000Z
+date: 2020-12-08T12:00:00.000Z
 draft: false
 tags:
   - Poem

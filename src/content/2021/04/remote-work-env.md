@@ -1,7 +1,7 @@
 ---
 layout: post
 title: フルリモートエンジニアの私がつくる最高の作業環境
-image: ../../img/sigmund-OORBdaMZCPw-unsplash.jpg
+image: ../../img/header/2021/04/b3b05e3b.jpg
 author: [Thanai]
 date: 2021-04-13T23:00:00.000+09:00
 draft: false

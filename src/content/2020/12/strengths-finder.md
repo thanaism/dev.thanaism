@@ -1,7 +1,7 @@
 ---
 layout: post
 title: STRENGTHS FINDER 2.0を受けてみた
-image: ../../img/chatnarin-pramnapan-hsnelnK7mt4-unsplash.jpg
+image: ../../img/header/2020/12/f90f017b.jpg
 author: [Thanai]
 date: 2020-12-25T17:00:00.000Z
 draft: false

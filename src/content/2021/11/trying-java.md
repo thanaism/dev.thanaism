@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Javaを知らない俺がモダンなJava開発をめざす
-image: ../../img/olav-tvedt-6lSBynPRaAQ-unsplash.jpg
+image: ../../img/header/2021/11/128e59cc.jpg
 author: [Thanai]
 date: 2021-11-26T19:00:00.000+09:00
 draft: false

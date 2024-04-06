@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 「詳説 正規表現」がメッチャよい
-image: ../../img/pawel-czerwinski-mJMrbY-jtls-unsplash.jpg
+image: ../../img/header/2021/03/b31e37d5.jpg
 author: [Thanai]
 date: 2021-03-29T15:00:00.000Z
 draft: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 数弱でも除算を理解する
-image: ../../img/zq-lee-Q6H4SwjsAdI-unsplash.jpg
+image: ../../img/header/2021/04/23b85dfc.jpg
 author: [Thanai]
 date: 2021-04-18T15:00:00.000+09:00
 draft: false

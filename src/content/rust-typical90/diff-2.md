@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 競プロ典型90問の★2をRustで解く
-image: ../img/pacto-visual-cWOzOnSoh6Q-unsplash.jpg
+image: ../img/header/rust-typical90/e0751568.jpg
 author: [Thanai]
 date: 2021-05-21T00:00:00.000+09:00
 draft: false

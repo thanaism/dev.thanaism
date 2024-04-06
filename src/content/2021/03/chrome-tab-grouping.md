@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chromeにタブのグループ化なんて機能があるのに今さら気付いた
-image: ../../img/david-clode-l-QdJMZX7PU-unsplash.jpg
+image: ../../img/header/2021/03/67def1ab.jpg
 author: [Thanai]
 date: 2021-03-17T18:00:00.000Z
 draft: false

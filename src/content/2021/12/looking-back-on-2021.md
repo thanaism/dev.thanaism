@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2021年の振り返り
-image: ../../img/serge-kutuzov-1K9-TbJWs2U-unsplash.jpg
+image: ../../img/header/2021/12/c3d81f9f.jpg
 author: [Thanai]
 date: 2021-12-31T23:00:00.000+09:00
 draft: false

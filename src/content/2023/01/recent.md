@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 直近4ヶ月くらいの学んだことのまとめ
-image: ../../img/ilya-pavlov-OqtafYT5kTw-unsplash.jpg
+image: ../../img/header/2023/01/996f5ba1.jpg
 author: [Thanai]
 date: 2023-01-22T23:00:00.000+09:00
 draft: false

@@ -90,11 +90,6 @@ const About: React.FC = () => (
                   <li>
                     <a href="https://zenn.dev/thanai">Zenn</a>
                   </li>
-                  <li>
-                    <a href="https://techblog.ap-com.co.jp/archive/author/thanaism">
-                      会社ブログへの投稿一覧
-                    </a>
-                  </li>
                 </ul>
                 <h3>過去のメディア掲載歴・受賞歴など</h3>
                 <ul>
